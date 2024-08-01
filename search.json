@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "tics100/Clase01.html#quién-es-el-profe",
+    "href": "tics100/Clase01.html#quién-es-el-profe",
+    "title": "TICS100 - Programación",
+    "section": "¿Quién es el profe?",
+    "text": "¿Quién es el profe?\nDiego Ramos Álvarez\n\n\nMaster en Science of Data Science - 2023\n\n\n\n\nEstudiante del Doctorado en Data Science"
+  },
+  {
+    "objectID": "tics100/Clase01.html#ayudantía",
+    "href": "tics100/Clase01.html#ayudantía",
+    "title": "TICS100 - Programación",
+    "section": "Ayudantía",
+    "text": "Ayudantía"
+  },
+  {
+    "objectID": "tics100/Clase01.html#section",
+    "href": "tics100/Clase01.html#section",
+    "title": "TICS100 - Programación",
+    "section": "",
+    "text": "Prueba 1 (P1) =&gt; Sabado 05 de Octube (05/10/2024)\n\n\n\n\nPrueba 2 (P2) =&gt; Sabado 30 de Noviembre (30/11/2024)\n\n\n\n\nEvaluación Extra (AE) =&gt; Lo definiremos entre todos\n\nTareas\nControles\nOtros"
+  },
+  {
+    "objectID": "tics100/Clase01.html#section-1",
+    "href": "tics100/Clase01.html#section-1",
+    "title": "TICS100 - Programación",
+    "section": "",
+    "text": "El calculo de la nota es el siguiente:\nif \\((\\small{\\frac{P1+P2}{2}} &gt;= 4.0):\\) \\[\nNF = P1*0.35 + P2*0.35 + AE*0.30\n\\] else: \\[\nNF = P1*0.5 + P2*0.5 + AE*0.00\n\\]"
+  },
+  {
+    "objectID": "tics100/Clase01.html#section-2",
+    "href": "tics100/Clase01.html#section-2",
+    "title": "TICS100 - Programación",
+    "section": "",
+    "text": "Exámen (Fecha por definir):\n\n\nSerá en el periodo de exámenes\n\n\n\n\nSi tienen las 2 notas de prueba mayor a 4.0 (P1 &gt;= 4.0 y P2 &gt;=4.0) se eximen.\n\n\n\n\nEl examen reemplaza la peor nota. Incluso si es peor.\n\n\n\n\nEn caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral."
+  },
+  {
+    "objectID": "tics100/Clase01.html#cuál-es-su-experiencia-programando",
+    "href": "tics100/Clase01.html#cuál-es-su-experiencia-programando",
+    "title": "TICS100 - Programación",
+    "section": "¿Cuál es su experiencia programando?",
+    "text": "¿Cuál es su experiencia programando?"
+  },
+  {
+    "objectID": "tics100/Clase01.html#qué-es-un-problema",
+    "href": "tics100/Clase01.html#qué-es-un-problema",
+    "title": "TICS100 - Programación",
+    "section": "¿Qué es un problema?",
+    "text": "¿Qué es un problema?\nDefinamos que es un problema"
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Diapositivas",
+    "section": "",
+    "text": "Clase 01\n\n\nPresentación del Curso\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Finley Malloc",
+    "section": "",
+    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Finley Malloc",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Finley Malloc",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HomePage",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nAcá se pueden encontrar las slides correspondientes al curso de Minería de Datos. \n\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]

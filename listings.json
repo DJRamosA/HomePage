@@ -1,0 +1,14 @@
+[
+  {
+    "listing": "/courses.html",
+    "items": [
+      "tics100/Clase01.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/courses.html"
+    ]
+  }
+]
