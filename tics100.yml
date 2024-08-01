@@ -1,0 +1,8 @@
+- title: "Clase 01"
+  subtitle: "Presentación del Curso"
+  author: "Diego Ramos Á"
+  date: 2024-08-07
+  # image: tics100/thumbnails/clase-0.png
+  path: tics100/Clase01.qmd
+  categories:
+   - slides

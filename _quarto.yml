@@ -1,5 +1,10 @@
 project:
   type: website
+  output-dir: docs
+
+
+toc: false
+# number-sections: true
 
 website:
   title: "HomePage"
@@ -8,12 +13,19 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://github.com/DJRamosA/HomePage
+          - text: Report a Bug
+            href:  https://github.com/DJRamosA/HomePage/issues/new
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    # toc: true
 
 
 
