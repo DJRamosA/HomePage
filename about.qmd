@@ -1,18 +1,18 @@
 ---
-title: "Finley Malloc"
+title: "Diego Ramos Álvarez"
 about:
   template: trestles
-  image: profile.jpg
+  image: img/profile.jpg
   links:
-    - icon: twitter
-      text: twitter
-      href: https://twitter.com
     - icon: github
       text: Github
       href: https://github.com
+    - icon: linkedin
+      text: Linkedin
+      href: https://github.com
 ---
 
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.
+I'm Diego Ramos a PhD student in Universidad Adolfo Ibañez in Santiago, Chile. 
 
 ## Education
 

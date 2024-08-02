@@ -1,11 +1,12 @@
 ---
 title: "TICS100 - Programación"
+subtitle: "Introducción al Curso"
 author: "Diego Ramos Á."
 institute: <diego.ramos.a@edu.uai.cl>
 format:
   revealjs: 
-    width: 1366
-    height: 768
+    width: 1050
+    height: 700
     theme: [default, custom.scss]
     slide-number: true
     controls: true
@@ -19,7 +20,11 @@ format:
 
 ## ¿Quién es el profe?
 ### Diego Ramos Álvarez
+![](../img/profile.jpg){.absolute top=100 right=0 width="250" height="250"}
 
+:::{.fragment .fade-in-then-semi-out}
+- Ingeniero Civil Informático - 2023
+:::
 :::{.fragment .fade-in-then-semi-out}
 - Master en Science of Data Science - 2023
 :::
@@ -30,10 +35,16 @@ format:
 
 ## Ayudantía 
 
+<br/>
+Los lunes modulo 5 (17:00-18:10)
+
+Ayudante por definir 
+
+
 
 # Evaluaciones
 
-## 
+## Cómo y cuándo serán las evaluaciones
 :::{.fragment .fade-in-then-semi-out }
 - Prueba 1 (P1) => Sabado 05 de Octube (05/10/2024)
 :::
@@ -47,10 +58,10 @@ format:
   - Otros
 :::
 
-##
+## Calculo de la nota
 El calculo de la nota es el siguiente:
 
-if $(\small{\frac{P1+P2}{2}} >= 4.0):$
+if $promedio\_ pruebas>= 4.0:$
 $$
 NF = P1*0.35 + P2*0.35 + AE*0.30 
 $$
@@ -60,9 +71,9 @@ NF = P1*0.5 + P2*0.5 + AE*0.00
 $$
 
 
-##
+## Examen
 
-Exámen (Fecha por definir): 
+Fecha por definir: 
 
 :::{.fragment .fade-in-then-semi-out}
 - Será en el periodo de exámenes
@@ -77,11 +88,44 @@ Exámen (Fecha por definir):
 - En caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral.
 :::
 
-## ¿Cuál es su experiencia programando?
+# ¿Cuál es su experiencia programando?
 
 
+## ¿Qué es un problema? {auto-animate=true}
 
-## ¿Qué es un problema?
+Definición:
 
-Definamos que es un problema
+:::{.fragment .fade-in-then-semi-out}
+- En el ámbito de las ciencias de la computación, un problema es una tarea que debe ser resuelta. 
+:::
+
+Para resolver un problema:
+
+:::{.fragment .fade-in-then-semi-out}
+- Tenemos identificar con qué vamos a trabajar (INPUT) 
+:::
+:::{.fragment .fade-in-then-semi-out}
+- Saber que queremos tener de resultado (OUTPUT)
+:::
+
+## Ejemplos 
+
+Sumar :
+
+```{}
+%%| label: fig-mermaid
+%%| fig-width: 6
+```
+
+## Como lo veo yo
+
+<br/>
+
+::: {.r-stack}
+![](../img/icons8-lego.png){.fragment width="480" height="480"}
+
+![](../img/boy-building.jpg){.fragment width="600" height="450"}
+
+![](../img/lego-spaceship.jpg){.fragment width="600" height="400"}
+:::
 

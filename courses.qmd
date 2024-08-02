@@ -1,12 +1,12 @@
 ---
-title: "Diapositivas"
+title: "Cursos"
 description: |
-  Acá se pueden encontrar las slides correspondientes al curso de Minería de Datos.
+  Diapositivas de los cursos que he dictado.
   
 listing:
   contents: "tics100.yml"
   type: grid
-  fields: [date, title, subtitle, image]
+  fields: [date, title, subtitle]
   sort: "date asc"
   image-height: 100%
   categories: unnumbered
