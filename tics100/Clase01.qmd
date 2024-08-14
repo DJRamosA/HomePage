@@ -48,6 +48,13 @@ Ayudante: Juan Pablo Orellana
 
 **juanorellana@alumnos.uai.cl**
 
+# Distribución del curso
+
+## 
+
+![](../img/Calendario_clases.png){fig-align="center" width=900 height=700}
+
+
 # Evaluaciones
 
 ## Cómo y cuándo serán las evaluaciones
@@ -69,7 +76,7 @@ Ayudante: Juan Pablo Orellana
 
 ## Calculo de la nota
 
-El calculo de la nota es el siguiente:
+El cálculo de la nota es el siguiente:
 
 if $promedio\_ pruebas>= 4.0:$ 
 $$
@@ -94,11 +101,11 @@ Fecha por definir:
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
--   El examen reemplaza la peor nota. Incluso si es peor.
+-   El examen reemplaza la peor nota. Incluso si es peor que la original.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
--   En caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral.
+-   En caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un **examen oral**.
 :::
 
 # ¿Cuál es su experiencia programando?
@@ -124,9 +131,9 @@ Para resolver un problema:
 ## Ejemplos {transition="fade"}
 Supongamos distintas tareas:
 
-- Sumar los numeros 2 y 4.
+- Sumar los números 2 y 4.
 - Incrementar el 56 en una unidad.
-- Ordenar nombres de un cruso segun la primera letra del nombre.
+- Ordenar nombres de un curso según la primera letra del nombre.
 
 
 ## Ejemplos {transition="fade"}
@@ -199,7 +206,7 @@ Sino pregunten a Chat-GPT
 # ¿A quíen es más fácil explicar un problema a una persona o a una máquina?
 
 
-## Ojo como entienden el lenguaje
+<!-- ## Ojo como entienden el lenguaje
 
 Caso Personal: "Tengo problemas para la aplicación en la capa 7, esto es debido a que la pagina web que tenemos, está siendo corrompida por fallos en las capas inferiores"
 
@@ -213,7 +220,7 @@ Caso Personal: "Tengo problemas para la aplicación en la capa 7, esto es debido
 
 Esto se conoce como la defensa Chewbacca, doy una cantidad enorme de información sin sentido para confundir al oyente
 
-::: 
+:::  -->
 
 <!-- Necesito desarrollar un asiento que sea capaz de superponerse a otro asiento y que logre contener a un usuario en una posición ergonómica, considerando las medidas individuales y sus necesidades particulares.
 
@@ -228,20 +235,20 @@ Esto se conoce como la defensa Chewbacca, doy una cantidad enorme de informació
 - Uno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.
 - Este integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.
 - No puede mencionar la letra, ni tampoco puede hacer comparaciones.
-- Al terminar, le entrega la hoja a su compañero y el debe seguir las instrucciones. 
+- Al terminar, le entrega la hoja a su compañero y él debe seguir las instrucciones. 
 - Comparen si lo dibujado coincide con la letra original.
 
 
 ## El objetivo del curso
 
-La idea es que sean capacez de llevar sus ideas a una maquina considerando el paso a paso.
+La idea es que sean capaces de llevar sus ideas a una maquina considerando el paso a paso.
 
 Para esto:
 
 - Identifiquen los elementos que tienen disponibles.
-- Qué quieren desarollar.
-- Utilicen los elementos basicos para resolver paso a paso.
-  
+- Qué quieren desarrollar.
+- Utilicen los elementos básicos para resolver paso a paso.
+
 
 ## ¿Donde quieren programar?
 
@@ -259,7 +266,7 @@ Opciones disponibles para el curso:
 :::
 
 
-# Acotación Importante
+<!-- # Acotación Importante -->
 
 ## Acotación Importante
 

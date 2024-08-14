@@ -17,6 +17,7 @@ format:
         mermaid-format: svg
         mermaid: 
             theme: neutral
+        code-link: true
 resources:
     - Clase02.pdf
 
@@ -24,10 +25,293 @@ resources:
 
 # Python Básico
 
+## Disclaimer
+
+<br/>
+
+Ahora todo tiene IA, por lo que armar codigo desde su computador será muy sencillo. Por lo tanto:
+
+:::{.fragment .fade-up}
+
+- **Recomendación 1**: Antes de usar la IA aprendan a ciegas, entender que hace cada cosa, es tema de practica.
+:::
+
+:::{.fragment .fade-up}
+
+- **Recomendación 2**: En las pruebas no tienen IA por lo que no les conviene acostumbrarse.
+:::
+
+
+# Para ejecutar el codigo que se está mostrando dependerá de su decisión:
+
+## Si escogió replit: 
+
+
+::: r-stack
+
+![](../img/crear_replit_1.png){.fragment width=1000 height=600}
+
+
+
+![](../img/crear_replit_2.png){.fragment width=1000 height=600}
+
+:::
+
+## Si escogió Colab:
+
+::: r-stack
+
+![](../img/crear_colab_1.png){.fragment width=1000 height=600}
+
+
+
+![](../img/crear_colab_2.png){.fragment width=1000 height=600}
+
+:::
+
+
+## En el caso que escoger instalarlo en su computador... 
+
+<br/>
+
+Dejaré un tutorial en los próximos días en *Webc*, puede apoyarse en mi o el ayudante.
+
+
+
 ## Hagamos el primer código
+
+<br/>
+
+Un programa en Python está conformado por líneas de texto que contienen **una o más instrucciones y sentencias del lenguaje**.
 
 Tenemos el clasico hola mundo:
 
-```{.python}
+```{.python filename="HelloWorld.py"}
+
 print("Hola Mundo")
+ 
 ```
+
+:::{.fragment .fade-up}
+```{python}
+#| output: asis
+#| panel: input
+print(" Hola Mundo")
+```
+:::
+
+# Comentarios
+
+
+## ¿Qué es y para qué sirve?
+
+Un comentario es una linea del codigo que no es ejecutable.
+
+Cuando deseamos escribir alguna nota para recordar o para otra persona podemos utilizar comentarios.
+
+Otro uso, es comentar código, es decir, hacer no ejecutable una parte de este.
+
+## ¿Cómo se comenta?
+
+Una línea de comentarios en Python comienza con el **símbolo `#`** y todo lo que está después de este no será tomado en cuenta por el intérprete de Python al momento de ejecutar el programa.
+
+
+```{.python filename="HelloWorld.py"}
+# Esto es un comentario
+print("Hola Mundo")
+# Por ejemplo si coloco:
+# print("Hola alumnos del curso de Programación")
+# Ups... no hay nada en el output
+
+```
+
+:::{.fragment .fade-up}
+```{python}
+#| output: asis
+#| panel: input
+
+# Esto es un comentario
+print("Hola Mundo")
+# Por ejemplo si coloco:
+# print("Hola alumnos del curso de Programación")
+# Ups... no hay nada en el output
+```
+:::
+
+
+
+# Imprimir en pantalla
+
+## Comando `print()`
+
+El comando `print()` permite desplegar el resultado de una ¿**variable**? o un **texto por la terminal**. Si escribimos texto, éste debe ir escrito entre **comillas**. 
+Si escribimos una ¿variable?, éste despliega **el valor almacenado** en dicha variable.
+
+
+
+## Observación
+
+El computador es literal, por lo que no va a completar el código por ustedes.
+Cada caracter que falte significa un error en su código.
+
+
+
+```{.python}
+print("Este es mi primer texto)
+# Esta linea de codigo si o si esta mal
+```
+:::{.fragment .fade-up}
+```{python}
+#| error: true
+print("Este es mi primer texto)
+```
+:::
+
+# Variables
+
+## ¿Qué es una variable?
+
+Una variable representa un espacio de memoria en el computador que puede ser modificado en el tiempo y permite el registro y acceso a los datos.
+
+Podemos compararlas con cajas. Donde podemos:
+
+:::{.fragment .fade-up}
+
+- Almacenar información
+:::
+
+:::{.fragment .fade-up}
+
+- Recuperar su información
+:::
+
+:::{.fragment .fade-up}
+
+- Sobreescribir la información
+:::
+
+
+## ¿Cómo creamos una variable?
+
+<br/>
+
+<center>
+Para asignar el valor 5 a una variable se usa:
+
+`x = 5`
+
+:::{.fragment .fade-up}
+
+**¿Qué pasa si lo invertimos?**
+
+<br/>
+
+:::
+
+
+:::{.fragment .fade-up}
+
+`5 = x`
+
+:::
+:::{.fragment .fade-up}
+
+<span style="color:red;">Error!! Siempre se asigna de DERECHA a IZQUIERDA</span>
+
+:::
+</center>
+
+## Observaciones
+
+Siempre intentar asignar un nombre **SIGNIFICATIVO** a las variables. 
+
+Entender código es un tema en las empresas.
+
+:::{.fragment .fade-left}
+
+**Considere que:**
+
+> Cambiar los nombres de las variables del programa de un amigo no implica que usted hizo el código. Esta es la forma más burda de intentar engañarse.
+
+:::
+
+# Modfiquemos variables
+
+## Operaciones existentes
+
+Las básicas que disponemos son:
+
+- Sumar (+)
+- Restar (-)
+- Dividir (/)
+- Módulo (%)
+
+
+# ¿Tiene sentido un programa que no podemos interactuar?
+
+## Función importante
+
+Segunda función que veremos hoy:
+`input()`
+
+Esta nos permite pedirle información al usuario. 
+
+Cuando se llama a la función el computador espera a que el usuario entregue un valor y presione la tecla ‘enter’.
+
+
+:::{.fragment .fade-up}
+```{.python}
+print("Ingrese un numero")
+numIngresado = input()
+print("El número ingresado es:", numIngresado)
+```
+:::
+
+# ¡Hagamos prueba de código!
+
+## ¿Porqué falla?
+
+Las variables pueden almacenar distinto tipo de información, ya sea número o texto. Esto afecta el cómo procesamos la información. Sumar `5+5`  es distinto a la cadena de texto  `"5+5"`.
+
+Entonces: 
+
+:::{.fragment .fade-left}
+
+Cuando le entregamos información con `input()`
+
+**¿Qué recibe? ¿Número o texto?**
+
+:::
+
+:::{.fragment .fade-left}
+
+<center>
+<span style="color:red;"> **TEXTO** </span>
+</center>
+
+:::
+
+
+## Nueva función importante 
+
+Podemos transformar el carácter de un número al valor de un número utilizando la función `int()`.
+
+:::{.fragment .fade-up}
+
+```python
+y = input() # Se asigna como texto
+y = int(y) # Se transforma a número
+
+```
+:::
+
+## Otro tipo de transformaciones
+
+Para transformar una variable a otro tipo de formato, no solo existe `input()`.
+
+Existe:
+
+- `str()` A texto
+- `float()` A decimal
+- Y muchas más que aprenderán con el tiempo…
+
