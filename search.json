@@ -1,86 +1,163 @@
 [
   {
-    "objectID": "tics100/Clase01.html#quién-es-el-profe",
-    "href": "tics100/Clase01.html#quién-es-el-profe",
+    "objectID": "tics100/Clase02.html#hagamos-el-primer-código",
+    "href": "tics100/Clase02.html#hagamos-el-primer-código",
     "title": "TICS100 - Programación",
-    "section": "¿Quién es el profe?",
-    "text": "¿Quién es el profe?\nDiego Ramos Álvarez\n\n\nMaster en Science of Data Science - 2023\n\n\n\n\nEstudiante del Doctorado en Data Science"
-  },
-  {
-    "objectID": "tics100/Clase01.html#ayudantía",
-    "href": "tics100/Clase01.html#ayudantía",
-    "title": "TICS100 - Programación",
-    "section": "Ayudantía",
-    "text": "Ayudantía"
-  },
-  {
-    "objectID": "tics100/Clase01.html#section",
-    "href": "tics100/Clase01.html#section",
-    "title": "TICS100 - Programación",
-    "section": "",
-    "text": "Prueba 1 (P1) =&gt; Sabado 05 de Octube (05/10/2024)\n\n\n\n\nPrueba 2 (P2) =&gt; Sabado 30 de Noviembre (30/11/2024)\n\n\n\n\nEvaluación Extra (AE) =&gt; Lo definiremos entre todos\n\nTareas\nControles\nOtros"
-  },
-  {
-    "objectID": "tics100/Clase01.html#section-1",
-    "href": "tics100/Clase01.html#section-1",
-    "title": "TICS100 - Programación",
-    "section": "",
-    "text": "El calculo de la nota es el siguiente:\nif \\((\\small{\\frac{P1+P2}{2}} &gt;= 4.0):\\) \\[\nNF = P1*0.35 + P2*0.35 + AE*0.30\n\\] else: \\[\nNF = P1*0.5 + P2*0.5 + AE*0.00\n\\]"
-  },
-  {
-    "objectID": "tics100/Clase01.html#section-2",
-    "href": "tics100/Clase01.html#section-2",
-    "title": "TICS100 - Programación",
-    "section": "",
-    "text": "Exámen (Fecha por definir):\n\n\nSerá en el periodo de exámenes\n\n\n\n\nSi tienen las 2 notas de prueba mayor a 4.0 (P1 &gt;= 4.0 y P2 &gt;=4.0) se eximen.\n\n\n\n\nEl examen reemplaza la peor nota. Incluso si es peor.\n\n\n\n\nEn caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral."
-  },
-  {
-    "objectID": "tics100/Clase01.html#cuál-es-su-experiencia-programando",
-    "href": "tics100/Clase01.html#cuál-es-su-experiencia-programando",
-    "title": "TICS100 - Programación",
-    "section": "¿Cuál es su experiencia programando?",
-    "text": "¿Cuál es su experiencia programando?"
-  },
-  {
-    "objectID": "tics100/Clase01.html#qué-es-un-problema",
-    "href": "tics100/Clase01.html#qué-es-un-problema",
-    "title": "TICS100 - Programación",
-    "section": "¿Qué es un problema?",
-    "text": "¿Qué es un problema?\nDefinamos que es un problema"
-  },
-  {
-    "objectID": "courses.html",
-    "href": "courses.html",
-    "title": "Diapositivas",
-    "section": "",
-    "text": "Clase 01\n\n\nPresentación del Curso\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Finley Malloc",
-    "section": "",
-    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Finley Malloc",
-    "section": "Education",
-    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "Finley Malloc",
-    "section": "Experience",
-    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+    "section": "Hagamos el primer código",
+    "text": "Hagamos el primer código\nTenemos el clasico hola mundo:\nprint(\"Hola Mundo\")"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "HomePage",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nAcá se pueden encontrar las slides correspondientes al curso de Minería de Datos. \n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCursos\n\n\n\n\n\nDiapositivas de los cursos que he dictado. \n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Diego Ramos Álvarez",
+    "section": "",
+    "text": "I’m Diego Ramos a PhD student in Universidad Adolfo Ibáñez in Santiago, Chile.\n\n\nUniversidad Adolfo Ibáñez | Santiago\nPhD Data Science | Marzo 2023 - Current\nUniversidad Adolfo Ibáñez | Viña del Mar\nMaster in Science of Data Science | Marzo 2021 - Enero 2023\nUniversidad Adolfo Ibáñez | Viña del Mar\nIngeniería Civil Informática | Marzo 2017 - Enero 2023\n\n\n\nRamos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data. Behavior Research Methods, 56(4), 3366-3379."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Diego Ramos Álvarez",
+    "section": "",
+    "text": "Universidad Adolfo Ibáñez | Santiago\nPhD Data Science | Marzo 2023 - Current\nUniversidad Adolfo Ibáñez | Viña del Mar\nMaster in Science of Data Science | Marzo 2021 - Enero 2023\nUniversidad Adolfo Ibáñez | Viña del Mar\nIngeniería Civil Informática | Marzo 2017 - Enero 2023"
+  },
+  {
+    "objectID": "about.html#papers-publicados",
+    "href": "about.html#papers-publicados",
+    "title": "Diego Ramos Álvarez",
+    "section": "",
+    "text": "Ramos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data. Behavior Research Methods, 56(4), 3366-3379."
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Cursos",
+    "section": "",
+    "text": "Clase 01\n\n\nPresentación del Curso\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 02\n\n\nIntroducción a Python\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tics100/Clase01.html#quién-es-el-profe",
+    "href": "tics100/Clase01.html#quién-es-el-profe",
+    "title": "TICS100 - Programación",
+    "section": "¿Quién es el profe?",
+    "text": "¿Quién es el profe?\nDiego Ramos Álvarez\n\n\n\nIngeniero Civil Informático - 2023\n\n\n\n\nMaster en Science of Data Science - 2023\n\n\n\n\nEstudiante del Doctorado en Data Science"
+  },
+  {
+    "objectID": "tics100/Clase01.html#ayudantía",
+    "href": "tics100/Clase01.html#ayudantía",
+    "title": "TICS100 - Programación",
+    "section": "Ayudantía",
+    "text": "Ayudantía\n Los lunes modulo 5 (17:00-18:10)\nAyudante por definir"
+  },
+  {
+    "objectID": "tics100/Clase01.html#cómo-y-cuándo-serán-las-evaluaciones",
+    "href": "tics100/Clase01.html#cómo-y-cuándo-serán-las-evaluaciones",
+    "title": "TICS100 - Programación",
+    "section": "Cómo y cuándo serán las evaluaciones",
+    "text": "Cómo y cuándo serán las evaluaciones\n\n\nPrueba 1 (P1) =&gt; Sabado 05 de Octube (05/10/2024)\n\n\n\n\nPrueba 2 (P2) =&gt; Sabado 30 de Noviembre (30/11/2024)\n\n\n\n\nEvaluación Extra (AE) =&gt; Lo definiremos entre todos\n\nTareas\nControles\nOtros"
+  },
+  {
+    "objectID": "tics100/Clase01.html#calculo-de-la-nota",
+    "href": "tics100/Clase01.html#calculo-de-la-nota",
+    "title": "TICS100 - Programación",
+    "section": "Calculo de la nota",
+    "text": "Calculo de la nota\nEl calculo de la nota es el siguiente:\nif \\(promedio\\_ pruebas&gt;= 4.0:\\) \\[\nNF = P1*0.35 + P2*0.35 + AE*0.30\n\\]\nelse: \\[\nNF = P1*0.5 + P2*0.5 + AE*0.00\n\\]"
+  },
+  {
+    "objectID": "tics100/Clase01.html#examen",
+    "href": "tics100/Clase01.html#examen",
+    "title": "TICS100 - Programación",
+    "section": "Examen",
+    "text": "Examen\nFecha por definir:\n\n\nSerá en el periodo de exámenes\n\n\n\n\nSi tienen las 2 notas de prueba mayor a 4.0 (P1 &gt;= 4.0 y P2 &gt;=4.0) se eximen.\n\n\n\n\nEl examen reemplaza la peor nota. Incluso si es peor.\n\n\n\n\nEn caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral."
+  },
+  {
+    "objectID": "tics100/Clase01.html#qué-es-un-problema",
+    "href": "tics100/Clase01.html#qué-es-un-problema",
+    "title": "TICS100 - Programación",
+    "section": "¿Qué es un problema?",
+    "text": "¿Qué es un problema?\nDefinición:\n\n\nEn el ámbito de las ciencias de la computación, un problema es una tarea que debe ser resuelta.\n\n\nPara resolver un problema:\n\n\nTenemos identificar con qué vamos a trabajar (INPUT)\n\n\n\n\nSaber que queremos tener de resultado (OUTPUT)"
+  },
+  {
+    "objectID": "tics100/Clase01.html#ejemplos",
+    "href": "tics100/Clase01.html#ejemplos",
+    "title": "TICS100 - Programación",
+    "section": "Ejemplos",
+    "text": "Ejemplos\nSupongamos distintas tareas:\n\nSumar los numeros 2 y 4.\nIncrementar el 56 en una unidad.\nOrdenar nombres de un cruso segun la primera letra del nombre."
+  },
+  {
+    "objectID": "tics100/Clase01.html#ejemplos-1",
+    "href": "tics100/Clase01.html#ejemplos-1",
+    "title": "TICS100 - Programación",
+    "section": "Ejemplos",
+    "text": "Ejemplos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\n\n4\n\n\n\nSumar\n\n\n\n6\n\n\n\n56\n\n\n\n57\n\n\n\nIncrementar\n\n\n\n[‘marcelo’, ‘juan’, ‘pedro’]\n\n\n\nOrdenar\n\n\n\n[‘juan’, ‘marcelo’, ‘pedro’]"
+  },
+  {
+    "objectID": "tics100/Clase01.html#algoritmos",
+    "href": "tics100/Clase01.html#algoritmos",
+    "title": "TICS100 - Programación",
+    "section": "Algoritmos",
+    "text": "Algoritmos\n\nEsta forma resolver un problema es lo que se conoce como algoritmo.\nLa definición más exacta:\n\n\nLa secuencia finita de pasos, dispuestos en forma lógica y ordenada, que se deben realizar para resolver un problema."
+  },
+  {
+    "objectID": "tics100/Clase01.html#como-veo-la-programación",
+    "href": "tics100/Clase01.html#como-veo-la-programación",
+    "title": "TICS100 - Programación",
+    "section": "Como veo la programación",
+    "text": "Como veo la programación"
+  },
+  {
+    "objectID": "tics100/Clase01.html#observaciones",
+    "href": "tics100/Clase01.html#observaciones",
+    "title": "TICS100 - Programación",
+    "section": "Observaciones",
+    "text": "Observaciones\nEl computador no puede resolver nada que no haya sido programado antes.\nPodemos resolver problemas complejos con elementos básicos. Pero no todos los problemas se pueden resolver computacionalmente…\n\nSino pregunten a Chat-GPT"
+  },
+  {
+    "objectID": "tics100/Clase01.html#ojo-como-entienden-el-lenguaje",
+    "href": "tics100/Clase01.html#ojo-como-entienden-el-lenguaje",
+    "title": "TICS100 - Programación",
+    "section": "Ojo como entienden el lenguaje",
+    "text": "Ojo como entienden el lenguaje\nCaso Personal: “Tengo problemas para la aplicación en la capa 7, esto es debido a que la pagina web que tenemos, está siendo corrompida por fallos en las capas inferiores”\n\n\n\n\n\n\n\n\nEsto se conoce como la defensa Chewbacca, doy una cantidad enorme de información sin sentido para confundir al oyente"
+  },
+  {
+    "objectID": "tics100/Clase01.html#volamos-con-un-ejemplo",
+    "href": "tics100/Clase01.html#volamos-con-un-ejemplo",
+    "title": "TICS100 - Programación",
+    "section": "Volamos con un ejemplo",
+    "text": "Volamos con un ejemplo\n\nUno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.\nEste integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.\nNo puede mencionar la letra, ni tampoco puede hacer comparaciones.\nAl terminar, le entrega la hoja a su compañero y el debe seguir las instrucciones.\nComparen si lo dibujado coincide con la letra original."
+  },
+  {
+    "objectID": "tics100/Clase01.html#el-objetivo-del-curso",
+    "href": "tics100/Clase01.html#el-objetivo-del-curso",
+    "title": "TICS100 - Programación",
+    "section": "El objetivo del curso",
+    "text": "El objetivo del curso\nLa idea es que sean capacez de llevar sus ideas a una maquina considerando el paso a paso.\nPara esto:\n\nIdentifiquen los elementos que tienen disponibles.\nQué quieren desarollar.\nUtilicen los elementos basicos para resolver paso a paso."
+  },
+  {
+    "objectID": "tics100/Clase01.html#donde-quieren-programar",
+    "href": "tics100/Clase01.html#donde-quieren-programar",
+    "title": "TICS100 - Programación",
+    "section": "¿Donde quieren programar?",
+    "text": "¿Donde quieren programar?\n Opciones disponibles para el curso:\n\n\n\n\n\n\n\n\n\n\n\n(a) replit\n\n\n\n\n\n\n\n\n\n\n\n(b) Google colab\n\n\n\n\n\n\n\n\n\n\n\n(c) Local\n\n\n\n\n\n\n\nFigure 1"
+  },
+  {
+    "objectID": "tics100/Clase01.html#acotación-importante-1",
+    "href": "tics100/Clase01.html#acotación-importante-1",
+    "title": "TICS100 - Programación",
+    "section": "Acotación Importante",
+    "text": "Acotación Importante\nCualquier duda que tengan por minima que sea, pregunten hasta que entiendan. Yo quiero que aprendan, por lo mismo, estoy dispuesto a resolver todas las dudas que tengan.\nDuda: diego.ramos.a@edu.uai.cl"
+  },
+  {
+    "objectID": "tics100/Clase01.html#recomendacion",
+    "href": "tics100/Clase01.html#recomendacion",
+    "title": "TICS100 - Programación",
+    "section": "Recomendacion",
+    "text": "Recomendacion\nCuando programes fijense sobretodo en los errores y recuerdenlos, son los errores son los que los convierten en buenos programadores."
   }
 ]

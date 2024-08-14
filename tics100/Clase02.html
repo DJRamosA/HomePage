@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -320,7 +385,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid-postprocess-shim.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -328,7 +392,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">TICS100 - Programación</h1>
-  <p class="subtitle">Presentación al Curso</p>
+  <p class="subtitle">Introducción a Python</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -342,350 +406,15 @@ Diego Ramos Á.
 </div>
 
 </section>
-<section id="quién-es-el-profe" class="slide level2">
-<h2>¿Quién es el profe?</h2>
-<h3 id="diego-ramos-álvarez">Diego Ramos Álvarez</h3>
-<p><img data-src="../img/profile.jpg" class="absolute" style="top: 100px; right: 0px; width: 250px; height: 250px; "></p>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Ingeniero Civil Informático - 2023</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Master en Science of Data Science - 2023</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Estudiante del Doctorado en Data Science</li>
-</ul>
-</div>
-</section>
-<section id="ayudantía" class="slide level2">
-<h2>Ayudantía</h2>
-<p><br> Los lunes modulo 5 (17:00-18:10)</p>
-<p>Ayudante por definir</p>
-</section>
 <section>
-<section id="evaluaciones" class="title-slide slide level1 center">
-<h1>Evaluaciones</h1>
+<section id="python-básico" class="title-slide slide level1 center">
+<h1>Python Básico</h1>
 
 </section>
-<section id="cómo-y-cuándo-serán-las-evaluaciones" class="slide level2">
-<h2>Cómo y cuándo serán las evaluaciones</h2>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Prueba 1 (P1) =&gt; Sabado 05 de Octube (05/10/2024)</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Prueba 2 (P2) =&gt; Sabado 30 de Noviembre (30/11/2024)</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Evaluación Extra (AE) =&gt; Lo definiremos entre todos
-<ul>
-<li>Tareas</li>
-<li>Controles</li>
-<li>Otros</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="calculo-de-la-nota" class="slide level2">
-<h2>Calculo de la nota</h2>
-<p>El calculo de la nota es el siguiente:</p>
-<p>if <span class="math inline">\(promedio\_ pruebas&gt;= 4.0:\)</span> <span class="math display">\[
-NF = P1*0.35 + P2*0.35 + AE*0.30
-\]</span></p>
-<p>else: <span class="math display">\[
-NF = P1*0.5 + P2*0.5 + AE*0.00
-\]</span></p>
-</section>
-<section id="examen" class="slide level2">
-<h2>Examen</h2>
-<p>Fecha por definir:</p>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Será en el periodo de exámenes</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Si tienen las <strong>2 notas</strong> de prueba <strong>mayor a 4.0</strong> (P1 &gt;= 4.0 y P2 &gt;=4.0) se <strong>eximen</strong>.</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>El examen reemplaza la peor nota. Incluso si es peor.</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>En caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral.</li>
-</ul>
-</div>
-</section></section>
-<section>
-<section id="cuál-es-su-experiencia-programando" class="title-slide slide level1 center">
-<h1>¿Cuál es su experiencia programando?</h1>
-
-</section>
-<section id="qué-es-un-problema" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">¿Qué es un problema?</h2>
-<p>Definición:</p>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>En el ámbito de las ciencias de la computación, un problema es una tarea que debe ser resuelta.</li>
-</ul>
-</div>
-<p>Para resolver un problema:</p>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Tenemos identificar con qué vamos a trabajar (INPUT)</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Saber que queremos tener de resultado (OUTPUT)</li>
-</ul>
-</div>
-</section>
-<section id="ejemplos" class="slide level2" data-transition="fade">
-<h2>Ejemplos</h2>
-<p>Supongamos distintas tareas:</p>
-<ul>
-<li>Sumar los numeros 2 y 4.</li>
-<li>Incrementar el 56 en una unidad.</li>
-<li>Ordenar nombres de un cruso segun la primera letra del nombre.</li>
-</ul>
-</section>
-<section id="ejemplos-1" class="slide level2" data-transition="fade">
-<h2>Ejemplos</h2>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="-8 -8 424.69921875 256" style="; display: block; margin: auto auto auto auto" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-1" height="480">
-<style>#mermaid-figure-1{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}#mermaid-figure-1 .error-icon{fill:#552222;}#mermaid-figure-1 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-1 .edge-thickness-normal{stroke-width:2px;}#mermaid-figure-1 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-1 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-1 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-1 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-1 .marker{fill:#666;stroke:#666;}#mermaid-figure-1 .marker.cross{stroke:#666;}#mermaid-figure-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-figure-1 .cluster-label text{fill:#333;}#mermaid-figure-1 .cluster-label span,#mermaid-figure-1 p{color:#333;}#mermaid-figure-1 .label text,#mermaid-figure-1 span,#mermaid-figure-1 p{fill:#000000;color:#000000;}#mermaid-figure-1 .node rect,#mermaid-figure-1 .node circle,#mermaid-figure-1 .node ellipse,#mermaid-figure-1 .node polygon,#mermaid-figure-1 .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-figure-1 .flowchart-label text{text-anchor:middle;}#mermaid-figure-1 .node .label{text-align:center;}#mermaid-figure-1 .node.clickable{cursor:pointer;}#mermaid-figure-1 .arrowheadPath{fill:#333333;}#mermaid-figure-1 .edgePath .path{stroke:#666;stroke-width:2.0px;}#mermaid-figure-1 .flowchart-link{stroke:#666;fill:none;}#mermaid-figure-1 .edgeLabel{background-color:white;text-align:center;}#mermaid-figure-1 .edgeLabel rect{opacity:0.5;background-color:white;fill:white;}#mermaid-figure-1 .cluster rect{fill:hsl(0, 0%, 98.9215686275%);stroke:#707070;stroke-width:1px;}#mermaid-figure-1 .cluster text{fill:#333;}#mermaid-figure-1 .cluster span,#mermaid-figure-1 p{color:#333;}#mermaid-figure-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(-160, 0%, 93.3333333333%);border:1px solid #707070;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-1 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-figure-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
-<g><marker orient="auto" markerheight="12" markerwidth="12" markerunits="userSpaceOnUse" refy="5" refx="10" viewbox="0 0 10 10" class="marker flowchart" id="flowchart-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="12" markerwidth="12" markerunits="userSpaceOnUse" refy="5" refx="0" viewbox="0 0 10 10" class="marker flowchart" id="flowchart-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart" id="flowchart-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart" id="flowchart-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart" id="flowchart-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart" id="flowchart-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-A LE-suma" id="L-A-suma-0" d="M11.6953125,43.5L11.6953125,49.25C11.6953125,55,11.6953125,66.5,15.335720486111109,76.41666666666667C18.97612847222222,86.33333333333333,26.256944444444443,94.66666666666667,29.897352430555554,98.83333333333333L33.537760416666664,103"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-B LE-suma" id="L-B-suma-0" d="M85.0859375,43.5L85.0859375,49.25C85.0859375,55,85.0859375,66.5,81.44552951388889,76.41666666666667C77.80512152777779,86.33333333333333,70.52430555555556,94.66666666666667,66.88389756944444,98.83333333333333L63.243489583333336,103"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-suma LE-D" id="L-suma-D-0" d="M48.390625,137L48.390625,141.16666666666666C48.390625,145.33333333333334,48.390625,153.66666666666666,48.390625,163.58333333333334C48.390625,173.5,48.390625,185,48.390625,190.75L48.390625,196.5"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-E LE-incr" id="L-E-incr-0" d="M193.66015625,43.5L193.66015625,49.25C193.66015625,55,193.66015625,66.5,193.66015625,76.41666666666667C193.66015625,86.33333333333333,193.66015625,94.66666666666667,193.66015625,98.83333333333333L193.66015625,103"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-incr LE-F" id="L-incr-F-0" d="M193.66015625,137L193.66015625,141.16666666666666C193.66015625,145.33333333333334,193.66015625,153.66666666666666,193.66015625,163.58333333333334C193.66015625,173.5,193.66015625,185,193.66015625,190.75L193.66015625,196.5"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-lista LE-func_ord" id="L-lista-func_ord-0" d="M340.05859375,53L340.05859375,57.166666666666664C340.05859375,61.333333333333336,340.05859375,69.66666666666667,340.05859375,78C340.05859375,86.33333333333333,340.05859375,94.66666666666667,340.05859375,98.83333333333333L340.05859375,103"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-func_ord LE-lista_ord" id="L-func_ord-lista_ord-0" d="M340.05859375,137L340.05859375,141.16666666666666C340.05859375,145.33333333333334,340.05859375,153.66666666666666,340.05859375,162C340.05859375,170.33333333333334,340.05859375,178.66666666666666,340.05859375,182.83333333333334L340.05859375,187"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g></g><g class="nodes"><g transform="translate(11.6953125, 26.5)" id="flowchart-A-48" class="node default default flowchart-label"><rect height="34" width="23.390625" y="-17" x="-11.6953125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-4.1953125, -9.5)" style="" class="label"><rect></rect><foreignobject height="19" width="8.390625">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">2</span>
-</div>
-</foreignobject></g></g><g transform="translate(85.0859375, 26.5)" id="flowchart-B-49" class="node default default flowchart-label"><rect height="34" width="23.390625" y="-17" x="-11.6953125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-4.1953125, -9.5)" style="" class="label"><rect></rect><foreignobject height="19" width="8.390625">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">4</span>
-</div>
-</foreignobject></g></g><g transform="translate(48.390625, 120)" id="flowchart-suma-50" class="node default default flowchart-label"><rect height="34" width="67.84375" y="-17" x="-33.921875" ry="17" rx="17" style=""></rect><g transform="translate(-22.171875, -9.5)" style="" class="label"><rect></rect><foreignobject height="19" width="44.34375">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">Sumar</span>
-</div>
-</foreignobject></g></g><g transform="translate(48.390625, 213.5)" id="flowchart-D-51" class="node default default flowchart-label"><rect height="34" width="23.390625" y="-17" x="-11.6953125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-4.1953125, -9.5)" style="" class="label"><rect></rect><foreignobject height="19" width="8.390625">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">6</span>
-</div>
-</foreignobject></g></g><g transform="translate(193.66015625, 26.5)" id="flowchart-E-58" class="node default default flowchart-label"><rect height="34" width="31.78125" y="-17" x="-15.890625" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-8.390625, -9.5)" style="" class="label"><rect></rect><foreignobject height="19" width="16.78125">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">56</span>
-</div>
-</foreignobject></g></g><g transform="translate(193.66015625, 213.5)" id="flowchart-F-59" class="node default default flowchart-label"><rect height="34" width="31.78125" y="-17" x="-15.890625" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-8.390625, -9.5)" style="" class="label"><rect></rect><foreignobject height="19" width="16.78125">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">57</span>
-</div>
-</foreignobject></g></g><g transform="translate(193.66015625, 120)" id="flowchart-incr-60" class="node default default flowchart-label"><rect height="34" width="111.28125" y="-17" x="-55.640625" ry="17" rx="17" style=""></rect><g transform="translate(-43.890625, -9.5)" style="" class="label"><rect></rect><foreignobject height="19" width="87.78125">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">Incrementar</span>
-</div>
-</foreignobject></g></g><g transform="translate(340.05859375, 26.5)" id="flowchart-lista-65" class="node default default flowchart-label"><rect height="53" width="137.28125" y="-26.5" x="-68.640625" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-61.140625, -19)" style="" class="label"><rect></rect><foreignobject height="38" width="122.28125">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">[‘marcelo’, ‘juan’, <br>‘pedro’]</span>
-</div>
-</foreignobject></g></g><g transform="translate(340.05859375, 120)" id="flowchart-func_ord-66" class="node default default flowchart-label"><rect height="34" width="81.515625" y="-17" x="-40.7578125" ry="17" rx="17" style=""></rect><g transform="translate(-29.0078125, -9.5)" style="" class="label"><rect></rect><foreignobject height="19" width="58.015625">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">Ordenar</span>
-</div>
-</foreignobject></g></g><g transform="translate(340.05859375, 213.5)" id="flowchart-lista_ord-67" class="node default default flowchart-label"><rect height="53" width="137.28125" y="-26.5" x="-68.640625" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-61.140625, -19)" style="" class="label"><rect></rect><foreignobject height="38" width="122.28125">
-<div style="display: inline-block; white-space: nowrap;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">[‘juan’, ‘marcelo’, <br>‘pedro’]</span>
-</div>
-</foreignobject></g></g></g></g></g>
-</svg>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="algoritmos" class="slide level2">
-<h2>Algoritmos</h2>
-<p><br></p>
-<p>Esta forma resolver un problema es lo que se conoce como <strong>algoritmo</strong>.</p>
-<p>La definición más exacta:</p>
-<div class="fragment fade-in-then-semi-out">
-<blockquote>
-<p>La <em>secuencia finita de pasos</em>, dispuestos en forma <strong><em>lógica y ordenada</em></strong>, que se deben realizar para <em>resolver un problema</em>.</p>
-</blockquote>
-</div>
-</section>
-<section id="como-veo-la-programación" class="slide level2">
-<h2>Como veo la programación</h2>
-<p><br></p>
-<div class="r-stack">
-<p><img data-src="../img/icons8-lego.png" class="fragment" width="480" height="480"></p>
-<p><img data-src="../img/boy-building.jpg" class="fragment" width="600" height="450"></p>
-<p><img data-src="../img/lego-spaceship.jpg" class="fragment" width="600" height="450"></p>
-</div>
-</section>
-<section id="observaciones" class="slide level2">
-<h2>Observaciones</h2>
-<p>El computador no puede resolver nada que no haya sido programado antes.</p>
-<p>Podemos resolver problemas complejos con elementos básicos. Pero no todos los problemas se pueden resolver computacionalmente…</p>
-<div class="fragment fade-in-then-semi-out">
-<p>Sino pregunten a Chat-GPT</p>
-</div>
-</section></section>
-<section>
-<section id="a-quíen-es-más-fácil-explicar-un-problema-a-una-persona-o-a-una-máquina" class="title-slide slide level1 center">
-<h1>¿A quíen es más fácil explicar un problema a una persona o a una máquina?</h1>
-
-</section>
-<section id="ojo-como-entienden-el-lenguaje" class="slide level2">
-<h2>Ojo como entienden el lenguaje</h2>
-<p>Caso Personal: “Tengo problemas para la aplicación en la capa 7, esto es debido a que la pagina web que tenemos, está siendo corrompida por fallos en las capas inferiores”</p>
-<div class="fragment fade-in">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../img/defensaChewbacca.jpg" class="quarto-figure quarto-figure-center" style="width:35.0%"></p>
-</figure>
-</div>
-</div>
-<div class="fragment fade-in">
-<p>Esto se conoce como la defensa Chewbacca, doy una cantidad enorme de información sin sentido para confundir al oyente</p>
-</div>
-<!-- Necesito desarrollar un asiento que sea capaz de superponerse a otro asiento y que logre contener a un usuario en una posición ergonómica, considerando las medidas individuales y sus necesidades particulares.
-
-:::{.fragment .fade-in-then-semi-out}
-
-![](../img/green_sitting_trans_doi_family.png){width=50%}
-
-::: -->
-</section>
-<section id="volamos-con-un-ejemplo" class="slide level2">
-<h2>Volamos con un ejemplo</h2>
-<ul>
-<li>Uno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.</li>
-<li>Este integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.</li>
-<li>No puede mencionar la letra, ni tampoco puede hacer comparaciones.</li>
-<li>Al terminar, le entrega la hoja a su compañero y el debe seguir las instrucciones.</li>
-<li>Comparen si lo dibujado coincide con la letra original.</li>
-</ul>
-</section>
-<section id="el-objetivo-del-curso" class="slide level2">
-<h2>El objetivo del curso</h2>
-<p>La idea es que sean capacez de llevar sus ideas a una maquina considerando el paso a paso.</p>
-<p>Para esto:</p>
-<ul>
-<li>Identifiquen los elementos que tienen disponibles.</li>
-<li>Qué quieren desarollar.</li>
-<li>Utilicen los elementos basicos para resolver paso a paso.</li>
-</ul>
-</section>
-<section id="donde-quieren-programar" class="slide level2">
-<h2>¿Donde quieren programar?</h2>
-<p><br> Opciones disponibles para el curso:</p>
-<div id="fig-options-code" class="quarto-layout-panel">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-options-code-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-options-code" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div id="fig-replit" class="quarto-figure quarto-figure-center quarto-float">
-<figure class="quarto-float quarto-subfloat-fig">
-<div aria-describedby="fig-replit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="../img/icons8-replit-480.png" style="width:80.0%" data-ref-parent="fig-options-code">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-replit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) <a href="https://replit.com/">replit</a>
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-options-code" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div id="fig-colab" class="quarto-figure quarto-figure-center quarto-float">
-<figure class="quarto-float quarto-subfloat-fig">
-<div aria-describedby="fig-colab-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="../img/icons8-google-colab-480.png" style="width:80.0%" data-ref-parent="fig-options-code">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-colab-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(b) <a href="https://colab.google/">Google colab</a>
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-options-code" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div id="fig-local" class="quarto-figure quarto-figure-center quarto-float">
-<figure class="quarto-float quarto-subfloat-fig">
-<div aria-describedby="fig-local-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="../img/icons8-python-480.png" style="width:80.0%" data-ref-parent="fig-options-code">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-local-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(c) <a href="https://www.python.org/">Local</a>
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-options-code-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1
-</figcaption>
-</figure>
-</div>
-</section></section>
-<section>
-<section id="acotación-importante" class="title-slide slide level1 center">
-<h1>Acotación Importante</h1>
-
-</section>
-<section id="acotación-importante-1" class="slide level2">
-<h2>Acotación Importante</h2>
-<p>Cualquier duda que tengan por minima que sea, pregunten hasta que entiendan. Yo quiero que aprendan, por lo mismo, estoy dispuesto a resolver todas las dudas que tengan.</p>
-<p>Duda: <strong>diego.ramos.a@edu.uai.cl</strong></p>
-</section>
-<section id="recomendacion" class="slide level2">
-<h2>Recomendacion</h2>
-<p>Cuando programes fijense sobretodo en los errores y recuerdenlos, son los errores son los que los convierten en buenos programadores.</p>
+<section id="hagamos-el-primer-código" class="slide level2">
+<h2>Hagamos el primer código</h2>
+<p>Tenemos el clasico hola mundo:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>(<span class="st">"Hola Mundo"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="../img/uai.png" class="slide-logo"></p>

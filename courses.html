@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Acá se pueden encontrar las slides correspondientes al curso de Minería de Datos.">
+<meta name="description" content="Diapositivas de los cursos que he dictado.">
 
-<title>HomePage - Diapositivas</title>
+<title>HomePage - Cursos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
@@ -155,7 +155,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">Finley Malloc</span></a>
+<span class="menu-text">Diego Ramos Álvarez</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -190,12 +190,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Diapositivas</h1>
+<h1 class="title">Cursos</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>Acá se pueden encontrar las slides correspondientes al curso de Minería de Datos.</p>
+    <p>Diapositivas de los cursos que he dictado.</p>
   </div>
 </div>
 
@@ -218,16 +218,34 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="slides" data-listing-date-sort="1723003200000" data-listing-file-modified-sort="1722489370665" data-listing-reading-time-sort="1" data-listing-word-count-sort="173">
+<div class="g-col-1" data-index="0" data-categories="slides" data-listing-date-sort="1723003200000" data-listing-file-modified-sort="1723490391648" data-listing-reading-time-sort="4" data-listing-word-count-sort="717">
 <a href="./tics100/Clase01.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 100%;">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Clase 01
 </h5>
 <div class="card-subtitle listing-subtitle">
 Presentación del Curso
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 7, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="slides" data-listing-date-sort="1723003200000" data-listing-file-modified-sort="1723597955006" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<a href="./tics100/Clase02.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Clase 02
+</h5>
+<div class="card-subtitle listing-subtitle">
+Introducción a Python
 </div>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
@@ -324,7 +342,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/DJRamosA\.github\.io\/HomePage\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
