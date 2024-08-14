@@ -1,6 +1,6 @@
 ---
 title: "TICS100 - Programación"
-subtitle: "Introducción al Curso"
+subtitle: "Presentación al Curso"
 author: "Diego Ramos Á."
 institute: <diego.ramos.a@edu.uai.cl>
 format:
@@ -15,117 +15,260 @@ format:
     callout-appearance: simple
     highlight-style: arrow  
     toc: false
+    mermaid-format: svg
+    mermaid: 
+      theme: neutral
+resources:
+  - Clase01.pdf
 ---
 
-
 ## ¿Quién es el profe?
+
 ### Diego Ramos Álvarez
-![](../img/profile.jpg){.absolute top=100 right=0 width="250" height="250"}
 
-:::{.fragment .fade-in-then-semi-out}
-- Ingeniero Civil Informático - 2023
-:::
-:::{.fragment .fade-in-then-semi-out}
-- Master en Science of Data Science - 2023
-:::
-:::{.fragment .fade-in-then-semi-out}
-- Estudiante del Doctorado en Data Science
+![](../img/profile.jpg){.absolute top=100 right=0 width=250 height=250}
+
+::: {.fragment .fade-in-then-semi-out}
+-   Ingeniero Civil Informático - 2023
 :::
 
+::: {.fragment .fade-in-then-semi-out}
+-   Master en Science of Data Science - 2023
+:::
 
-## Ayudantía 
+::: {.fragment .fade-in-then-semi-out}
+-   Estudiante del Doctorado en Data Science
+:::
 
-<br/>
-Los lunes modulo 5 (17:00-18:10)
+## Ayudantía
 
-Ayudante por definir 
+Serán los lunes modulo 5 (17:00-18:10)
 
+Ayudante: Juan Pablo Orellana 
 
+**juanorellana@alumnos.uai.cl**
 
 # Evaluaciones
 
 ## Cómo y cuándo serán las evaluaciones
-:::{.fragment .fade-in-then-semi-out }
-- Prueba 1 (P1) => Sabado 05 de Octube (05/10/2024)
+
+::: {.fragment .fade-in-then-semi-out}
+-   Prueba 1 (P1) =\> Sabado 05 de Octube (05/10/2024)
 :::
-:::{.fragment .fade-in-then-semi-out }
-- Prueba 2 (P2) => Sabado 30 de Noviembre (30/11/2024)
+
+::: {.fragment .fade-in-then-semi-out}
+-   Prueba 2 (P2) =\> Sabado 30 de Noviembre (30/11/2024)
 :::
-:::{.fragment .fade-in-then-semi-out }
-- Evaluación Extra (AE) => Lo definiremos entre todos
-  - Tareas
-  - Controles
-  - Otros
+
+::: {.fragment .fade-in-then-semi-out}
+-   Evaluación Extra (AE) =\> Lo definiremos entre todos
+    -   Tareas
+    -   Controles
+    -   Otros
 :::
 
 ## Calculo de la nota
+
 El calculo de la nota es el siguiente:
 
-if $promedio\_ pruebas>= 4.0:$
+if $promedio\_ pruebas>= 4.0:$ 
 $$
 NF = P1*0.35 + P2*0.35 + AE*0.30 
-$$
-else:
+$$ 
+
+else: 
 $$
 NF = P1*0.5 + P2*0.5 + AE*0.00
 $$
 
-
 ## Examen
 
-Fecha por definir: 
+Fecha por definir:
 
-:::{.fragment .fade-in-then-semi-out}
-- Será en el periodo de exámenes
+::: {.fragment .fade-in-then-semi-out}
+-   Será en el periodo de exámenes
 :::
-:::{.fragment .fade-in-then-semi-out}
-- Si tienen las **2 notas** de prueba **mayor a 4.0** (P1 >= 4.0 y P2 >=4.0) se **eximen**.
+
+::: {.fragment .fade-in-then-semi-out}
+-   Si tienen las **2 notas** de prueba **mayor a 4.0** (P1 \>= 4.0 y P2 \>=4.0) se **eximen**.
 :::
-:::{.fragment .fade-in-then-semi-out}
-- El examen reemplaza la peor nota. Incluso si es peor. 
+
+::: {.fragment .fade-in-then-semi-out}
+-   El examen reemplaza la peor nota. Incluso si es peor.
 :::
-:::{.fragment .fade-in-then-semi-out}
-- En caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral.
+
+::: {.fragment .fade-in-then-semi-out}
+-   En caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral.
 :::
 
 # ¿Cuál es su experiencia programando?
 
-
-## ¿Qué es un problema? {auto-animate=true}
+## ¿Qué es un problema? {auto-animate="true"}
 
 Definición:
 
-:::{.fragment .fade-in-then-semi-out}
-- En el ámbito de las ciencias de la computación, un problema es una tarea que debe ser resuelta. 
+::: {.fragment .fade-in-then-semi-out}
+-   En el ámbito de las ciencias de la computación, un problema es una tarea que debe ser resuelta.
 :::
 
 Para resolver un problema:
 
-:::{.fragment .fade-in-then-semi-out}
-- Tenemos identificar con qué vamos a trabajar (INPUT) 
-:::
-:::{.fragment .fade-in-then-semi-out}
-- Saber que queremos tener de resultado (OUTPUT)
+::: {.fragment .fade-in-then-semi-out}
+-   Tenemos identificar con qué vamos a trabajar (INPUT)
 :::
 
-## Ejemplos 
+::: {.fragment .fade-in-then-semi-out}
+-   Saber que queremos tener de resultado (OUTPUT)
+:::
 
-Sumar :
+## Ejemplos {transition="fade"}
+Supongamos distintas tareas:
 
-```{}
-%%| label: fig-mermaid
-%%| fig-width: 6
+- Sumar los numeros 2 y 4.
+- Incrementar el 56 en una unidad.
+- Ordenar nombres de un cruso segun la primera letra del nombre.
+
+
+## Ejemplos {transition="fade"}
+
+```{mermaid}    
+
+flowchart TB
+  A[2] 
+  B[4] 
+  suma(["Sumar"])
+  D[6]
+  A-->suma
+  B-->suma
+  suma-->D
+
+
+  E[56]
+  F[57]
+  incr([Incrementar])
+  E-->incr
+  incr-->F
+
+
+  lista["['marcelo', 'juan', \n'pedro']"] 
+  func_ord(["Ordenar"])
+  lista_ord["['juan', 'marcelo', \n'pedro']"]
+  lista-->func_ord
+  func_ord-->lista_ord
 ```
 
-## Como lo veo yo
+
+## Algoritmos
 
 <br/>
 
-::: {.r-stack}
-![](../img/icons8-lego.png){.fragment width="480" height="480"}
+Esta forma resolver un problema es lo que se conoce como **algoritmo**.
 
-![](../img/boy-building.jpg){.fragment width="600" height="450"}
+La definición más exacta:
 
-![](../img/lego-spaceship.jpg){.fragment width="600" height="400"}
+:::{.fragment .fade-in-then-semi-out}
+
+> La *secuencia finita de pasos*, dispuestos en forma ***lógica y ordenada***, que se deben realizar para *resolver un problema*.
+
 :::
 
+
+## Como veo la programación
+
+<br/>
+
+::: r-stack
+![](../img/icons8-lego.png){.fragment width=480 height=480}
+
+![](../img/boy-building.jpg){.fragment width=600 height=450}
+
+![](../img/lego-spaceship.jpg){.fragment width=600 height=450}
+:::
+
+## Observaciones
+
+El computador no puede resolver nada que no haya sido programado antes.
+
+Podemos resolver problemas complejos con elementos básicos. Pero no todos los problemas se pueden resolver computacionalmente...
+
+:::{.fragment .fade-in-then-semi-out}
+Sino pregunten a Chat-GPT
+:::
+
+
+# ¿A quíen es más fácil explicar un problema a una persona o a una máquina?
+
+
+## Ojo como entienden el lenguaje
+
+Caso Personal: "Tengo problemas para la aplicación en la capa 7, esto es debido a que la pagina web que tenemos, está siendo corrompida por fallos en las capas inferiores"
+
+:::{.fragment .fade-in}
+
+![](../img/defensaChewbacca.jpg){width=35% fig-align="center"}
+
+::: 
+
+:::{.fragment .fade-in}
+
+Esto se conoce como la defensa Chewbacca, doy una cantidad enorme de información sin sentido para confundir al oyente
+
+::: 
+
+<!-- Necesito desarrollar un asiento que sea capaz de superponerse a otro asiento y que logre contener a un usuario en una posición ergonómica, considerando las medidas individuales y sus necesidades particulares.
+
+:::{.fragment .fade-in-then-semi-out}
+
+![](../img/green_sitting_trans_doi_family.png){width=50%}
+
+::: -->
+
+## Volamos con un ejemplo
+
+- Uno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.
+- Este integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.
+- No puede mencionar la letra, ni tampoco puede hacer comparaciones.
+- Al terminar, le entrega la hoja a su compañero y el debe seguir las instrucciones. 
+- Comparen si lo dibujado coincide con la letra original.
+
+
+## El objetivo del curso
+
+La idea es que sean capacez de llevar sus ideas a una maquina considerando el paso a paso.
+
+Para esto:
+
+- Identifiquen los elementos que tienen disponibles.
+- Qué quieren desarollar.
+- Utilicen los elementos basicos para resolver paso a paso.
+  
+
+## ¿Donde quieren programar?
+
+<br/>
+Opciones disponibles para el curso:
+
+::: {#fig-options-code layout-ncol=3}
+
+![[replit](https://replit.com/)](../img/icons8-replit-480.png){#fig-replit width=80%}
+
+![[Google colab](https://colab.google/)](../img/icons8-google-colab-480.png){#fig-colab width=80%}
+
+![[Local](https://www.python.org/)](../img/icons8-python-480.png){#fig-local width=80%}
+
+:::
+
+
+# Acotación Importante
+
+## Acotación Importante
+
+Cualquier duda que tengan por minima que sea, pregunten hasta que entiendan.
+Yo quiero que aprendan, por lo mismo, estoy dispuesto a resolver todas las dudas que tengan.
+
+Duda: **diego.ramos.a@edu.uai.cl**
+
+
+## Recomendacion
+
+Cuando programes fijense sobretodo en los errores y recuerdenlos, son los errores son los que los convierten en buenos programadores.

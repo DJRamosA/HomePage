@@ -1,0 +1,33 @@
+---
+title: 'TICS100 - Programación'
+subtitle: 'Introducción a Python'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow 
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+resources:
+    - Clase02.pdf
+
+--- 
+
+# Python Básico
+
+## Hagamos el primer código
+
+Tenemos el clasico hola mundo:
+
+```{.python}
+print("Hola Mundo")
+```

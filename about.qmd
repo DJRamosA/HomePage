@@ -6,24 +6,27 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/DJRamosA
     - icon: linkedin
       text: Linkedin
-      href: https://github.com
+      href: https://www.linkedin.com/in/diego-ramos-alvarez/
 ---
+:::{#hero-heading}
 
-I'm Diego Ramos a PhD student in Universidad Adolfo Ibañez in Santiago, Chile. 
+I'm Diego Ramos a PhD student in Universidad Adolfo Ibáñez in Santiago, Chile. 
 
-## Education
+## Education 
 
-University of California, San Diego | San Diego, CA
-PhD in Mathematics | Sept 2011 - June 2015
+**Universidad Adolfo Ibáñez** | Santiago \
+PhD Data Science | Marzo 2023 - Current
 
-Macalester College | St. Paul MA
-B.A in Economics | Sept 2007 - June 2011
+**Universidad Adolfo Ibáñez** | Viña del Mar \
+Master in Science of Data Science | Marzo 2021 - Enero 2023
 
-## Experience
+**Universidad Adolfo Ibáñez** | Viña del Mar \
+Ingeniería Civil Informática | Marzo 2017 - Enero 2023
 
-Wengo Analytics | Head Data Scientist | April 2018 - present
+## Papers Publicados
 
-GeoScynce | Chief Analyst | Spet 2012 - April 2018
+Ramos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). [AC-PLT: An algorithm for computer-assisted coding of semantic property listing data](https://link.springer.com/article/10.3758/s13428-023-02260-9). *Behavior Research Methods*, 56(4), 3366-3379.
+:::
