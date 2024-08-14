@@ -1,10 +1,122 @@
 [
   {
+    "objectID": "tics100/Clase02.html#disclaimer",
+    "href": "tics100/Clase02.html#disclaimer",
+    "title": "TICS100 - Programación",
+    "section": "Disclaimer",
+    "text": "Disclaimer\n\nAhora todo tiene IA, por lo que armar codigo desde su computador será muy sencillo. Por lo tanto:\n\n\nRecomendación 1: Antes de usar la IA aprendan a ciegas, entender que hace cada cosa, es tema de practica.\n\n\n\n\nRecomendación 2: En las pruebas no tienen IA por lo que no les conviene acostumbrarse."
+  },
+  {
+    "objectID": "tics100/Clase02.html#si-escogió-replit",
+    "href": "tics100/Clase02.html#si-escogió-replit",
+    "title": "TICS100 - Programación",
+    "section": "Si escogió replit:",
+    "text": "Si escogió replit:"
+  },
+  {
+    "objectID": "tics100/Clase02.html#si-escogió-colab",
+    "href": "tics100/Clase02.html#si-escogió-colab",
+    "title": "TICS100 - Programación",
+    "section": "Si escogió Colab:",
+    "text": "Si escogió Colab:"
+  },
+  {
+    "objectID": "tics100/Clase02.html#en-el-caso-que-escoger-instalarlo-en-su-computador",
+    "href": "tics100/Clase02.html#en-el-caso-que-escoger-instalarlo-en-su-computador",
+    "title": "TICS100 - Programación",
+    "section": "En el caso que escoger instalarlo en su computador…",
+    "text": "En el caso que escoger instalarlo en su computador…\n\nDejaré un tutorial en los próximos días en Webc, puede apoyarse en mi o el ayudante."
+  },
+  {
     "objectID": "tics100/Clase02.html#hagamos-el-primer-código",
     "href": "tics100/Clase02.html#hagamos-el-primer-código",
     "title": "TICS100 - Programación",
     "section": "Hagamos el primer código",
-    "text": "Hagamos el primer código\nTenemos el clasico hola mundo:\nprint(\"Hola Mundo\")"
+    "text": "Hagamos el primer código\n\nUn programa en Python está conformado por líneas de texto que contienen una o más instrucciones y sentencias del lenguaje.\nTenemos el clasico hola mundo:\n\n\nHelloWorld.py\n\n\nprint(\"Hola Mundo\")\n \n\n\n\nHola Mundo"
+  },
+  {
+    "objectID": "tics100/Clase02.html#qué-es-y-para-qué-sirve",
+    "href": "tics100/Clase02.html#qué-es-y-para-qué-sirve",
+    "title": "TICS100 - Programación",
+    "section": "¿Qué es y para qué sirve?",
+    "text": "¿Qué es y para qué sirve?\nUn comentario es una linea del codigo que no es ejecutable.\nCuando deseamos escribir alguna nota para recordar o para otra persona podemos utilizar comentarios.\nOtro uso, es comentar código, es decir, hacer no ejecutable una parte de este."
+  },
+  {
+    "objectID": "tics100/Clase02.html#cómo-se-comenta",
+    "href": "tics100/Clase02.html#cómo-se-comenta",
+    "title": "TICS100 - Programación",
+    "section": "¿Cómo se comenta?",
+    "text": "¿Cómo se comenta?\nUna línea de comentarios en Python comienza con el símbolo # y todo lo que está después de este no será tomado en cuenta por el intérprete de Python al momento de ejecutar el programa.\n\n\nHelloWorld.py\n\n# Esto es un comentario\nprint(\"Hola Mundo\")\n# Por ejemplo si coloco:\n# print(\"Hola alumnos del curso de Programación\")\n# Ups... no hay nada en el output\n\n\n\nHola Mundo"
+  },
+  {
+    "objectID": "tics100/Clase02.html#comando-print",
+    "href": "tics100/Clase02.html#comando-print",
+    "title": "TICS100 - Programación",
+    "section": "Comando print()",
+    "text": "Comando print()\nEl comando print() permite desplegar el resultado de una ¿variable? o un texto por la terminal. Si escribimos texto, éste debe ir escrito entre comillas. Si escribimos una ¿variable?, éste despliega el valor almacenado en dicha variable."
+  },
+  {
+    "objectID": "tics100/Clase02.html#observación",
+    "href": "tics100/Clase02.html#observación",
+    "title": "TICS100 - Programación",
+    "section": "Observación",
+    "text": "Observación\nEl computador es literal, por lo que no va a completar el código por ustedes. Cada caracter que falte significa un error en su código.\nprint(\"Este es mi primer texto)\n# Esta linea de codigo si o si esta mal\n\n\n\nSyntaxError: unterminated string literal (detected at line 1) (3579302234.py, line 1)"
+  },
+  {
+    "objectID": "tics100/Clase02.html#qué-es-una-variable",
+    "href": "tics100/Clase02.html#qué-es-una-variable",
+    "title": "TICS100 - Programación",
+    "section": "¿Qué es una variable?",
+    "text": "¿Qué es una variable?\nUna variable representa un espacio de memoria en el computador que puede ser modificado en el tiempo y permite el registro y acceso a los datos.\nPodemos compararlas con cajas. Donde podemos:\n\n\nAlmacenar información\n\n\n\n\nRecuperar su información\n\n\n\n\nSobreescribir la información"
+  },
+  {
+    "objectID": "tics100/Clase02.html#cómo-creamos-una-variable",
+    "href": "tics100/Clase02.html#cómo-creamos-una-variable",
+    "title": "TICS100 - Programación",
+    "section": "¿Cómo creamos una variable?",
+    "text": "¿Cómo creamos una variable?\n\n\nPara asignar el valor 5 a una variable se usa:\nx = 5\n\n¿Qué pasa si lo invertimos?\n\n\n\n5 = x\n\n\nError!! Siempre se asigna de DERECHA a IZQUIERDA"
+  },
+  {
+    "objectID": "tics100/Clase02.html#observaciones",
+    "href": "tics100/Clase02.html#observaciones",
+    "title": "TICS100 - Programación",
+    "section": "Observaciones",
+    "text": "Observaciones\nSiempre intentar asignar un nombre SIGNIFICATIVO a las variables.\nEntender código es un tema en las empresas.\n\nConsidere que:\n\nCambiar los nombres de las variables del programa de un amigo no implica que usted hizo el código. Esta es la forma más burda de intentar engañarse."
+  },
+  {
+    "objectID": "tics100/Clase02.html#operaciones-existentes",
+    "href": "tics100/Clase02.html#operaciones-existentes",
+    "title": "TICS100 - Programación",
+    "section": "Operaciones existentes",
+    "text": "Operaciones existentes\nLas básicas que disponemos son:\n\nSumar (+)\nRestar (-)\nDividir (/)\nMódulo (%)"
+  },
+  {
+    "objectID": "tics100/Clase02.html#función-importante",
+    "href": "tics100/Clase02.html#función-importante",
+    "title": "TICS100 - Programación",
+    "section": "Función importante",
+    "text": "Función importante\nSegunda función que veremos hoy: input()\nEsta nos permite pedirle información al usuario.\nCuando se llama a la función el computador espera a que el usuario entregue un valor y presione la tecla ‘enter’.\n\nprint(\"Ingrese un numero\")\nnumIngresado = input()\nprint(\"El número ingresado es:\", numIngresado)"
+  },
+  {
+    "objectID": "tics100/Clase02.html#porqué-falla",
+    "href": "tics100/Clase02.html#porqué-falla",
+    "title": "TICS100 - Programación",
+    "section": "¿Porqué falla?",
+    "text": "¿Porqué falla?\nLas variables pueden almacenar distinto tipo de información, ya sea número o texto. Esto afecta el cómo procesamos la información. Sumar 5+5 es distinto a la cadena de texto \"5+5\".\nEntonces:\n\nCuando le entregamos información con input()\n¿Qué recibe? ¿Número o texto?\n\n\n\n TEXTO"
+  },
+  {
+    "objectID": "tics100/Clase02.html#nueva-función-importante",
+    "href": "tics100/Clase02.html#nueva-función-importante",
+    "title": "TICS100 - Programación",
+    "section": "Nueva función importante",
+    "text": "Nueva función importante\nPodemos transformar el carácter de un número al valor de un número utilizando la función int().\n\ny = input() # Se asigna como texto\ny = int(y) # Se transforma a número"
+  },
+  {
+    "objectID": "tics100/Clase02.html#otro-tipo-de-transformaciones",
+    "href": "tics100/Clase02.html#otro-tipo-de-transformaciones",
+    "title": "TICS100 - Programación",
+    "section": "Otro tipo de transformaciones",
+    "text": "Otro tipo de transformaciones\nPara transformar una variable a otro tipo de formato, no solo existe input().\nExiste:\n\nstr() A texto\nfloat() A decimal\nY muchas más que aprenderán con el tiempo…"
   },
   {
     "objectID": "index.html",
@@ -53,7 +165,7 @@
     "href": "tics100/Clase01.html#ayudantía",
     "title": "TICS100 - Programación",
     "section": "Ayudantía",
-    "text": "Ayudantía\n Los lunes modulo 5 (17:00-18:10)\nAyudante por definir"
+    "text": "Ayudantía\nSerán los lunes modulo 5 (17:00-18:10)\nAyudante: Juan Pablo Orellana\njuanorellana@alumnos.uai.cl"
   },
   {
     "objectID": "tics100/Clase01.html#cómo-y-cuándo-serán-las-evaluaciones",
@@ -67,14 +179,14 @@
     "href": "tics100/Clase01.html#calculo-de-la-nota",
     "title": "TICS100 - Programación",
     "section": "Calculo de la nota",
-    "text": "Calculo de la nota\nEl calculo de la nota es el siguiente:\nif \\(promedio\\_ pruebas&gt;= 4.0:\\) \\[\nNF = P1*0.35 + P2*0.35 + AE*0.30\n\\]\nelse: \\[\nNF = P1*0.5 + P2*0.5 + AE*0.00\n\\]"
+    "text": "Calculo de la nota\nEl cálculo de la nota es el siguiente:\nif \\(promedio\\_ pruebas&gt;= 4.0:\\) \\[\nNF = P1*0.35 + P2*0.35 + AE*0.30\n\\]\nelse: \\[\nNF = P1*0.5 + P2*0.5 + AE*0.00\n\\]"
   },
   {
     "objectID": "tics100/Clase01.html#examen",
     "href": "tics100/Clase01.html#examen",
     "title": "TICS100 - Programación",
     "section": "Examen",
-    "text": "Examen\nFecha por definir:\n\n\nSerá en el periodo de exámenes\n\n\n\n\nSi tienen las 2 notas de prueba mayor a 4.0 (P1 &gt;= 4.0 y P2 &gt;=4.0) se eximen.\n\n\n\n\nEl examen reemplaza la peor nota. Incluso si es peor.\n\n\n\n\nEn caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral."
+    "text": "Examen\nFecha por definir:\n\n\nSerá en el periodo de exámenes\n\n\n\n\nSi tienen las 2 notas de prueba mayor a 4.0 (P1 &gt;= 4.0 y P2 &gt;=4.0) se eximen.\n\n\n\n\nEl examen reemplaza la peor nota. Incluso si es peor que la original.\n\n\n\n\nEn caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral."
   },
   {
     "objectID": "tics100/Clase01.html#qué-es-un-problema",
@@ -88,7 +200,7 @@
     "href": "tics100/Clase01.html#ejemplos",
     "title": "TICS100 - Programación",
     "section": "Ejemplos",
-    "text": "Ejemplos\nSupongamos distintas tareas:\n\nSumar los numeros 2 y 4.\nIncrementar el 56 en una unidad.\nOrdenar nombres de un cruso segun la primera letra del nombre."
+    "text": "Ejemplos\nSupongamos distintas tareas:\n\nSumar los números 2 y 4.\nIncrementar el 56 en una unidad.\nOrdenar nombres de un curso según la primera letra del nombre."
   },
   {
     "objectID": "tics100/Clase01.html#ejemplos-1",
@@ -119,25 +231,18 @@
     "text": "Observaciones\nEl computador no puede resolver nada que no haya sido programado antes.\nPodemos resolver problemas complejos con elementos básicos. Pero no todos los problemas se pueden resolver computacionalmente…\n\nSino pregunten a Chat-GPT"
   },
   {
-    "objectID": "tics100/Clase01.html#ojo-como-entienden-el-lenguaje",
-    "href": "tics100/Clase01.html#ojo-como-entienden-el-lenguaje",
-    "title": "TICS100 - Programación",
-    "section": "Ojo como entienden el lenguaje",
-    "text": "Ojo como entienden el lenguaje\nCaso Personal: “Tengo problemas para la aplicación en la capa 7, esto es debido a que la pagina web que tenemos, está siendo corrompida por fallos en las capas inferiores”\n\n\n\n\n\n\n\n\nEsto se conoce como la defensa Chewbacca, doy una cantidad enorme de información sin sentido para confundir al oyente"
-  },
-  {
     "objectID": "tics100/Clase01.html#volamos-con-un-ejemplo",
     "href": "tics100/Clase01.html#volamos-con-un-ejemplo",
     "title": "TICS100 - Programación",
     "section": "Volamos con un ejemplo",
-    "text": "Volamos con un ejemplo\n\nUno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.\nEste integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.\nNo puede mencionar la letra, ni tampoco puede hacer comparaciones.\nAl terminar, le entrega la hoja a su compañero y el debe seguir las instrucciones.\nComparen si lo dibujado coincide con la letra original."
+    "text": "Volamos con un ejemplo\n\nUno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.\nEste integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.\nNo puede mencionar la letra, ni tampoco puede hacer comparaciones.\nAl terminar, le entrega la hoja a su compañero y él debe seguir las instrucciones.\nComparen si lo dibujado coincide con la letra original."
   },
   {
     "objectID": "tics100/Clase01.html#el-objetivo-del-curso",
     "href": "tics100/Clase01.html#el-objetivo-del-curso",
     "title": "TICS100 - Programación",
     "section": "El objetivo del curso",
-    "text": "El objetivo del curso\nLa idea es que sean capacez de llevar sus ideas a una maquina considerando el paso a paso.\nPara esto:\n\nIdentifiquen los elementos que tienen disponibles.\nQué quieren desarollar.\nUtilicen los elementos basicos para resolver paso a paso."
+    "text": "El objetivo del curso\nLa idea es que sean capaces de llevar sus ideas a una maquina considerando el paso a paso.\nPara esto:\n\nIdentifiquen los elementos que tienen disponibles.\nQué quieren desarrollar.\nUtilicen los elementos básicos para resolver paso a paso."
   },
   {
     "objectID": "tics100/Clase01.html#donde-quieren-programar",
@@ -147,8 +252,8 @@
     "text": "¿Donde quieren programar?\n Opciones disponibles para el curso:\n\n\n\n\n\n\n\n\n\n\n\n(a) replit\n\n\n\n\n\n\n\n\n\n\n\n(b) Google colab\n\n\n\n\n\n\n\n\n\n\n\n(c) Local\n\n\n\n\n\n\n\nFigure 1"
   },
   {
-    "objectID": "tics100/Clase01.html#acotación-importante-1",
-    "href": "tics100/Clase01.html#acotación-importante-1",
+    "objectID": "tics100/Clase01.html#acotación-importante",
+    "href": "tics100/Clase01.html#acotación-importante",
     "title": "TICS100 - Programación",
     "section": "Acotación Importante",
     "text": "Acotación Importante\nCualquier duda que tengan por minima que sea, pregunten hasta que entiendan. Yo quiero que aprendan, por lo mismo, estoy dispuesto a resolver todas las dudas que tengan.\nDuda: diego.ramos.a@edu.uai.cl"
