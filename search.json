@@ -25,7 +25,7 @@
     "href": "tics100/Clase02.html#en-el-caso-que-escoger-instalarlo-en-su-computador",
     "title": "TICS100 - Programación",
     "section": "En el caso que escoger instalarlo en su computador…",
-    "text": "En el caso que escoger instalarlo en su computador…\n\nDejaré un tutorial en los próximos días en Webc, puede apoyarse en mi o el ayudante."
+    "text": "En el caso que escoger instalarlo en su computador…\n\nMandar un correo al ayudante o puede apoyarse en mi para el proceso de instalación."
   },
   {
     "objectID": "tics100/Clase02.html#hagamos-el-primer-código",
@@ -39,7 +39,7 @@
     "href": "tics100/Clase02.html#qué-es-y-para-qué-sirve",
     "title": "TICS100 - Programación",
     "section": "¿Qué es y para qué sirve?",
-    "text": "¿Qué es y para qué sirve?\nUn comentario es una linea del codigo que no es ejecutable.\nCuando deseamos escribir alguna nota para recordar o para otra persona podemos utilizar comentarios.\nOtro uso, es comentar código, es decir, hacer no ejecutable una parte de este."
+    "text": "¿Qué es y para qué sirve?\nUn comentario es una linea del código que no es ejecutable.\nCuando deseamos escribir alguna nota para recordar o para otra persona, podemos utilizar comentarios.\nOtro uso, es comentar código, es decir, hacer no ejecutable una parte de este."
   },
   {
     "objectID": "tics100/Clase02.html#cómo-se-comenta",
@@ -186,7 +186,7 @@
     "href": "tics100/Clase01.html#examen",
     "title": "TICS100 - Programación",
     "section": "Examen",
-    "text": "Examen\nFecha por definir:\n\n\nSerá en el periodo de exámenes\n\n\n\n\nSi tienen las 2 notas de prueba mayor a 4.0 (P1 &gt;= 4.0 y P2 &gt;=4.0) se eximen.\n\n\n\n\nEl examen reemplaza la peor nota. Incluso si es peor que la original.\n\n\n\n\nEn caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral."
+    "text": "Examen\nFecha por definir:\n\n\nSerá en el periodo de exámenes.\n\n\n\n\nSi tienen las 2 notas de prueba mayor a 4.0 (P1 &gt;= 4.0 y P2 &gt;=4.0) se eximen.\n\n\n\n\nEl examen reemplaza la peor nota. Incluso si es peor que la original.\n\n\n\n\nEn caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral."
   },
   {
     "objectID": "tics100/Clase01.html#qué-es-un-problema",
@@ -231,13 +231,6 @@
     "text": "Observaciones\nEl computador no puede resolver nada que no haya sido programado antes.\nPodemos resolver problemas complejos con elementos básicos. Pero no todos los problemas se pueden resolver computacionalmente…\n\nSino pregunten a Chat-GPT"
   },
   {
-    "objectID": "tics100/Clase01.html#volamos-con-un-ejemplo",
-    "href": "tics100/Clase01.html#volamos-con-un-ejemplo",
-    "title": "TICS100 - Programación",
-    "section": "Volamos con un ejemplo",
-    "text": "Volamos con un ejemplo\n\nUno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.\nEste integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.\nNo puede mencionar la letra, ni tampoco puede hacer comparaciones.\nAl terminar, le entrega la hoja a su compañero y él debe seguir las instrucciones.\nComparen si lo dibujado coincide con la letra original."
-  },
-  {
     "objectID": "tics100/Clase01.html#el-objetivo-del-curso",
     "href": "tics100/Clase01.html#el-objetivo-del-curso",
     "title": "TICS100 - Programación",
@@ -264,5 +257,12 @@
     "title": "TICS100 - Programación",
     "section": "Recomendacion",
     "text": "Recomendacion\nCuando programes fijense sobretodo en los errores y recuerdenlos, son los errores son los que los convierten en buenos programadores."
+  },
+  {
+    "objectID": "tics100/Clase01.html#volamos-con-un-ejemplo",
+    "href": "tics100/Clase01.html#volamos-con-un-ejemplo",
+    "title": "TICS100 - Programación",
+    "section": "Volamos con un ejemplo",
+    "text": "Volamos con un ejemplo\n\nUno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.\nEste integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.\nNo puede mencionar la letra, ni tampoco puede hacer comparaciones.\nAl terminar, le entrega la hoja a su compañero y él debe seguir las instrucciones.\nComparen si lo dibujado coincide con la letra original."
   }
 ]
