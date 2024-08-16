@@ -42,7 +42,7 @@ Ahora todo tiene IA, por lo que armar codigo desde su computador será muy senci
 :::
 
 
-# Para ejecutar el codigo que se está mostrando dependerá de su decisión:
+# Para ejecutar el código que se está mostrando dependerá de su decisión:
 
 ## Si escogió replit: 
 
@@ -74,7 +74,7 @@ Ahora todo tiene IA, por lo que armar codigo desde su computador será muy senci
 
 <br/>
 
-Dejaré un tutorial en los próximos días en *Webc*, puede apoyarse en mi o el ayudante.
+Mandar un correo al ayudante o puede apoyarse en mi para el proceso de instalación.
 
 
 
@@ -105,9 +105,9 @@ print(" Hola Mundo")
 
 ## ¿Qué es y para qué sirve?
 
-Un comentario es una linea del codigo que no es ejecutable.
+Un comentario es una linea del código que no es ejecutable.
 
-Cuando deseamos escribir alguna nota para recordar o para otra persona podemos utilizar comentarios.
+Cuando deseamos escribir alguna nota para recordar o para otra persona, podemos utilizar comentarios.
 
 Otro uso, es comentar código, es decir, hacer no ejecutable una parte de este.
 

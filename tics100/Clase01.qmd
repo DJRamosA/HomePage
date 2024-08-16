@@ -93,7 +93,7 @@ $$
 Fecha por definir:
 
 ::: {.fragment .fade-in-then-semi-out}
--   Será en el periodo de exámenes
+-   Será en el periodo de exámenes.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
@@ -196,14 +196,14 @@ La definición más exacta:
 
 El computador no puede resolver nada que no haya sido programado antes.
 
-Podemos resolver problemas complejos con elementos básicos. Pero no todos los problemas se pueden resolver computacionalmente...
+Podemos resolver problemas complejos con **elementos básicos**. Pero no todos los problemas se pueden resolver computacionalmente...
 
 :::{.fragment .fade-in-then-semi-out}
 Sino pregunten a Chat-GPT
 :::
 
 
-# ¿A quíen es más fácil explicar un problema a una persona o a una máquina?
+# ¿A quíen es más fácil explicar un problema, a una persona o a una máquina?
 
 
 <!-- ## Ojo como entienden el lenguaje
@@ -229,14 +229,6 @@ Esto se conoce como la defensa Chewbacca, doy una cantidad enorme de informació
 ![](../img/green_sitting_trans_doi_family.png){width=50%}
 
 ::: -->
-
-## Volamos con un ejemplo
-
-- Uno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.
-- Este integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.
-- No puede mencionar la letra, ni tampoco puede hacer comparaciones.
-- Al terminar, le entrega la hoja a su compañero y él debe seguir las instrucciones. 
-- Comparen si lo dibujado coincide con la letra original.
 
 
 ## El objetivo del curso
@@ -279,3 +271,12 @@ Duda: **diego.ramos.a@edu.uai.cl**
 ## Recomendacion
 
 Cuando programes fijense sobretodo en los errores y recuerdenlos, son los errores son los que los convierten en buenos programadores.
+
+
+## Volamos con un ejemplo
+
+- Uno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.
+- Este integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.
+- No puede mencionar la letra, ni tampoco puede hacer comparaciones.
+- Al terminar, le entrega la hoja a su compañero y él debe seguir las instrucciones. 
+- Comparen si lo dibujado coincide con la letra original.
