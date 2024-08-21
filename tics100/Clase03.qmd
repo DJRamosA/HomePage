@@ -1,0 +1,379 @@
+---
+title: 'TICS100 - Programación'
+subtitle: 'Clase03'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow 
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+        code-block-background: true
+resources:
+    - Clase03.pdf
+
+---
+
+# Introoducción a funciones
+
+## ¿Qué son las funciones?
+
+- Es un subprograma que realiza una tarea específica y pueden ser reutilizados.
+- Son independientes de nuestro programa y se caracterizan por que siempre usan `()`.
+- Puede recibir 0 o más valores del programa que lo llama y devolver 0 o 1 valor a dicho programa.
+
+:::{.fragment .fade-up}
+
+- Ejemplo de funciones que ya hemos utilizado:
+    - `print(…)` => recibe **1 o más valores** del programa y **no retorna nada** (muestra por pantalla).
+    - `int(valTexto)` => recibe **1 valor** y retorna **1 valor**.
+:::
+
+
+## ¿Dónde las conseguimos?
+
+:::{.fragment .fade-up}
+
+- La creación de funciones lo veremos para la prueba 2
+:::
+:::{.fragment .fade-up}
+
+- Pero repasaremos algunas que podemos conseguir de otras partes como de **Módulos o bibliotecas**
+:::
+
+## Modulos
+
+Existen conjuntos de códigos llamados **bibliotecas o módulos**. Al cargar los módulos somos capaces de utilizar los códigos que ofrecen.
+
+:::{.fragment .fade-up}
+O sea, tenemos acceso a funciones y tipos de datos completamente codificados por otras *personas*.
+:::
+:::{.fragment .fade-up}
+Las bibliotecas las hicieron otras personas y las dejaron públicas para que trabajemos con ellas **¡agradezcamos!**, **pero tengamos cuidado**. 
+:::
+:::{.fragment .fade-up}
+Cualquier persona puede crear una biblioteca, por lo cual, los errores que contengan son asumidos como algo correcto.
+:::
+
+## ¿Cómo las utilizamos?
+
+Para cargar un módulo se sigue la siguiente estructura:
+
+```{.python}
+import <nombreModulo>
+```
+
+:::{.fragment .fade-up}
+
+En la primera palabra `import` llama al modulo que queremos usar.
+:::
+:::{.fragment .fade-up}
+
+Luego viene el nombre del modulo que queremos cargar.
+:::
+
+## Para llamar una función del modulo
+
+Para cargar un módulo se sigue la siguiente estructura:
+
+```{.python}
+nombreModulo.nombreFuncion(<parametros>)
+```
+
+:::{.fragment .fade-up}
+
+Los parámetros de la función que nosotros le entregamos
+:::
+
+# Algunos modulos útiles
+
+Dentro de los módulos más útiles en Python podemos encontrar:
+
+:::{.fragment .fade-in-then-semi-out}
+
+- `math` para operaciones matemáticas
+:::
+:::{.fragment .fade-in-then-semi-out}
+
+- `random` para generar números aleatorios
+:::
+:::{.fragment .fade-in-then-semi-out}
+
+- `matplotlib` para graficar
+:::
+:::{.fragment .fade-in-then-semi-out}
+
+- `numpy` y `pandas` para análisis de datos y modelos de machine learning
+:::
+:::{.fragment .fade-in-then-semi-out}
+
+- Y muchos más…
+:::
+
+# Ejemplos de Módulos
+
+## `random`
+
+El módulo `random` en Python es una herramienta poderosa para **generar valores aleatorios**. 
+
+Puede ser utilizado en una variedad de aplicaciones, como juegos, simulaciones y más. 
+
+En esta clase, exploraremos diferentes funciones del módulo `random` con ejemplos prácticos y sencillos.
+
+
+## Código 1
+
+Podemos generar un numero aleatorio entre 0 y 1:
+```{python}
+#| echo: true
+#| code-line-numbers: "1|4|5|"
+import random
+
+# Genera un numero aleatorio entre 0 y 1
+numAleatorio = random.random()
+print(numAleatorio)
+```
+
+
+:::{.fragment .fade-right}
+También podemos generar un numero entero entre 1 y 10:
+
+```{python}
+#| echo: true
+#| code-line-numbers: "4|5|"
+import random
+
+# Genera un numero aleatorio entre 1 y 10
+numAleatorio = random.randint(1, 10)
+print(numAleatorio)
+```
+:::
+
+## Código 2
+
+
+También podemos generar números aleatorios decimales entre un rango.
+
+:::{.fragment .fade-right}
+```{python}
+#| echo: true
+#| code-line-numbers: "4|5|"
+import random
+
+# Genera un numero aleatorio entre 2.5 y 5.5
+numAleatorio = random.uniform(2.5, 5.5)
+print(numAleatorio)
+```
+:::
+
+
+## `math`
+
+El módulo `math` en Python proporciona una amplia **variedad de funciones y constantes matemáticas** para realizar operaciones matemáticas más avanzadas. 
+
+En esta guía, exploraremos diferentes funciones del módulo `math` con ejemplos prácticos y sencillos.
+
+## Código 1
+
+Podemos obtener la raiz cuadrada de un número: 
+
+:::{.fragment .fade-right}
+```{python}
+#| echo: true
+#| code-line-numbers: "1|3|5|6|"
+import math
+
+numero = 25
+# Calcula la raiz cuadrada de un número
+raizNum = math.sqrt(numero)
+print(raizNum)
+```
+:::
+
+
+
+
+## Código 2
+
+Podemos redondear un número para arriba y para abajo:
+
+:::{.fragment .fade-right}
+```{python}
+#| echo: true
+#| code-line-numbers: "1|5-6|8-9|"
+import math
+
+numDecimal = 3.7
+# Calcula la raiz cuadrada de un número
+numRedondeoArriba = math.ceil(numDecimal) # arriba
+print(numRedondeoArriba)
+
+numRedondeoAbajo = math.floor(numDecimal) # abajo
+print(numRedondeoAbajo)
+
+```
+:::
+
+
+## Código 3
+
+Podemos cambiar números a radianes y calcular funciones trigonométricas:
+
+:::{.fragment .fade-right}
+```{python}
+#| echo: true
+#| code-line-numbers: "|3-5|6|7|8|"
+import math
+
+angulo = 30
+anguloRadianes = math.radians(angulo)
+print("El angulo de 30 en radianes es:", anguloRadianes)
+seno = math.sin(anguloRadianes)
+coseno = math.cos(anguloRadianes)
+tangente = math.tan(anguloRadianes)
+print(seno, coseno, tangente)
+```
+:::
+
+
+
+## Código 4
+
+Podemos calcular el logaritmo de un número:
+
+:::{.fragment .fade-right}
+```{python}
+#| echo: true
+#| code-line-numbers: "5|6|"
+import math
+
+numero = 2.71828
+# Calcula la raiz cuadrada de un número
+logNum = math.log(numero)
+print(logNum)
+```
+:::
+
+
+:::{.fragment .fade-left}
+Podemos calcular el logaritmo en base 10 de un número:
+
+```{python}
+#| echo: true
+#| code-line-numbers: "5|6|"
+import math
+
+numero = 2.71828
+# Calcula la raiz cuadrada de un número
+logNum = math.log10(numero)
+print(logNum)
+```
+:::
+
+## Código 5
+Finalmente algunas constantes que nos pueden servir:
+
+
+```{python}
+#| echo: true
+import math
+
+print("El numero pi en math es:", math.pi)
+
+print("El numero de euler en math es:", math.e)
+```
+
+
+
+## `time`
+
+El módulo `time` en Python proporciona funciones para **trabajar con el tiempo** y medir intervalos de tiempo. 
+
+Puedes usar este módulo para obtener la hora actual, medir el tiempo de ejecución de un programa y generar retrasos, entre otras cosas.
+
+## Código 1
+La función `time()` devuelve el tiempo actual en segundos desde el 1 de enero de 1970.
+
+```{python}
+#| echo: true
+#| code-line-numbers: "1|3-4|"
+import time
+
+tiempoActual = time.time()
+print("Segundos desde el 01/01/1970: ", tiempoActual)
+```
+
+
+:::{.fragment .fade-up}
+También podemos formatear la hora actual en una cadena legible para los humanos.
+Muestra la hora, la fecha y la zona horaria.
+
+```{python}
+#| code-line-numbers: "3-4|"
+#| echo: true
+import time
+
+formatoFecha = time.ctime()
+print("Fecha actual: ", formatoFecha)
+```
+:::
+
+
+## Código 2
+
+Podemos pausar la ejecución de un programa:
+
+```{python}
+#| echo: true
+#| code-line-numbers: "3-4|6|8-9|"
+import time
+
+formatoFecha = time.ctime()
+print("Fecha actual: ", formatoFecha)
+
+time.sleep(2)
+
+formatoFecha = time.ctime()
+print("Fecha actual: ", formatoFecha)
+```
+
+
+## Ejemplo de uso
+
+Para medir tiempos de ejecución podemos calculara la diferencia de dos `time.time()`
+
+
+```{.python}
+import time
+
+print("Hola, ingrese un número:")
+
+tiempoInicio = time.time()
+numIngresado = input()
+tiempoFinal = time.time()
+
+difTiempo = tiempoFinal - tiempoInicio
+
+print("Te demoraste un total de", difTiempo, "segundos en ingresar el número")
+```
+
+# ¿Qué aprendieron?
+
+## Actividad
+
+- Cree un código que ingrese 3 números, donde:
+  - El primer numero es la unidad
+  - El segundo es la decima
+  - El tercero es la centena
+- Luego obtenga la raíz cuadrada de ese número. **Con solo los primero 2 dígitos decimales.** Ej: 10.24
+
+- Tiene que medir el tiempo que toma en agregar cada uno de los números y el total.
