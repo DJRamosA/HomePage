@@ -1,15 +1,15 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/courses.html"
-    ]
-  },
-  {
     "listing": "/courses.html",
     "items": [
       "tics100/Clase01.html",
       "tics100/Clase02.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/courses.html"
     ]
   }
 ]
