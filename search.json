@@ -1,129 +1,276 @@
 [
   {
-    "objectID": "tics100/Clase04.html#caracteristicas",
-    "href": "tics100/Clase04.html#caracteristicas",
+    "objectID": "tics100/Clase03.html#qué-son-las-funciones",
+    "href": "tics100/Clase03.html#qué-son-las-funciones",
     "title": "TICS100 - Programación",
-    "section": "Caracteristicas",
-    "text": "Caracteristicas\nMuchas veces queremos tomar decisiones en función de lo que está ocurriendo.\n\n\n\n\n\n\nA esto le llamamos condicionales"
+    "section": "¿Qué son las funciones?",
+    "text": "¿Qué son las funciones?\n\nEs un subprograma que realiza una tarea específica y pueden ser reutilizados.\nSon independientes de nuestro programa y se caracterizan por que siempre usan ().\nPuede recibir 0 o más valores del programa que lo llama y devolver 0 o 1 valor a dicho programa.\n\n\n\nEjemplo de funciones que ya hemos utilizado:\n\nprint(…) =&gt; recibe 1 o más valores del programa y no retorna nada (muestra por pantalla).\nint(valTexto) =&gt; recibe 1 valor y retorna 1 valor."
   },
   {
-    "objectID": "tics100/Clase04.html#cómo-lo-programamos",
-    "href": "tics100/Clase04.html#cómo-lo-programamos",
+    "objectID": "tics100/Clase03.html#dónde-las-conseguimos",
+    "href": "tics100/Clase03.html#dónde-las-conseguimos",
     "title": "TICS100 - Programación",
-    "section": "¿Cómo lo programamos?",
-    "text": "¿Cómo lo programamos?\nEn inglés existe la palabra if que se traduce literalmente como ‘si…’\n\nPor lo tanto si queremos hacer una condición sería de la siguiente forma:\n\n1valor = int(input(\"Entregame un número del 1 al 10\"))\n\n2if (valor &gt; 10):\n    print(\"El número es muy alto\")\n3if (valor&lt;1):\n    print(\"El número es muy bajo\")\n4if (valor &gt;= 1 and valor &lt;= 10):\n    print(\"Gracias!\")\n\n\n1\n\nAquí pedimos un numero al usuario\n\n2\n\nComparamos si el valor es mayor a 10\n\n3\n\nComparamos ahora si es menor a 10\n\n4\n\nComparamos si esta dentro del rango que pedimos"
+    "section": "¿Dónde las conseguimos?",
+    "text": "¿Dónde las conseguimos?\n\n\nLa creación de funciones lo veremos para la prueba 2\n\n\n\n\nPero repasaremos algunas que podemos conseguir de otras partes como de Módulos o bibliotecas"
   },
   {
-    "objectID": "tics100/Clase04.html#veamos-los-detalles",
-    "href": "tics100/Clase04.html#veamos-los-detalles",
+    "objectID": "tics100/Clase03.html#modulos",
+    "href": "tics100/Clase03.html#modulos",
     "title": "TICS100 - Programación",
-    "section": "Veamos los detalles",
-    "text": "Veamos los detalles\nEn el caso que queramos hacer una condición tenemos varios elementos que fijarnos:\n\nif (valor &gt; 10): \n    print(\"El número es muy alto\")\n\n\nPrimero tiene que ir el if para avisar que es una condición lo que tenemos\n\n\nVemos como la condición está entre paréntesis\n\n\nLuego van unos 2 puntos para advertir a la máquina que lo que esta indentado (se hace con el boton tab) abajo va dentro de la condición"
+    "section": "Modulos",
+    "text": "Modulos\nExisten conjuntos de códigos llamados bibliotecas o módulos. Al cargar los módulos somos capaces de utilizar los códigos que ofrecen.\n\nO sea, tenemos acceso a funciones y tipos de datos completamente codificados por otras personas.\n\n\nLas bibliotecas las hicieron otras personas y las dejaron públicas para que trabajemos con ellas ¡agradezcamos!, pero tengamos cuidado.\n\n\nCualquier persona puede crear una biblioteca, por lo cual, los errores que contengan son asumidos como algo correcto."
   },
   {
-    "objectID": "tics100/Clase04.html#después-de-la-condición",
-    "href": "tics100/Clase04.html#después-de-la-condición",
+    "objectID": "tics100/Clase03.html#cómo-las-utilizamos",
+    "href": "tics100/Clase03.html#cómo-las-utilizamos",
     "title": "TICS100 - Programación",
-    "section": "Después de la condición",
-    "text": "Después de la condición\nCuando ya tenemos listo nuestra condición, simplemente sacando el tab podemos ejecutar otra parte del codigo sin que afecte\n\nif (valor &gt; 10):\n    print(\"El número es muy alto\")\nif (valor&lt;1):\n    print(\"El número es muy bajo\")\n\n\nEn este caso cada if se ejecutará independiente al otro"
+    "section": "¿Cómo las utilizamos?",
+    "text": "¿Cómo las utilizamos?\nPara cargar un módulo se sigue la siguiente estructura:\nimport &lt;nombreModulo&gt;\n\nEn la primera palabra import llama al modulo que queremos usar.\n\n\nLuego viene el nombre del modulo que queremos cargar."
   },
   {
-    "objectID": "tics100/Clase04.html#algunas-condiciones-para-saber",
-    "href": "tics100/Clase04.html#algunas-condiciones-para-saber",
+    "objectID": "tics100/Clase03.html#para-llamar-una-función-del-modulo",
+    "href": "tics100/Clase03.html#para-llamar-una-función-del-modulo",
     "title": "TICS100 - Programación",
-    "section": "Algunas condiciones para saber",
-    "text": "Algunas condiciones para saber\nLos simbolos de condicionales que deben saber son los siguientes (de derecha a izquierda):\n\n“==”: es para verificar si son valores iguales\n“!=”: es para verificar que son distintos\n“=&gt;”: es para verificar si es menor o igual que…\n“=&lt;”: es para verificar si es mayor o igual que…\n“&gt;”: es para verificar si es menor que…\n“&lt;”: es para verificar si es mayor que…\n\n\nEl simbolo = es para asignar un valor, favor de no confundir."
+    "section": "Para llamar una función del modulo",
+    "text": "Para llamar una función del modulo\nPara cargar un módulo se sigue la siguiente estructura:\nnombreModulo.nombreFuncion(&lt;parametros&gt;)\n\nLos parámetros de la función que nosotros le entregamos"
   },
   {
-    "objectID": "tics100/Clase04.html#en-caso-de-no-cumplir-la-condición",
-    "href": "tics100/Clase04.html#en-caso-de-no-cumplir-la-condición",
+    "objectID": "tics100/Clase03.html#random",
+    "href": "tics100/Clase03.html#random",
     "title": "TICS100 - Programación",
-    "section": "En caso de no cumplir la condición",
-    "text": "En caso de no cumplir la condición\nEn un inicio vimos solo condiciones if, pero no es comodo colocar cada condición en particular.\nCuando NO se cumple la condición que propusimos, también podemos ejecutar ciertas lineas de código.\n\n\nEsto se hace con else.\nelse se traduce como “si no”:"
+    "section": "random",
+    "text": "random\nEl módulo random en Python es una herramienta poderosa para generar valores aleatorios.\nPuede ser utilizado en una variedad de aplicaciones, como juegos, simulaciones y más.\nEn esta clase, exploraremos diferentes funciones del módulo random con ejemplos prácticos y sencillos."
   },
   {
-    "objectID": "tics100/Clase04.html#ejemplo-else",
-    "href": "tics100/Clase04.html#ejemplo-else",
+    "objectID": "tics100/Clase03.html#código-1",
+    "href": "tics100/Clase03.html#código-1",
     "title": "TICS100 - Programación",
-    "section": "Ejemplo else",
-    "text": "Ejemplo else\n\n\n\n\n\n\n\nhambre = True\n\nif (hambre == True):\n    print(\"Hacer sandwich\")\nelse:\n    print(\"Seguir trabajando\")"
+    "section": "Código 1",
+    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.691969941721498\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n1"
   },
   {
-    "objectID": "tics100/Clase04.html#cómo-podemos-hacer-el-código-más-eficiente-todavía",
-    "href": "tics100/Clase04.html#cómo-podemos-hacer-el-código-más-eficiente-todavía",
+    "objectID": "tics100/Clase03.html#código-2",
+    "href": "tics100/Clase03.html#código-2",
     "title": "TICS100 - Programación",
-    "section": "¿Cómo podemos hacer el código más eficiente todavía?",
-    "text": "¿Cómo podemos hacer el código más eficiente todavía?\n\nHay un condicional intermedio, existe el elif que es la combinación de else con if. En palabras sencillas, se utiliza para agregar una nueva condición cuando la primera condición no se cumple."
+    "section": "Código 2",
+    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n3.256196600109935"
   },
   {
-    "objectID": "tics100/Clase04.html#ejemplo",
-    "href": "tics100/Clase04.html#ejemplo",
+    "objectID": "tics100/Clase03.html#math",
+    "href": "tics100/Clase03.html#math",
     "title": "TICS100 - Programación",
-    "section": "Ejemplo",
-    "text": "Ejemplo\nSi reescribimos el ejemplo anterior:\n\n1valor = int(input(\"Entregame un número del 1 al 10\"))\n\n2if (valor &gt; 10):\n    print(\"El número es muy alto\")\n3elif (valor&lt;1):\n    print(\"El número es muy bajo\")\n4else:\n    print(\"Gracias!\")\n\n\n1\n\nAquí pedimos un numero al usuario\n\n2\n\nComparamos si el valor es mayor a 10\n\n3\n\nComparamos ahora si es menor a 10\n\n4\n\nCaso contrario el numero es correcto"
+    "section": "math",
+    "text": "math\nEl módulo math en Python proporciona una amplia variedad de funciones y constantes matemáticas para realizar operaciones matemáticas más avanzadas.\nEn esta guía, exploraremos diferentes funciones del módulo math con ejemplos prácticos y sencillos."
   },
   {
-    "objectID": "tics100/Clase04.html#actividad",
-    "href": "tics100/Clase04.html#actividad",
+    "objectID": "tics100/Clase03.html#código-1-1",
+    "href": "tics100/Clase03.html#código-1-1",
+    "title": "TICS100 - Programación",
+    "section": "Código 1",
+    "text": "Código 1\nPodemos obtener la raiz cuadrada de un número:\n\n\nimport math\n\nnumero = 25\n# Calcula la raiz cuadrada de un número\nraizNum = math.sqrt(numero)\nprint(raizNum)\n\n5.0"
+  },
+  {
+    "objectID": "tics100/Clase03.html#código-2-1",
+    "href": "tics100/Clase03.html#código-2-1",
+    "title": "TICS100 - Programación",
+    "section": "Código 2",
+    "text": "Código 2\nPodemos redondear un número para arriba y para abajo:\n\n\nimport math\n\nnumDecimal = 3.7\n# Calcula la raiz cuadrada de un número\nnumRedondeoArriba = math.ceil(numDecimal) # arriba\nprint(numRedondeoArriba)\n\nnumRedondeoAbajo = math.floor(numDecimal) # abajo\nprint(numRedondeoAbajo)\n\n4\n3"
+  },
+  {
+    "objectID": "tics100/Clase03.html#código-3",
+    "href": "tics100/Clase03.html#código-3",
+    "title": "TICS100 - Programación",
+    "section": "Código 3",
+    "text": "Código 3\nPodemos cambiar números a radianes y calcular funciones trigonométricas:\n\n\nimport math\n\nangulo = 30\nanguloRadianes = math.radians(angulo)\nprint(\"El angulo de 30 en radianes es:\", anguloRadianes)\nseno = math.sin(anguloRadianes)\ncoseno = math.cos(anguloRadianes)\ntangente = math.tan(anguloRadianes)\nprint(seno, coseno, tangente)\n\nEl angulo de 30 en radianes es: 0.5235987755982988\n0.49999999999999994 0.8660254037844387 0.5773502691896257"
+  },
+  {
+    "objectID": "tics100/Clase03.html#código-4",
+    "href": "tics100/Clase03.html#código-4",
+    "title": "TICS100 - Programación",
+    "section": "Código 4",
+    "text": "Código 4\nPodemos calcular el logaritmo de un número:\n\n\nimport math\n\nnumero = 2.71828\n# Calcula la raiz cuadrada de un número\nlogNum = math.log(numero)\nprint(logNum)\n\n0.999999327347282\n\n\n\n\nPodemos calcular el logaritmo en base 10 de un número:\n\nimport math\n\nnumero = 2.71828\n# Calcula la raiz cuadrada de un número\nlogNum = math.log10(numero)\nprint(logNum)\n\n0.4342941897738882"
+  },
+  {
+    "objectID": "tics100/Clase03.html#código-5",
+    "href": "tics100/Clase03.html#código-5",
+    "title": "TICS100 - Programación",
+    "section": "Código 5",
+    "text": "Código 5\nFinalmente algunas constantes que nos pueden servir:\n\nimport math\n\nprint(\"El numero pi en math es:\", math.pi)\n\nprint(\"El numero de euler en math es:\", math.e)\n\nEl numero pi en math es: 3.141592653589793\nEl numero de euler en math es: 2.718281828459045"
+  },
+  {
+    "objectID": "tics100/Clase03.html#time",
+    "href": "tics100/Clase03.html#time",
+    "title": "TICS100 - Programación",
+    "section": "time",
+    "text": "time\nEl módulo time en Python proporciona funciones para trabajar con el tiempo y medir intervalos de tiempo.\nPuedes usar este módulo para obtener la hora actual, medir el tiempo de ejecución de un programa y generar retrasos, entre otras cosas."
+  },
+  {
+    "objectID": "tics100/Clase03.html#código-1-2",
+    "href": "tics100/Clase03.html#código-1-2",
+    "title": "TICS100 - Programación",
+    "section": "Código 1",
+    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1724883504.2417686\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Aug 28 18:18:24 2024"
+  },
+  {
+    "objectID": "tics100/Clase03.html#código-2-2",
+    "href": "tics100/Clase03.html#código-2-2",
+    "title": "TICS100 - Programación",
+    "section": "Código 2",
+    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Aug 28 18:18:24 2024\nFecha actual:  Wed Aug 28 18:18:26 2024"
+  },
+  {
+    "objectID": "tics100/Clase03.html#ejemplo-de-uso",
+    "href": "tics100/Clase03.html#ejemplo-de-uso",
+    "title": "TICS100 - Programación",
+    "section": "Ejemplo de uso",
+    "text": "Ejemplo de uso\nPara medir tiempos de ejecución podemos calculara la diferencia de dos time.time()\nimport time\n\nprint(\"Hola, ingrese un número:\")\n\ntiempoInicio = time.time()\nnumIngresado = input()\ntiempoFinal = time.time()\n\ndifTiempo = tiempoFinal - tiempoInicio\n\nprint(\"Te demoraste un total de\", difTiempo, \"segundos en ingresar el número\")"
+  },
+  {
+    "objectID": "tics100/Clase03.html#actividad",
+    "href": "tics100/Clase03.html#actividad",
     "title": "TICS100 - Programación",
     "section": "Actividad",
-    "text": "Actividad\nHagan un código que pregunte la edad y categorice en:\n\nNiño\nAdulto\nAdulto mayor"
+    "text": "Actividad\n\nCree un código que ingrese 3 números, donde:\n\nEl primer numero es la unidad\nEl segundo es la decima\nEl tercero es la centena\n\nLuego obtenga la raíz cuadrada de ese número. Con solo los primero 2 dígitos decimales. Ej: 10.24\nTiene que medir el tiempo que toma en agregar cada uno de los números y el total."
   },
   {
-    "objectID": "tics100/Clase04.html#and-y-or",
-    "href": "tics100/Clase04.html#and-y-or",
+    "objectID": "tics100/Clase01.html#quién-es-el-profe",
+    "href": "tics100/Clase01.html#quién-es-el-profe",
     "title": "TICS100 - Programación",
-    "section": "and y or",
-    "text": "and y or\nDentro de un if podemos tener múltiples condiciones. Para esto usamos and y or.\n\nand: Cuando queremos que se cumplan todas las condiciones.\nor: Cuando queremos que se cumpla mínimo una de las condiciones."
+    "section": "¿Quién es el profe?",
+    "text": "¿Quién es el profe?\nDiego Ramos Álvarez\n\n\n\nIngeniero Civil Informático - 2023\n\n\n\n\nMaster en Science of Data Science - 2023\n\n\n\n\nEstudiante del Doctorado en Data Science"
   },
   {
-    "objectID": "tics100/Clase04.html#ejemplo-and",
-    "href": "tics100/Clase04.html#ejemplo-and",
+    "objectID": "tics100/Clase01.html#ayudantía",
+    "href": "tics100/Clase01.html#ayudantía",
     "title": "TICS100 - Programación",
-    "section": "Ejemplo and",
-    "text": "Ejemplo and\n\nPrimero: ¿Cómo pondrían la condición: número mayor que 3, menor que 12 y que sea par?\nSegundo: ¿Cómo pondrían la condición: mayor 15 o par? (O sea, si cumple que es mayor a 15 o par o ambas).\n\n\nVayamos a replit"
+    "section": "Ayudantía",
+    "text": "Ayudantía\nSerán los lunes modulo 5 (17:00-18:10)\nAyudante: Juan Pablo Orellana\njuanorellana@alumnos.uai.cl"
   },
   {
-    "objectID": "tics100/Clase04.html#not",
-    "href": "tics100/Clase04.html#not",
+    "objectID": "tics100/Clase01.html#cómo-y-cuándo-serán-las-evaluaciones",
+    "href": "tics100/Clase01.html#cómo-y-cuándo-serán-las-evaluaciones",
     "title": "TICS100 - Programación",
-    "section": "not",
-    "text": "not\nEl not se usa para hacer que una condición sea su contrario.\nEs decir, si una condición nos indicaba los pares, ahora nos indica los impares"
+    "section": "Cómo y cuándo serán las evaluaciones",
+    "text": "Cómo y cuándo serán las evaluaciones\n\n\nPrueba 1 (P1) =&gt; Sabado 05 de Octube (05/10/2024)\n\n\n\n\nPrueba 2 (P2) =&gt; Sabado 30 de Noviembre (30/11/2024)\n\n\n\n\nEvaluación Extra (AE) =&gt; Lo definiremos entre todos\n\nTareas\nControles\nOtros"
   },
   {
-    "objectID": "tics100/Clase04.html#ejemplo-not",
-    "href": "tics100/Clase04.html#ejemplo-not",
+    "objectID": "tics100/Clase01.html#calculo-de-la-nota",
+    "href": "tics100/Clase01.html#calculo-de-la-nota",
     "title": "TICS100 - Programación",
-    "section": "Ejemplo not",
-    "text": "Ejemplo not\nQueremos revisar si es mayor de 18 y NO ha sido bloqueado.\n\nedad = 20\nbloqueado = False\n\nif (edad&gt;=18 and not bloqueado):\n    print(\"Bienvenido a la plataforma en línea.\")\nelse:\n    print(\"Lo siento, no puedes acceder a la plataforma.\")\n\nBienvenido a la plataforma en línea."
+    "section": "Calculo de la nota",
+    "text": "Calculo de la nota\nEl cálculo de la nota es el siguiente:\nif \\(promedio\\_ pruebas&gt;= 4.0:\\) \\[\nNF = P1*0.35 + P2*0.35 + AE*0.30\n\\]\nelse: \\[\nNF = P1*0.5 + P2*0.5 + AE*0.00\n\\]"
   },
   {
-    "objectID": "tics100/Clase04.html#complejicemos-la-cosa-anidemos-condiciones",
-    "href": "tics100/Clase04.html#complejicemos-la-cosa-anidemos-condiciones",
+    "objectID": "tics100/Clase01.html#examen",
+    "href": "tics100/Clase01.html#examen",
     "title": "TICS100 - Programación",
-    "section": "Complejicemos la cosa (anidemos condiciones)",
-    "text": "Complejicemos la cosa (anidemos condiciones)\nOlvidemos el elif de momento\n\nAnidar if-else nos permite acceder a lógica más compleja.\n\n\nConsiste en poner un if-else dentro de otro para manejar múltiples condiciones.\n\n\nCon esto podemos trabajar múltiples variables al mismo tiempo de forma más lógica."
+    "section": "Examen",
+    "text": "Examen\nFecha por definir:\n\n\nSerá en el periodo de exámenes.\n\n\n\n\nSi tienen las 2 notas de prueba mayor a 4.0 (P1 &gt;= 4.0 y P2 &gt;=4.0) se eximen.\n\n\n\n\nEl examen reemplaza la peor nota. Incluso si es peor que la original.\n\n\n\n\nEn caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral."
   },
   {
-    "objectID": "tics100/Clase04.html#ejemplo-anidado",
-    "href": "tics100/Clase04.html#ejemplo-anidado",
+    "objectID": "tics100/Clase01.html#qué-es-un-problema",
+    "href": "tics100/Clase01.html#qué-es-un-problema",
     "title": "TICS100 - Programación",
-    "section": "Ejemplo anidado",
-    "text": "Ejemplo anidado\n¿Que pasa si hay descuento por tramo de edad, solo si compra más de 100 unidades?\n\n\ncantidad_compra = 120\nedad_cliente = 50\n\nif cantidad_compra &gt; 100:\n    if edad_cliente &lt; 18:\n        descuento = 0.1\n    else: \n        if edad_cliente &lt; 65:\n            descuento = 0.2\n        else:\n            descuento = 0.3\nelse:\n    descuento = 0\n\nprint(\"Tiene un descuento del:\", descuento)\n\nTiene un descuento del: 0.2"
+    "section": "¿Qué es un problema?",
+    "text": "¿Qué es un problema?\nDefinición:\n\n\nEn el ámbito de las ciencias de la computación, un problema es una tarea que debe ser resuelta.\n\n\nPara resolver un problema:\n\n\nTenemos identificar con qué vamos a trabajar (INPUT)\n\n\n\n\nSaber que queremos tener de resultado (OUTPUT)"
   },
   {
-    "objectID": "tics100/Clase04.html#ejemplo-de-control",
-    "href": "tics100/Clase04.html#ejemplo-de-control",
+    "objectID": "tics100/Clase01.html#ejemplos",
+    "href": "tics100/Clase01.html#ejemplos",
     "title": "TICS100 - Programación",
-    "section": "Ejemplo de control",
-    "text": "Ejemplo de control\n\n\n\nEl siguiente código solicita las notas de dos pruebas, calcula el promedio y luego despliega 3 mensajes distintos dependiendo del promedio: “Felicitaciones, vas camino a aprobar” (si el promedio es mayor o igual a 4.0); “Atención, vas camino a reprobar” (promedio mayor o igual a 3.0 pero menor a 4.0) y “Pocas posibilidades de aprobar” (para promedio menor a 3.0). Sin embargo, tiene errores. Corrija el código\n\n\nprint(\"la nota 1\")\nnota1 = int(input())\nprint(\"la nota 2\")\nnota2 = input()\npromedio = (nota1 * nota2) / 2 \nprint (\"tu promedio es \",promedio)\nif (promedio&gt;=4.0):\n   print ( \"Felicitaciones, vas camino a aprobar\" )\n   else:\nif ( promedio&gt;=3.0 ):\n    print( \"Atención: camino a reprobar\" )\nelse:\n    print( \"Pocas posibilidades de aprobar\" )"
+    "section": "Ejemplos",
+    "text": "Ejemplos\nSupongamos distintas tareas:\n\nSumar los números 2 y 4.\nIncrementar el 56 en una unidad.\nOrdenar nombres de un curso según la primera letra del nombre.\n\n\nsuma B–&gt;suma suma–&gt;D\nE[56] F[57] incr([Incrementar]) E–&gt;incr incr–&gt;F\nlista[“[‘marcelo’, ‘juan’, ‘pedro’]”] func_ord([“Ordenar”]) lista_ord[“[‘juan’, ‘marcelo’, ‘pedro’]”] lista–&gt;func_ord func_ord–&gt;lista_ord ``` –&gt;"
   },
   {
-    "objectID": "tics100/Clase04.html#ejercicio-de-programación",
-    "href": "tics100/Clase04.html#ejercicio-de-programación",
+    "objectID": "tics100/Clase01.html#algoritmos",
+    "href": "tics100/Clase01.html#algoritmos",
     "title": "TICS100 - Programación",
-    "section": "Ejercicio de programación",
-    "text": "Ejercicio de programación\nCalculadora de Envío\nCrea un programa que simule una calculadora de envío para una tienda en línea. El programa debe solicitar al usuario la cantidad total de productos en su carrito y su ubicación de envío. Basado en estos datos, calcula el costo de envío de acuerdo a las siguientes reglas:\n\nSi la cantidad de productos es menor o igual a 10, el costo de envío es $5.\nSi la cantidad de productos es mayor a 10 y menor o igual a 20, el costo de envío es $10.\nSi la cantidad de productos es mayor a 20, el costo de envío es $15.\nAdicionalmente, si la ubicación de envío es internacional, agrega un costo adicional de $20 al costo de envío calculado anteriormente."
+    "section": "Algoritmos",
+    "text": "Algoritmos\n\nEsta forma resolver un problema es lo que se conoce como algoritmo.\nLa definición más exacta:\n\n\nLa secuencia finita de pasos, dispuestos en forma lógica y ordenada, que se deben realizar para resolver un problema."
+  },
+  {
+    "objectID": "tics100/Clase01.html#como-veo-la-programación",
+    "href": "tics100/Clase01.html#como-veo-la-programación",
+    "title": "TICS100 - Programación",
+    "section": "Como veo la programación",
+    "text": "Como veo la programación"
+  },
+  {
+    "objectID": "tics100/Clase01.html#observaciones",
+    "href": "tics100/Clase01.html#observaciones",
+    "title": "TICS100 - Programación",
+    "section": "Observaciones",
+    "text": "Observaciones\nEl computador no puede resolver nada que no haya sido programado antes.\nPodemos resolver problemas complejos con elementos básicos. Pero no todos los problemas se pueden resolver computacionalmente…\n\nSino pregunten a Chat-GPT"
+  },
+  {
+    "objectID": "tics100/Clase01.html#el-objetivo-del-curso",
+    "href": "tics100/Clase01.html#el-objetivo-del-curso",
+    "title": "TICS100 - Programación",
+    "section": "El objetivo del curso",
+    "text": "El objetivo del curso\nLa idea es que sean capaces de llevar sus ideas a una maquina considerando el paso a paso.\nPara esto:\n\nIdentifiquen los elementos que tienen disponibles.\nQué quieren desarrollar.\nUtilicen los elementos básicos para resolver paso a paso."
+  },
+  {
+    "objectID": "tics100/Clase01.html#donde-quieren-programar",
+    "href": "tics100/Clase01.html#donde-quieren-programar",
+    "title": "TICS100 - Programación",
+    "section": "¿Donde quieren programar?",
+    "text": "¿Donde quieren programar?\n Opciones disponibles para el curso:\n\n\n\n\n\n\n\n\n\n\n\n(a) replit\n\n\n\n\n\n\n\n\n\n\n\n(b) Google colab\n\n\n\n\n\n\n\n\n\n\n\n(c) Local\n\n\n\n\n\n\n\nFigure 1"
+  },
+  {
+    "objectID": "tics100/Clase01.html#acotación-importante",
+    "href": "tics100/Clase01.html#acotación-importante",
+    "title": "TICS100 - Programación",
+    "section": "Acotación Importante",
+    "text": "Acotación Importante\nCualquier duda que tengan por minima que sea, pregunten hasta que entiendan. Yo quiero que aprendan, por lo mismo, estoy dispuesto a resolver todas las dudas que tengan.\nDuda: diego.ramos.a@edu.uai.cl"
+  },
+  {
+    "objectID": "tics100/Clase01.html#recomendacion",
+    "href": "tics100/Clase01.html#recomendacion",
+    "title": "TICS100 - Programación",
+    "section": "Recomendacion",
+    "text": "Recomendacion\nCuando programes fijense sobretodo en los errores y recuerdenlos, son los errores son los que los convierten en buenos programadores."
+  },
+  {
+    "objectID": "tics100/Clase01.html#volamos-con-un-ejemplo",
+    "href": "tics100/Clase01.html#volamos-con-un-ejemplo",
+    "title": "TICS100 - Programación",
+    "section": "Volamos con un ejemplo",
+    "text": "Volamos con un ejemplo\n\nUno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.\nEste integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.\nNo puede mencionar la letra, ni tampoco puede hacer comparaciones.\nAl terminar, le entrega la hoja a su compañero y él debe seguir las instrucciones.\nComparen si lo dibujado coincide con la letra original."
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Cursos",
+    "section": "",
+    "text": "Clase 01\n\n\nPresentación del Curso\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 02\n\n\nIntroducción a Python\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 03\n\n\nIntroducción a Python: Funciones\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 04\n\n\nCondicionales\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Diego Ramos Álvarez",
+    "section": "",
+    "text": "I’m Diego Ramos a PhD student in Universidad Adolfo Ibáñez in Santiago, Chile.\n\n\nUniversidad Adolfo Ibáñez | Santiago\nPhD Data Science | Marzo 2023 - Current\nUniversidad Adolfo Ibáñez | Viña del Mar\nMaster in Science of Data Science | Marzo 2021 - Enero 2023\nUniversidad Adolfo Ibáñez | Viña del Mar\nIngeniería Civil Informática | Marzo 2017 - Enero 2023\n\n\n\nRamos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data. Behavior Research Methods, 56(4), 3366-3379."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Diego Ramos Álvarez",
+    "section": "",
+    "text": "Universidad Adolfo Ibáñez | Santiago\nPhD Data Science | Marzo 2023 - Current\nUniversidad Adolfo Ibáñez | Viña del Mar\nMaster in Science of Data Science | Marzo 2021 - Enero 2023\nUniversidad Adolfo Ibáñez | Viña del Mar\nIngeniería Civil Informática | Marzo 2017 - Enero 2023"
+  },
+  {
+    "objectID": "about.html#papers-publicados",
+    "href": "about.html#papers-publicados",
+    "title": "Diego Ramos Álvarez",
+    "section": "",
+    "text": "Ramos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data. Behavior Research Methods, 56(4), 3366-3379."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HomePage",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCursos\n\n\n\n\n\nDiapositivas de los cursos que he dictado. \n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tics100/Clase02.html#disclaimer",
@@ -245,276 +392,129 @@
     "text": "Otro tipo de transformaciones\nPara transformar una variable a otro tipo de formato, no solo existe input().\nExiste:\n\nstr() A texto\nfloat() A decimal\nY muchas más que aprenderán con el tiempo…"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "HomePage",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCursos\n\n\n\n\n\nDiapositivas de los cursos que he dictado. \n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Diego Ramos Álvarez",
-    "section": "",
-    "text": "I’m Diego Ramos a PhD student in Universidad Adolfo Ibáñez in Santiago, Chile.\n\n\nUniversidad Adolfo Ibáñez | Santiago\nPhD Data Science | Marzo 2023 - Current\nUniversidad Adolfo Ibáñez | Viña del Mar\nMaster in Science of Data Science | Marzo 2021 - Enero 2023\nUniversidad Adolfo Ibáñez | Viña del Mar\nIngeniería Civil Informática | Marzo 2017 - Enero 2023\n\n\n\nRamos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data. Behavior Research Methods, 56(4), 3366-3379."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Diego Ramos Álvarez",
-    "section": "",
-    "text": "Universidad Adolfo Ibáñez | Santiago\nPhD Data Science | Marzo 2023 - Current\nUniversidad Adolfo Ibáñez | Viña del Mar\nMaster in Science of Data Science | Marzo 2021 - Enero 2023\nUniversidad Adolfo Ibáñez | Viña del Mar\nIngeniería Civil Informática | Marzo 2017 - Enero 2023"
-  },
-  {
-    "objectID": "about.html#papers-publicados",
-    "href": "about.html#papers-publicados",
-    "title": "Diego Ramos Álvarez",
-    "section": "",
-    "text": "Ramos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data. Behavior Research Methods, 56(4), 3366-3379."
-  },
-  {
-    "objectID": "courses.html",
-    "href": "courses.html",
-    "title": "Cursos",
-    "section": "",
-    "text": "Clase 01\n\n\nPresentación del Curso\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 02\n\n\nIntroducción a Python\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 03\n\n\nIntroducción a Python: Funciones\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 04\n\n\nCondicionales\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "tics100/Clase01.html#quién-es-el-profe",
-    "href": "tics100/Clase01.html#quién-es-el-profe",
+    "objectID": "tics100/Clase04.html#caracteristicas",
+    "href": "tics100/Clase04.html#caracteristicas",
     "title": "TICS100 - Programación",
-    "section": "¿Quién es el profe?",
-    "text": "¿Quién es el profe?\nDiego Ramos Álvarez\n\n\n\nIngeniero Civil Informático - 2023\n\n\n\n\nMaster en Science of Data Science - 2023\n\n\n\n\nEstudiante del Doctorado en Data Science"
+    "section": "Caracteristicas",
+    "text": "Caracteristicas\nMuchas veces queremos tomar decisiones en función de lo que está ocurriendo.\n\n\n\n\n\n\nA esto le llamamos condicionales"
   },
   {
-    "objectID": "tics100/Clase01.html#ayudantía",
-    "href": "tics100/Clase01.html#ayudantía",
+    "objectID": "tics100/Clase04.html#cómo-lo-programamos",
+    "href": "tics100/Clase04.html#cómo-lo-programamos",
     "title": "TICS100 - Programación",
-    "section": "Ayudantía",
-    "text": "Ayudantía\nSerán los lunes modulo 5 (17:00-18:10)\nAyudante: Juan Pablo Orellana\njuanorellana@alumnos.uai.cl"
+    "section": "¿Cómo lo programamos?",
+    "text": "¿Cómo lo programamos?\nEn inglés existe la palabra if que se traduce literalmente como ‘si…’\n\nPor lo tanto si queremos hacer una condición sería de la siguiente forma:\n\n1valor = int(input(\"Entregame un número del 1 al 10\"))\n\n2if (valor &gt; 10):\n    print(\"El número es muy alto\")\n3if (valor&lt;1):\n    print(\"El número es muy bajo\")\n4if (valor &gt;= 1 and valor &lt;= 10):\n    print(\"Gracias!\")\n\n\n1\n\nAquí pedimos un numero al usuario\n\n2\n\nComparamos si el valor es mayor a 10\n\n3\n\nComparamos ahora si es menor a 10\n\n4\n\nComparamos si esta dentro del rango que pedimos"
   },
   {
-    "objectID": "tics100/Clase01.html#cómo-y-cuándo-serán-las-evaluaciones",
-    "href": "tics100/Clase01.html#cómo-y-cuándo-serán-las-evaluaciones",
+    "objectID": "tics100/Clase04.html#veamos-los-detalles",
+    "href": "tics100/Clase04.html#veamos-los-detalles",
     "title": "TICS100 - Programación",
-    "section": "Cómo y cuándo serán las evaluaciones",
-    "text": "Cómo y cuándo serán las evaluaciones\n\n\nPrueba 1 (P1) =&gt; Sabado 05 de Octube (05/10/2024)\n\n\n\n\nPrueba 2 (P2) =&gt; Sabado 30 de Noviembre (30/11/2024)\n\n\n\n\nEvaluación Extra (AE) =&gt; Lo definiremos entre todos\n\nTareas\nControles\nOtros"
+    "section": "Veamos los detalles",
+    "text": "Veamos los detalles\nEn el caso que queramos hacer una condición tenemos varios elementos que fijarnos:\n\nif (valor &gt; 10): \n    print(\"El número es muy alto\")\n\n\nPrimero tiene que ir el if para avisar que es una condición lo que tenemos\n\n\nVemos como la condición está entre paréntesis\n\n\nLuego van unos 2 puntos para advertir a la máquina que lo que esta indentado (se hace con el boton tab) abajo va dentro de la condición"
   },
   {
-    "objectID": "tics100/Clase01.html#calculo-de-la-nota",
-    "href": "tics100/Clase01.html#calculo-de-la-nota",
+    "objectID": "tics100/Clase04.html#después-de-la-condición",
+    "href": "tics100/Clase04.html#después-de-la-condición",
     "title": "TICS100 - Programación",
-    "section": "Calculo de la nota",
-    "text": "Calculo de la nota\nEl cálculo de la nota es el siguiente:\nif \\(promedio\\_ pruebas&gt;= 4.0:\\) \\[\nNF = P1*0.35 + P2*0.35 + AE*0.30\n\\]\nelse: \\[\nNF = P1*0.5 + P2*0.5 + AE*0.00\n\\]"
+    "section": "Después de la condición",
+    "text": "Después de la condición\nCuando ya tenemos listo nuestra condición, simplemente sacando el tab podemos ejecutar otra parte del codigo sin que afecte\n\nif (valor &gt; 10):\n    print(\"El número es muy alto\")\nif (valor&lt;1):\n    print(\"El número es muy bajo\")\n\n\nEn este caso cada if se ejecutará independiente al otro"
   },
   {
-    "objectID": "tics100/Clase01.html#examen",
-    "href": "tics100/Clase01.html#examen",
+    "objectID": "tics100/Clase04.html#algunas-condiciones-para-saber",
+    "href": "tics100/Clase04.html#algunas-condiciones-para-saber",
     "title": "TICS100 - Programación",
-    "section": "Examen",
-    "text": "Examen\nFecha por definir:\n\n\nSerá en el periodo de exámenes.\n\n\n\n\nSi tienen las 2 notas de prueba mayor a 4.0 (P1 &gt;= 4.0 y P2 &gt;=4.0) se eximen.\n\n\n\n\nEl examen reemplaza la peor nota. Incluso si es peor que la original.\n\n\n\n\nEn caso de Justificar inasistencia a 1 prueba se reemplaza con el examen. En caso de que sean las 2, la segunda nota se reemplazará con un examen oral."
+    "section": "Algunas condiciones para saber",
+    "text": "Algunas condiciones para saber\nLos simbolos de condicionales que deben saber son los siguientes (de derecha a izquierda):\n\n“==”: es para verificar si son valores iguales\n“!=”: es para verificar que son distintos\n“&gt;=”: es para verificar si es menor o igual que…\n“&lt;=”: es para verificar si es mayor o igual que…\n“&gt;”: es para verificar si es menor que…\n“&lt;”: es para verificar si es mayor que…\n\n\nEl simbolo = es para asignar un valor."
   },
   {
-    "objectID": "tics100/Clase01.html#qué-es-un-problema",
-    "href": "tics100/Clase01.html#qué-es-un-problema",
+    "objectID": "tics100/Clase04.html#en-caso-de-no-cumplir-la-condición",
+    "href": "tics100/Clase04.html#en-caso-de-no-cumplir-la-condición",
     "title": "TICS100 - Programación",
-    "section": "¿Qué es un problema?",
-    "text": "¿Qué es un problema?\nDefinición:\n\n\nEn el ámbito de las ciencias de la computación, un problema es una tarea que debe ser resuelta.\n\n\nPara resolver un problema:\n\n\nTenemos identificar con qué vamos a trabajar (INPUT)\n\n\n\n\nSaber que queremos tener de resultado (OUTPUT)"
+    "section": "En caso de no cumplir la condición",
+    "text": "En caso de no cumplir la condición\nEn un inicio vimos solo condiciones if, pero no es comodo colocar cada condición en particular.\nCuando NO se cumple la condición que propusimos, también podemos ejecutar ciertas lineas de código.\n\n\nEsto se hace con else.\nelse se traduce como “si no”:"
   },
   {
-    "objectID": "tics100/Clase01.html#ejemplos",
-    "href": "tics100/Clase01.html#ejemplos",
+    "objectID": "tics100/Clase04.html#ejemplo-else",
+    "href": "tics100/Clase04.html#ejemplo-else",
     "title": "TICS100 - Programación",
-    "section": "Ejemplos",
-    "text": "Ejemplos\nSupongamos distintas tareas:\n\nSumar los números 2 y 4.\nIncrementar el 56 en una unidad.\nOrdenar nombres de un curso según la primera letra del nombre.\n\n\nsuma B–&gt;suma suma–&gt;D\nE[56] F[57] incr([Incrementar]) E–&gt;incr incr–&gt;F\nlista[“[‘marcelo’, ‘juan’, ‘pedro’]”] func_ord([“Ordenar”]) lista_ord[“[‘juan’, ‘marcelo’, ‘pedro’]”] lista–&gt;func_ord func_ord–&gt;lista_ord ``` –&gt;"
+    "section": "Ejemplo else",
+    "text": "Ejemplo else\n\n\n\n\n\n\n\nhambre = True\n\nif (hambre == True):\n    print(\"Hacer sandwich\")\nelse:\n    print(\"Seguir trabajando\")"
   },
   {
-    "objectID": "tics100/Clase01.html#algoritmos",
-    "href": "tics100/Clase01.html#algoritmos",
+    "objectID": "tics100/Clase04.html#cómo-podemos-hacer-el-código-más-eficiente-todavía",
+    "href": "tics100/Clase04.html#cómo-podemos-hacer-el-código-más-eficiente-todavía",
     "title": "TICS100 - Programación",
-    "section": "Algoritmos",
-    "text": "Algoritmos\n\nEsta forma resolver un problema es lo que se conoce como algoritmo.\nLa definición más exacta:\n\n\nLa secuencia finita de pasos, dispuestos en forma lógica y ordenada, que se deben realizar para resolver un problema."
+    "section": "¿Cómo podemos hacer el código más eficiente todavía?",
+    "text": "¿Cómo podemos hacer el código más eficiente todavía?\n\nHay un condicional intermedio, existe el elif que es la combinación de else con if. En palabras sencillas, se utiliza para agregar una nueva condición cuando la primera condición no se cumple."
   },
   {
-    "objectID": "tics100/Clase01.html#como-veo-la-programación",
-    "href": "tics100/Clase01.html#como-veo-la-programación",
+    "objectID": "tics100/Clase04.html#ejemplo",
+    "href": "tics100/Clase04.html#ejemplo",
     "title": "TICS100 - Programación",
-    "section": "Como veo la programación",
-    "text": "Como veo la programación"
+    "section": "Ejemplo",
+    "text": "Ejemplo\nSi reescribimos el ejemplo anterior:\n\n1valor = int(input(\"Entregame un número del 1 al 10\"))\n\n2if (valor &gt; 10):\n    print(\"El número es muy alto\")\n3elif (valor&lt;1):\n    print(\"El número es muy bajo\")\n4else:\n    print(\"Gracias!\")\n\n\n1\n\nAquí pedimos un numero al usuario\n\n2\n\nComparamos si el valor es mayor a 10\n\n3\n\nComparamos ahora si es menor a 10\n\n4\n\nCaso contrario el numero es correcto"
   },
   {
-    "objectID": "tics100/Clase01.html#observaciones",
-    "href": "tics100/Clase01.html#observaciones",
-    "title": "TICS100 - Programación",
-    "section": "Observaciones",
-    "text": "Observaciones\nEl computador no puede resolver nada que no haya sido programado antes.\nPodemos resolver problemas complejos con elementos básicos. Pero no todos los problemas se pueden resolver computacionalmente…\n\nSino pregunten a Chat-GPT"
-  },
-  {
-    "objectID": "tics100/Clase01.html#el-objetivo-del-curso",
-    "href": "tics100/Clase01.html#el-objetivo-del-curso",
-    "title": "TICS100 - Programación",
-    "section": "El objetivo del curso",
-    "text": "El objetivo del curso\nLa idea es que sean capaces de llevar sus ideas a una maquina considerando el paso a paso.\nPara esto:\n\nIdentifiquen los elementos que tienen disponibles.\nQué quieren desarrollar.\nUtilicen los elementos básicos para resolver paso a paso."
-  },
-  {
-    "objectID": "tics100/Clase01.html#donde-quieren-programar",
-    "href": "tics100/Clase01.html#donde-quieren-programar",
-    "title": "TICS100 - Programación",
-    "section": "¿Donde quieren programar?",
-    "text": "¿Donde quieren programar?\n Opciones disponibles para el curso:\n\n\n\n\n\n\n\n\n\n\n\n(a) replit\n\n\n\n\n\n\n\n\n\n\n\n(b) Google colab\n\n\n\n\n\n\n\n\n\n\n\n(c) Local\n\n\n\n\n\n\n\nFigure 1"
-  },
-  {
-    "objectID": "tics100/Clase01.html#acotación-importante",
-    "href": "tics100/Clase01.html#acotación-importante",
-    "title": "TICS100 - Programación",
-    "section": "Acotación Importante",
-    "text": "Acotación Importante\nCualquier duda que tengan por minima que sea, pregunten hasta que entiendan. Yo quiero que aprendan, por lo mismo, estoy dispuesto a resolver todas las dudas que tengan.\nDuda: diego.ramos.a@edu.uai.cl"
-  },
-  {
-    "objectID": "tics100/Clase01.html#recomendacion",
-    "href": "tics100/Clase01.html#recomendacion",
-    "title": "TICS100 - Programación",
-    "section": "Recomendacion",
-    "text": "Recomendacion\nCuando programes fijense sobretodo en los errores y recuerdenlos, son los errores son los que los convierten en buenos programadores."
-  },
-  {
-    "objectID": "tics100/Clase01.html#volamos-con-un-ejemplo",
-    "href": "tics100/Clase01.html#volamos-con-un-ejemplo",
-    "title": "TICS100 - Programación",
-    "section": "Volamos con un ejemplo",
-    "text": "Volamos con un ejemplo\n\nUno de los integrantes debe elegir una letra aleatoria, sin contarle a su compañero.\nEste integrante debe escribir en una hoja de papel los pasos para dibujar la letra. Solo utilizando instrucciones.\nNo puede mencionar la letra, ni tampoco puede hacer comparaciones.\nAl terminar, le entrega la hoja a su compañero y él debe seguir las instrucciones.\nComparen si lo dibujado coincide con la letra original."
-  },
-  {
-    "objectID": "tics100/Clase03.html#qué-son-las-funciones",
-    "href": "tics100/Clase03.html#qué-son-las-funciones",
-    "title": "TICS100 - Programación",
-    "section": "¿Qué son las funciones?",
-    "text": "¿Qué son las funciones?\n\nEs un subprograma que realiza una tarea específica y pueden ser reutilizados.\nSon independientes de nuestro programa y se caracterizan por que siempre usan ().\nPuede recibir 0 o más valores del programa que lo llama y devolver 0 o 1 valor a dicho programa.\n\n\n\nEjemplo de funciones que ya hemos utilizado:\n\nprint(…) =&gt; recibe 1 o más valores del programa y no retorna nada (muestra por pantalla).\nint(valTexto) =&gt; recibe 1 valor y retorna 1 valor."
-  },
-  {
-    "objectID": "tics100/Clase03.html#dónde-las-conseguimos",
-    "href": "tics100/Clase03.html#dónde-las-conseguimos",
-    "title": "TICS100 - Programación",
-    "section": "¿Dónde las conseguimos?",
-    "text": "¿Dónde las conseguimos?\n\n\nLa creación de funciones lo veremos para la prueba 2\n\n\n\n\nPero repasaremos algunas que podemos conseguir de otras partes como de Módulos o bibliotecas"
-  },
-  {
-    "objectID": "tics100/Clase03.html#modulos",
-    "href": "tics100/Clase03.html#modulos",
-    "title": "TICS100 - Programación",
-    "section": "Modulos",
-    "text": "Modulos\nExisten conjuntos de códigos llamados bibliotecas o módulos. Al cargar los módulos somos capaces de utilizar los códigos que ofrecen.\n\nO sea, tenemos acceso a funciones y tipos de datos completamente codificados por otras personas.\n\n\nLas bibliotecas las hicieron otras personas y las dejaron públicas para que trabajemos con ellas ¡agradezcamos!, pero tengamos cuidado.\n\n\nCualquier persona puede crear una biblioteca, por lo cual, los errores que contengan son asumidos como algo correcto."
-  },
-  {
-    "objectID": "tics100/Clase03.html#cómo-las-utilizamos",
-    "href": "tics100/Clase03.html#cómo-las-utilizamos",
-    "title": "TICS100 - Programación",
-    "section": "¿Cómo las utilizamos?",
-    "text": "¿Cómo las utilizamos?\nPara cargar un módulo se sigue la siguiente estructura:\nimport &lt;nombreModulo&gt;\n\nEn la primera palabra import llama al modulo que queremos usar.\n\n\nLuego viene el nombre del modulo que queremos cargar."
-  },
-  {
-    "objectID": "tics100/Clase03.html#para-llamar-una-función-del-modulo",
-    "href": "tics100/Clase03.html#para-llamar-una-función-del-modulo",
-    "title": "TICS100 - Programación",
-    "section": "Para llamar una función del modulo",
-    "text": "Para llamar una función del modulo\nPara cargar un módulo se sigue la siguiente estructura:\nnombreModulo.nombreFuncion(&lt;parametros&gt;)\n\nLos parámetros de la función que nosotros le entregamos"
-  },
-  {
-    "objectID": "tics100/Clase03.html#random",
-    "href": "tics100/Clase03.html#random",
-    "title": "TICS100 - Programación",
-    "section": "random",
-    "text": "random\nEl módulo random en Python es una herramienta poderosa para generar valores aleatorios.\nPuede ser utilizado en una variedad de aplicaciones, como juegos, simulaciones y más.\nEn esta clase, exploraremos diferentes funciones del módulo random con ejemplos prácticos y sencillos."
-  },
-  {
-    "objectID": "tics100/Clase03.html#código-1",
-    "href": "tics100/Clase03.html#código-1",
-    "title": "TICS100 - Programación",
-    "section": "Código 1",
-    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.8393342543296951\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n3"
-  },
-  {
-    "objectID": "tics100/Clase03.html#código-2",
-    "href": "tics100/Clase03.html#código-2",
-    "title": "TICS100 - Programación",
-    "section": "Código 2",
-    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n3.116130462844496"
-  },
-  {
-    "objectID": "tics100/Clase03.html#math",
-    "href": "tics100/Clase03.html#math",
-    "title": "TICS100 - Programación",
-    "section": "math",
-    "text": "math\nEl módulo math en Python proporciona una amplia variedad de funciones y constantes matemáticas para realizar operaciones matemáticas más avanzadas.\nEn esta guía, exploraremos diferentes funciones del módulo math con ejemplos prácticos y sencillos."
-  },
-  {
-    "objectID": "tics100/Clase03.html#código-1-1",
-    "href": "tics100/Clase03.html#código-1-1",
-    "title": "TICS100 - Programación",
-    "section": "Código 1",
-    "text": "Código 1\nPodemos obtener la raiz cuadrada de un número:\n\n\nimport math\n\nnumero = 25\n# Calcula la raiz cuadrada de un número\nraizNum = math.sqrt(numero)\nprint(raizNum)\n\n5.0"
-  },
-  {
-    "objectID": "tics100/Clase03.html#código-2-1",
-    "href": "tics100/Clase03.html#código-2-1",
-    "title": "TICS100 - Programación",
-    "section": "Código 2",
-    "text": "Código 2\nPodemos redondear un número para arriba y para abajo:\n\n\nimport math\n\nnumDecimal = 3.7\n# Calcula la raiz cuadrada de un número\nnumRedondeoArriba = math.ceil(numDecimal) # arriba\nprint(numRedondeoArriba)\n\nnumRedondeoAbajo = math.floor(numDecimal) # abajo\nprint(numRedondeoAbajo)\n\n4\n3"
-  },
-  {
-    "objectID": "tics100/Clase03.html#código-3",
-    "href": "tics100/Clase03.html#código-3",
-    "title": "TICS100 - Programación",
-    "section": "Código 3",
-    "text": "Código 3\nPodemos cambiar números a radianes y calcular funciones trigonométricas:\n\n\nimport math\n\nangulo = 30\nanguloRadianes = math.radians(angulo)\nprint(\"El angulo de 30 en radianes es:\", anguloRadianes)\nseno = math.sin(anguloRadianes)\ncoseno = math.cos(anguloRadianes)\ntangente = math.tan(anguloRadianes)\nprint(seno, coseno, tangente)\n\nEl angulo de 30 en radianes es: 0.5235987755982988\n0.49999999999999994 0.8660254037844387 0.5773502691896257"
-  },
-  {
-    "objectID": "tics100/Clase03.html#código-4",
-    "href": "tics100/Clase03.html#código-4",
-    "title": "TICS100 - Programación",
-    "section": "Código 4",
-    "text": "Código 4\nPodemos calcular el logaritmo de un número:\n\n\nimport math\n\nnumero = 2.71828\n# Calcula la raiz cuadrada de un número\nlogNum = math.log(numero)\nprint(logNum)\n\n0.999999327347282\n\n\n\n\nPodemos calcular el logaritmo en base 10 de un número:\n\nimport math\n\nnumero = 2.71828\n# Calcula la raiz cuadrada de un número\nlogNum = math.log10(numero)\nprint(logNum)\n\n0.4342941897738882"
-  },
-  {
-    "objectID": "tics100/Clase03.html#código-5",
-    "href": "tics100/Clase03.html#código-5",
-    "title": "TICS100 - Programación",
-    "section": "Código 5",
-    "text": "Código 5\nFinalmente algunas constantes que nos pueden servir:\n\nimport math\n\nprint(\"El numero pi en math es:\", math.pi)\n\nprint(\"El numero de euler en math es:\", math.e)\n\nEl numero pi en math es: 3.141592653589793\nEl numero de euler en math es: 2.718281828459045"
-  },
-  {
-    "objectID": "tics100/Clase03.html#time",
-    "href": "tics100/Clase03.html#time",
-    "title": "TICS100 - Programación",
-    "section": "time",
-    "text": "time\nEl módulo time en Python proporciona funciones para trabajar con el tiempo y medir intervalos de tiempo.\nPuedes usar este módulo para obtener la hora actual, medir el tiempo de ejecución de un programa y generar retrasos, entre otras cosas."
-  },
-  {
-    "objectID": "tics100/Clase03.html#código-1-2",
-    "href": "tics100/Clase03.html#código-1-2",
-    "title": "TICS100 - Programación",
-    "section": "Código 1",
-    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1724874033.1622193\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Aug 28 15:40:33 2024"
-  },
-  {
-    "objectID": "tics100/Clase03.html#código-2-2",
-    "href": "tics100/Clase03.html#código-2-2",
-    "title": "TICS100 - Programación",
-    "section": "Código 2",
-    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Aug 28 15:40:33 2024\nFecha actual:  Wed Aug 28 15:40:35 2024"
-  },
-  {
-    "objectID": "tics100/Clase03.html#ejemplo-de-uso",
-    "href": "tics100/Clase03.html#ejemplo-de-uso",
-    "title": "TICS100 - Programación",
-    "section": "Ejemplo de uso",
-    "text": "Ejemplo de uso\nPara medir tiempos de ejecución podemos calculara la diferencia de dos time.time()\nimport time\n\nprint(\"Hola, ingrese un número:\")\n\ntiempoInicio = time.time()\nnumIngresado = input()\ntiempoFinal = time.time()\n\ndifTiempo = tiempoFinal - tiempoInicio\n\nprint(\"Te demoraste un total de\", difTiempo, \"segundos en ingresar el número\")"
-  },
-  {
-    "objectID": "tics100/Clase03.html#actividad",
-    "href": "tics100/Clase03.html#actividad",
+    "objectID": "tics100/Clase04.html#actividad",
+    "href": "tics100/Clase04.html#actividad",
     "title": "TICS100 - Programación",
     "section": "Actividad",
-    "text": "Actividad\n\nCree un código que ingrese 3 números, donde:\n\nEl primer numero es la unidad\nEl segundo es la decima\nEl tercero es la centena\n\nLuego obtenga la raíz cuadrada de ese número. Con solo los primero 2 dígitos decimales. Ej: 10.24\nTiene que medir el tiempo que toma en agregar cada uno de los números y el total."
+    "text": "Actividad\nHagan un código que pregunte la edad y categorice en:\n\nNiño\nAdulto\nAdulto mayor"
+  },
+  {
+    "objectID": "tics100/Clase04.html#and-y-or",
+    "href": "tics100/Clase04.html#and-y-or",
+    "title": "TICS100 - Programación",
+    "section": "and y or",
+    "text": "and y or\nDentro de un if podemos tener múltiples condiciones. Para esto usamos and y or.\n\nand: Cuando queremos que se cumplan todas las condiciones.\nor: Cuando queremos que se cumpla mínimo una de las condiciones."
+  },
+  {
+    "objectID": "tics100/Clase04.html#ejemplo-and",
+    "href": "tics100/Clase04.html#ejemplo-and",
+    "title": "TICS100 - Programación",
+    "section": "Ejemplo and",
+    "text": "Ejemplo and\n\nPrimero: ¿Cómo pondrían la condición: número mayor que 3, menor que 12 y que sea par?\nSegundo: ¿Cómo pondrían la condición: mayor 15 o par? (O sea, si cumple que es mayor a 15 o par o ambas).\n\n\nVayamos a replit"
+  },
+  {
+    "objectID": "tics100/Clase04.html#not",
+    "href": "tics100/Clase04.html#not",
+    "title": "TICS100 - Programación",
+    "section": "not",
+    "text": "not\nEl not se usa para hacer que una condición sea su contrario.\nEs decir, si una condición nos indicaba los pares, ahora nos indica los impares"
+  },
+  {
+    "objectID": "tics100/Clase04.html#ejemplo-not",
+    "href": "tics100/Clase04.html#ejemplo-not",
+    "title": "TICS100 - Programación",
+    "section": "Ejemplo not",
+    "text": "Ejemplo not\nQueremos revisar si es mayor de 18 y NO ha sido bloqueado.\n\nedad = 20\nbloqueado = False\n\nif (edad&gt;=18 and not bloqueado):\n    print(\"Bienvenido a la plataforma en línea.\")\nelse:\n    print(\"Lo siento, no puedes acceder a la plataforma.\")\n\nBienvenido a la plataforma en línea."
+  },
+  {
+    "objectID": "tics100/Clase04.html#complejicemos-la-cosa-anidemos-condiciones",
+    "href": "tics100/Clase04.html#complejicemos-la-cosa-anidemos-condiciones",
+    "title": "TICS100 - Programación",
+    "section": "Complejicemos la cosa (anidemos condiciones)",
+    "text": "Complejicemos la cosa (anidemos condiciones)\nOlvidemos el elif de momento\n\nAnidar if-else nos permite acceder a lógica más compleja.\n\n\nConsiste en poner un if-else dentro de otro para manejar múltiples condiciones.\n\n\nCon esto podemos trabajar múltiples variables al mismo tiempo de forma más lógica."
+  },
+  {
+    "objectID": "tics100/Clase04.html#ejemplo-anidado",
+    "href": "tics100/Clase04.html#ejemplo-anidado",
+    "title": "TICS100 - Programación",
+    "section": "Ejemplo anidado",
+    "text": "Ejemplo anidado\n¿Que pasa si hay descuento por tramo de edad, solo si compra más de 100 unidades?\n\n\ncantidad_compra = 120\nedad_cliente = 50\n\nif cantidad_compra &gt; 100:\n    if edad_cliente &lt; 18:\n        descuento = 0.1\n    else: \n        if edad_cliente &lt; 65:\n            descuento = 0.2\n        else:\n            descuento = 0.3\nelse:\n    descuento = 0\n\nprint(\"Tiene un descuento del:\", descuento)\n\nTiene un descuento del: 0.2"
+  },
+  {
+    "objectID": "tics100/Clase04.html#ejemplo-de-control",
+    "href": "tics100/Clase04.html#ejemplo-de-control",
+    "title": "TICS100 - Programación",
+    "section": "Ejemplo de control",
+    "text": "Ejemplo de control\n\n\n\nEl siguiente código solicita las notas de dos pruebas, calcula el promedio y luego despliega 3 mensajes distintos dependiendo del promedio: “Felicitaciones, vas camino a aprobar” (si el promedio es mayor o igual a 4.0); “Atención, vas camino a reprobar” (promedio mayor o igual a 3.0 pero menor a 4.0) y “Pocas posibilidades de aprobar” (para promedio menor a 3.0). Sin embargo, tiene errores. Corrija el código\n\n\nprint(\"la nota 1\")\nnota1 = int(input())\nprint(\"la nota 2\")\nnota2 = input()\npromedio = (nota1 * nota2) / 2 \nprint (\"tu promedio es \",promedio)\nif (promedio&gt;=4.0):\n   print ( \"Felicitaciones, vas camino a aprobar\" )\n   else:\nif ( promedio&gt;=3.0 ):\n    print( \"Atención: camino a reprobar\" )\nelse:\n    print( \"Pocas posibilidades de aprobar\" )"
+  },
+  {
+    "objectID": "tics100/Clase04.html#ejercicio-de-programación",
+    "href": "tics100/Clase04.html#ejercicio-de-programación",
+    "title": "TICS100 - Programación",
+    "section": "Ejercicio de programación",
+    "text": "Ejercicio de programación\nCalculadora de Envío\nCrea un programa que simule una calculadora de envío para una tienda en línea. El programa debe solicitar al usuario la cantidad total de productos en su carrito y su ubicación de envío. Basado en estos datos, calcula el costo de envío de acuerdo a las siguientes reglas:\n\nSi la cantidad de productos es menor o igual a 10, el costo de envío es $5.\nSi la cantidad de productos es mayor a 10 y menor o igual a 20, el costo de envío es $10.\nSi la cantidad de productos es mayor a 20, el costo de envío es $15.\nAdicionalmente, si la ubicación de envío es internacional, agrega un costo adicional de $20 al costo de envío calculado anteriormente."
   }
 ]
