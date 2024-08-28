@@ -17,11 +17,20 @@
   categories:
    - slides
 
-- title: "Clase 02"
+- title: "Clase 03"
   subtitle: "Introducción a Python: Funciones"
   author: "Diego Ramos Á"
-  date: 2024-08-07
+  date: 2024-08-21
   # image: tics100/thumbnails/clase-0.png
   path: tics100/Clase03.qmd
+  categories:
+   - slides
+
+- title: "Clase 04"
+  subtitle: "Condicionales"
+  author: "Diego Ramos Á"
+  date: 2024-08-21
+  # image: tics100/thumbnails/clase-0.png
+  path: tics100/Clase04.qmd
   categories:
    - slides
