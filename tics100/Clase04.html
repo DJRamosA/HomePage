@@ -392,7 +392,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">TICS100 - Programación</h1>
-  <p class="subtitle">Clase03</p>
+  <p class="subtitle">Condicionales</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -407,346 +407,298 @@ Diego Ramos Á.
 
 </section>
 <section>
-<section id="introoducción-a-funciones" class="title-slide slide level1 center">
-<h1>Introoducción a funciones</h1>
-
+<section id="condicionales" class="title-slide slide level1 center">
+<h1>Condicionales</h1>
+<p><strong>Hora de tomar apuntes</strong> (<code>if</code> - <code>elif</code>- <code>else</code>)</p>
 </section>
-<section id="qué-son-las-funciones" class="slide level2">
-<h2>¿Qué son las funciones?</h2>
+<section id="caracteristicas" class="slide level2">
+<h2>Caracteristicas</h2>
+<p>Muchas veces queremos tomar decisiones en función de lo que está ocurriendo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/diagrama_condicionales.png" class="quarto-figure quarto-figure-center" width="900" height="150"></p>
+</figure>
+</div>
+<div class="fragment fade-up">
+<p>A esto le llamamos <strong>condicionales</strong></p>
+</div>
+</section>
+<section id="cómo-lo-programamos" class="slide level2">
+<h2>¿Cómo lo programamos?</h2>
+<p>En inglés existe la palabra <code>if</code> que se traduce literalmente como ‘si…’</p>
+<div class="fragment fade-up">
+<p>Por lo tanto si queremos hacer una condición sería de la siguiente forma:</p>
+<div id="435b41c4" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="annotated-cell-5" data-code-line-numbers="1|3-4|5-6|7-8|"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-1" class="code-annotation-target"><a href="#annotated-cell-5-1"></a>valor <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Entregame un número del 1 al 10"</span>))</span>
+<span id="annotated-cell-5-2"><a href="#annotated-cell-5-2"></a></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2">2</button><span id="annotated-cell-5-3" class="code-annotation-target"><a href="#annotated-cell-5-3"></a><span class="cf">if</span> (valor <span class="op">&gt;</span> <span class="dv">10</span>):</span>
+<span id="annotated-cell-5-4"><a href="#annotated-cell-5-4"></a>    <span class="bu">print</span>(<span class="st">"El número es muy alto"</span>)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3">3</button><span id="annotated-cell-5-5" class="code-annotation-target"><a href="#annotated-cell-5-5"></a><span class="cf">if</span> (valor<span class="op">&lt;</span><span class="dv">1</span>):</span>
+<span id="annotated-cell-5-6"><a href="#annotated-cell-5-6"></a>    <span class="bu">print</span>(<span class="st">"El número es muy bajo"</span>)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="4">4</button><span id="annotated-cell-5-7" class="code-annotation-target"><a href="#annotated-cell-5-7"></a><span class="cf">if</span> (valor <span class="op">&gt;=</span> <span class="dv">1</span> <span class="kw">and</span> valor <span class="op">&lt;=</span> <span class="dv">10</span>):</span>
+<span id="annotated-cell-5-8"><a href="#annotated-cell-5-8"></a>    <span class="bu">print</span>(<span class="st">"Gracias!"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="1" data-code-annotation="1">Aquí pedimos un numero al usuario</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="3,4" data-code-annotation="2">Comparamos si el valor es mayor a 10</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="5,6" data-code-annotation="3">Comparamos ahora si es menor a 10</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="7,8" data-code-annotation="4">Comparamos si esta dentro del rango que pedimos</span>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</section>
+<section id="veamos-los-detalles" class="slide level2">
+<h2>Veamos los detalles</h2>
+<p>En el caso que queramos hacer una condición tenemos varios elementos que fijarnos:</p>
+<div id="b6e1a51f" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="cf">if</span> (valor <span class="op">&gt;</span> <span class="dv">10</span>): </span>
+<span id="cb1-2"><a></a>    <span class="bu">print</span>(<span class="st">"El número es muy alto"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment fade-right">
+<p>Primero tiene que ir el <code>if</code> para avisar que es una condición lo que tenemos</p>
+</div>
+<div class="fragment fade-right">
+<p>Vemos como la condición está entre paréntesis</p>
+</div>
+<div class="fragment fade-right">
+<p>Luego van unos 2 puntos para advertir a la máquina que lo que esta indentado (se hace con el boton tab) abajo va dentro de la condición</p>
+</div>
+</section>
+<section id="después-de-la-condición" class="slide level2">
+<h2>Después de la condición</h2>
+<p>Cuando ya tenemos listo nuestra condición, simplemente sacando el tab podemos ejecutar otra parte del codigo sin que afecte</p>
+<div id="fd8ef531" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="cf">if</span> (valor <span class="op">&gt;</span> <span class="dv">10</span>):</span>
+<span id="cb2-2"><a></a>    <span class="bu">print</span>(<span class="st">"El número es muy alto"</span>)</span>
+<span id="cb2-3"><a></a><span class="cf">if</span> (valor<span class="op">&lt;</span><span class="dv">1</span>):</span>
+<span id="cb2-4"><a></a>    <span class="bu">print</span>(<span class="st">"El número es muy bajo"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment fade-up">
+<p>En este caso cada <code>if</code> se ejecutará independiente al otro</p>
+</div>
+</section>
+<section id="algunas-condiciones-para-saber" class="slide level2">
+<h2>Algunas condiciones para saber</h2>
+<p>Los simbolos de condicionales que deben saber son los siguientes (de derecha a izquierda):</p>
 <ul>
-<li>Es un subprograma que realiza una tarea específica y pueden ser reutilizados.</li>
-<li>Son independientes de nuestro programa y se caracterizan por que siempre usan <code>()</code>.</li>
-<li>Puede recibir 0 o más valores del programa que lo llama y devolver 0 o 1 valor a dicho programa.</li>
+<li>“<code>==</code>”: es para verificar si son valores iguales</li>
+<li>“<code>!=</code>”: es para verificar que son distintos</li>
+<li>“<code>=&gt;</code>”: es para verificar si es menor o igual que…</li>
+<li>“<code>=&lt;</code>”: es para verificar si es mayor o igual que…</li>
+<li>“<code>&gt;</code>”: es para verificar si es menor que…</li>
+<li>“<code>&lt;</code>”: es para verificar si es mayor que…</li>
 </ul>
-<div class="fragment fade-up">
-<ul>
-<li>Ejemplo de funciones que ya hemos utilizado:
-<ul>
-<li><code>print(…)</code> =&gt; recibe <strong>1 o más valores</strong> del programa y <strong>no retorna nada</strong> (muestra por pantalla).</li>
-<li><code>int(valTexto)</code> =&gt; recibe <strong>1 valor</strong> y retorna <strong>1 valor</strong>.</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="dónde-las-conseguimos" class="slide level2">
-<h2>¿Dónde las conseguimos?</h2>
-<div class="fragment fade-up">
-<ul>
-<li>La creación de funciones lo veremos para la prueba 2</li>
-</ul>
-</div>
-<div class="fragment fade-up">
-<ul>
-<li>Pero repasaremos algunas que podemos conseguir de otras partes como de <strong>Módulos o bibliotecas</strong></li>
-</ul>
-</div>
-</section>
-<section id="modulos" class="slide level2">
-<h2>Modulos</h2>
-<p>Existen conjuntos de códigos llamados <strong>bibliotecas o módulos</strong>. Al cargar los módulos somos capaces de utilizar los códigos que ofrecen.</p>
-<div class="fragment fade-up">
-<p>O sea, tenemos acceso a funciones y tipos de datos completamente codificados por otras <em>personas</em>.</p>
-</div>
-<div class="fragment fade-up">
-<p>Las bibliotecas las hicieron otras personas y las dejaron públicas para que trabajemos con ellas <strong>¡agradezcamos!</strong>, <strong>pero tengamos cuidado</strong>.</p>
-</div>
-<div class="fragment fade-up">
-<p>Cualquier persona puede crear una biblioteca, por lo cual, los errores que contengan son asumidos como algo correcto.</p>
-</div>
-</section>
-<section id="cómo-las-utilizamos" class="slide level2">
-<h2>¿Cómo las utilizamos?</h2>
-<p>Para cargar un módulo se sigue la siguiente estructura:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> <span class="op">&lt;</span>nombreModulo<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="fragment fade-up">
-<p>En la primera palabra <code>import</code> llama al modulo que queremos usar.</p>
-</div>
-<div class="fragment fade-up">
-<p>Luego viene el nombre del modulo que queremos cargar.</p>
-</div>
-</section>
-<section id="para-llamar-una-función-del-modulo" class="slide level2">
-<h2>Para llamar una función del modulo</h2>
-<p>Para cargar un módulo se sigue la siguiente estructura:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>nombreModulo.nombreFuncion(<span class="op">&lt;</span>parametros<span class="op">&gt;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="fragment fade-up">
-<p>Los parámetros de la función que nosotros le entregamos</p>
-</div>
-</section></section>
-<section id="algunos-modulos-útiles" class="title-slide slide level1 center">
-<h1>Algunos modulos útiles</h1>
-<p>Dentro de los módulos más útiles en Python podemos encontrar:</p>
 <div class="fragment fade-in-then-semi-out">
-<ul>
-<li><code>math</code> para operaciones matemáticas</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li><code>random</code> para generar números aleatorios</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li><code>matplotlib</code> para graficar</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li><code>numpy</code> y <code>pandas</code> para análisis de datos y modelos de machine learning</li>
-</ul>
-</div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Y muchos más…</li>
-</ul>
+<p>El simbolo <code>=</code> es para asignar un valor, favor de no confundir.</p>
 </div>
 </section>
-
-<section>
-<section id="ejemplos-de-módulos" class="title-slide slide level1 center">
-<h1>Ejemplos de Módulos</h1>
-
-</section>
-<section id="random" class="slide level2">
-<h2><code>random</code></h2>
-<p>El módulo <code>random</code> en Python es una herramienta poderosa para <strong>generar valores aleatorios</strong>.</p>
-<p>Puede ser utilizado en una variedad de aplicaciones, como juegos, simulaciones y más.</p>
-<p>En esta clase, exploraremos diferentes funciones del módulo <code>random</code> con ejemplos prácticos y sencillos.</p>
-</section>
-<section id="código-1" class="slide level2">
-<h2>Código 1</h2>
-<p>Podemos generar un numero aleatorio entre 0 y 1:</p>
-<div id="1f283fd0" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="1|4|5|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">import</span> random</span>
-<span id="cb3-2"><a></a></span>
-<span id="cb3-3"><a></a><span class="co"># Genera un numero aleatorio entre 0 y 1</span></span>
-<span id="cb3-4"><a></a>numAleatorio <span class="op">=</span> random.random()</span>
-<span id="cb3-5"><a></a><span class="bu">print</span>(numAleatorio)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>0.8393342543296951</code></pre>
-</div>
-</div>
-<div class="fragment fade-right">
-<p>También podemos generar un numero entero entre 1 y 10:</p>
-<div id="6eacb69a" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb5" data-code-line-numbers="4|5|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="im">import</span> random</span>
-<span id="cb5-2"><a></a></span>
-<span id="cb5-3"><a></a><span class="co"># Genera un numero aleatorio entre 1 y 10</span></span>
-<span id="cb5-4"><a></a>numAleatorio <span class="op">=</span> random.randint(<span class="dv">1</span>, <span class="dv">10</span>)</span>
-<span id="cb5-5"><a></a><span class="bu">print</span>(numAleatorio)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>3</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="código-2" class="slide level2">
-<h2>Código 2</h2>
-<p>También podemos generar números aleatorios decimales entre un rango.</p>
-<div class="fragment fade-right">
-<div id="ef109711" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="4|5|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a><span class="im">import</span> random</span>
-<span id="cb7-2"><a></a></span>
-<span id="cb7-3"><a></a><span class="co"># Genera un numero aleatorio entre 2.5 y 5.5</span></span>
-<span id="cb7-4"><a></a>numAleatorio <span class="op">=</span> random.uniform(<span class="fl">2.5</span>, <span class="fl">5.5</span>)</span>
-<span id="cb7-5"><a></a><span class="bu">print</span>(numAleatorio)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>3.116130462844496</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="math" class="slide level2">
-<h2><code>math</code></h2>
-<p>El módulo <code>math</code> en Python proporciona una amplia <strong>variedad de funciones y constantes matemáticas</strong> para realizar operaciones matemáticas más avanzadas.</p>
-<p>En esta guía, exploraremos diferentes funciones del módulo <code>math</code> con ejemplos prácticos y sencillos.</p>
-</section>
-<section id="código-1-1" class="slide level2">
-<h2>Código 1</h2>
-<p>Podemos obtener la raiz cuadrada de un número:</p>
-<div class="fragment fade-right">
-<div id="58b500b8" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="1|3|5|6|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="im">import</span> math</span>
-<span id="cb9-2"><a></a></span>
-<span id="cb9-3"><a></a>numero <span class="op">=</span> <span class="dv">25</span></span>
-<span id="cb9-4"><a></a><span class="co"># Calcula la raiz cuadrada de un número</span></span>
-<span id="cb9-5"><a></a>raizNum <span class="op">=</span> math.sqrt(numero)</span>
-<span id="cb9-6"><a></a><span class="bu">print</span>(raizNum)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>5.0</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="código-2-1" class="slide level2">
-<h2>Código 2</h2>
-<p>Podemos redondear un número para arriba y para abajo:</p>
-<div class="fragment fade-right">
-<div id="9e0274ef" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="1|5-6|8-9|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="im">import</span> math</span>
-<span id="cb11-2"><a></a></span>
-<span id="cb11-3"><a></a>numDecimal <span class="op">=</span> <span class="fl">3.7</span></span>
-<span id="cb11-4"><a></a><span class="co"># Calcula la raiz cuadrada de un número</span></span>
-<span id="cb11-5"><a></a>numRedondeoArriba <span class="op">=</span> math.ceil(numDecimal) <span class="co"># arriba</span></span>
-<span id="cb11-6"><a></a><span class="bu">print</span>(numRedondeoArriba)</span>
-<span id="cb11-7"><a></a></span>
-<span id="cb11-8"><a></a>numRedondeoAbajo <span class="op">=</span> math.floor(numDecimal) <span class="co"># abajo</span></span>
-<span id="cb11-9"><a></a><span class="bu">print</span>(numRedondeoAbajo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>4
-3</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="código-3" class="slide level2">
-<h2>Código 3</h2>
-<p>Podemos cambiar números a radianes y calcular funciones trigonométricas:</p>
-<div class="fragment fade-right">
-<div id="1c221b69" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="|3-5|6|7|8|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a></a><span class="im">import</span> math</span>
-<span id="cb13-2"><a></a></span>
-<span id="cb13-3"><a></a>angulo <span class="op">=</span> <span class="dv">30</span></span>
-<span id="cb13-4"><a></a>anguloRadianes <span class="op">=</span> math.radians(angulo)</span>
-<span id="cb13-5"><a></a><span class="bu">print</span>(<span class="st">"El angulo de 30 en radianes es:"</span>, anguloRadianes)</span>
-<span id="cb13-6"><a></a>seno <span class="op">=</span> math.sin(anguloRadianes)</span>
-<span id="cb13-7"><a></a>coseno <span class="op">=</span> math.cos(anguloRadianes)</span>
-<span id="cb13-8"><a></a>tangente <span class="op">=</span> math.tan(anguloRadianes)</span>
-<span id="cb13-9"><a></a><span class="bu">print</span>(seno, coseno, tangente)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>El angulo de 30 en radianes es: 0.5235987755982988
-0.49999999999999994 0.8660254037844387 0.5773502691896257</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="código-4" class="slide level2">
-<h2>Código 4</h2>
-<p>Podemos calcular el logaritmo de un número:</p>
-<div class="fragment fade-right">
-<div id="4d58411a" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="5|6|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a></a><span class="im">import</span> math</span>
-<span id="cb15-2"><a></a></span>
-<span id="cb15-3"><a></a>numero <span class="op">=</span> <span class="fl">2.71828</span></span>
-<span id="cb15-4"><a></a><span class="co"># Calcula la raiz cuadrada de un número</span></span>
-<span id="cb15-5"><a></a>logNum <span class="op">=</span> math.log(numero)</span>
-<span id="cb15-6"><a></a><span class="bu">print</span>(logNum)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>0.999999327347282</code></pre>
-</div>
-</div>
-</div>
+<section id="en-caso-de-no-cumplir-la-condición" class="slide level2">
+<h2>En caso de no cumplir la condición</h2>
+<p>En un inicio vimos solo condiciones <code>if</code>, pero no es comodo colocar cada condición en particular.</p>
+<p>Cuando <strong>NO</strong> se cumple la condición que propusimos, también podemos ejecutar ciertas lineas de código.</p>
 <div class="fragment fade-left">
-<p>Podemos calcular el logaritmo en base 10 de un número:</p>
-<div id="9b611c03" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="5|6|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a></a><span class="im">import</span> math</span>
-<span id="cb17-2"><a></a></span>
-<span id="cb17-3"><a></a>numero <span class="op">=</span> <span class="fl">2.71828</span></span>
-<span id="cb17-4"><a></a><span class="co"># Calcula la raiz cuadrada de un número</span></span>
-<span id="cb17-5"><a></a>logNum <span class="op">=</span> math.log10(numero)</span>
-<span id="cb17-6"><a></a><span class="bu">print</span>(logNum)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>0.4342941897738882</code></pre>
-</div>
-</div>
+<ul>
+<li><p>Esto se hace con <code>else</code>.</p></li>
+<li><p><code>else</code> se traduce como “si no”:</p></li>
+</ul>
 </div>
 </section>
-<section id="código-5" class="slide level2">
-<h2>Código 5</h2>
-<p>Finalmente algunas constantes que nos pueden servir:</p>
-<div id="a99157f2" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a></a><span class="im">import</span> math</span>
-<span id="cb19-2"><a></a></span>
-<span id="cb19-3"><a></a><span class="bu">print</span>(<span class="st">"El numero pi en math es:"</span>, math.pi)</span>
-<span id="cb19-4"><a></a></span>
-<span id="cb19-5"><a></a><span class="bu">print</span>(<span class="st">"El numero de euler en math es:"</span>, math.e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>El numero pi en math es: 3.141592653589793
-El numero de euler en math es: 2.718281828459045</code></pre>
-</div>
-</div>
-</section>
-<section id="time" class="slide level2">
-<h2><code>time</code></h2>
-<p>El módulo <code>time</code> en Python proporciona funciones para <strong>trabajar con el tiempo</strong> y medir intervalos de tiempo.</p>
-<p>Puedes usar este módulo para obtener la hora actual, medir el tiempo de ejecución de un programa y generar retrasos, entre otras cosas.</p>
-</section>
-<section id="código-1-2" class="slide level2">
-<h2>Código 1</h2>
-<p>La función <code>time()</code> devuelve el tiempo actual en segundos desde el 1 de enero de 1970.</p>
-<div id="6e6caa0f" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb21" data-code-line-numbers="1|3-4|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a></a><span class="im">import</span> time</span>
-<span id="cb21-2"><a></a></span>
-<span id="cb21-3"><a></a>tiempoActual <span class="op">=</span> time.time()</span>
-<span id="cb21-4"><a></a><span class="bu">print</span>(<span class="st">"Segundos desde el 01/01/1970: "</span>, tiempoActual)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Segundos desde el 01/01/1970:  1724874033.1622193</code></pre>
-</div>
+<section id="ejemplo-else" class="slide level2">
+<h2>Ejemplo <code>else</code></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/diagrama_condicionales.png" class="quarto-figure quarto-figure-center" width="900" height="150"></p>
+</figure>
 </div>
 <div class="fragment fade-up">
-<p>También podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.</p>
-<div id="2c7035f6" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb23" data-code-line-numbers="3-4|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a></a><span class="im">import</span> time</span>
-<span id="cb23-2"><a></a></span>
-<span id="cb23-3"><a></a>formatoFecha <span class="op">=</span> time.ctime()</span>
-<span id="cb23-4"><a></a><span class="bu">print</span>(<span class="st">"Fecha actual: "</span>, formatoFecha)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Fecha actual:  Wed Aug 28 15:40:33 2024</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="código-2-2" class="slide level2">
-<h2>Código 2</h2>
-<p>Podemos pausar la ejecución de un programa:</p>
-<div id="c21e8680" class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb25" data-code-line-numbers="3-4|6|8-9|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a></a><span class="im">import</span> time</span>
-<span id="cb25-2"><a></a></span>
-<span id="cb25-3"><a></a>formatoFecha <span class="op">=</span> time.ctime()</span>
-<span id="cb25-4"><a></a><span class="bu">print</span>(<span class="st">"Fecha actual: "</span>, formatoFecha)</span>
-<span id="cb25-5"><a></a></span>
-<span id="cb25-6"><a></a>time.sleep(<span class="dv">2</span>)</span>
-<span id="cb25-7"><a></a></span>
-<span id="cb25-8"><a></a>formatoFecha <span class="op">=</span> time.ctime()</span>
-<span id="cb25-9"><a></a><span class="bu">print</span>(<span class="st">"Fecha actual: "</span>, formatoFecha)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Fecha actual:  Wed Aug 28 15:40:33 2024
-Fecha actual:  Wed Aug 28 15:40:35 2024</code></pre>
+<div id="96ec9aba" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>hambre <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb3-2"><a></a></span>
+<span id="cb3-3"><a></a><span class="cf">if</span> (hambre <span class="op">==</span> <span class="va">True</span>):</span>
+<span id="cb3-4"><a></a>    <span class="bu">print</span>(<span class="st">"Hacer sandwich"</span>)</span>
+<span id="cb3-5"><a></a><span class="cf">else</span>:</span>
+<span id="cb3-6"><a></a>    <span class="bu">print</span>(<span class="st">"Seguir trabajando"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
-<section id="ejemplo-de-uso" class="slide level2">
-<h2>Ejemplo de uso</h2>
-<p>Para medir tiempos de ejecución podemos calculara la diferencia de dos <code>time.time()</code></p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a></a><span class="im">import</span> time</span>
-<span id="cb27-2"><a></a></span>
-<span id="cb27-3"><a></a><span class="bu">print</span>(<span class="st">"Hola, ingrese un número:"</span>)</span>
-<span id="cb27-4"><a></a></span>
-<span id="cb27-5"><a></a>tiempoInicio <span class="op">=</span> time.time()</span>
-<span id="cb27-6"><a></a>numIngresado <span class="op">=</span> <span class="bu">input</span>()</span>
-<span id="cb27-7"><a></a>tiempoFinal <span class="op">=</span> time.time()</span>
-<span id="cb27-8"><a></a></span>
-<span id="cb27-9"><a></a>difTiempo <span class="op">=</span> tiempoFinal <span class="op">-</span> tiempoInicio</span>
-<span id="cb27-10"><a></a></span>
-<span id="cb27-11"><a></a><span class="bu">print</span>(<span class="st">"Te demoraste un total de"</span>, difTiempo, <span class="st">"segundos en ingresar el número"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
-<section>
-<section id="qué-aprendieron" class="title-slide slide level1 center">
-<h1>¿Qué aprendieron?</h1>
-
+<section id="cómo-podemos-hacer-el-código-más-eficiente-todavía" class="slide level2">
+<h2>¿Cómo podemos hacer el código más eficiente todavía?</h2>
+<div class="fragment fade-right">
+<p>Hay un condicional intermedio, existe el <code>elif</code> que es la combinación de <code>else</code> con <code>if</code>. En palabras sencillas, se utiliza para agregar una nueva condición cuando la primera condición no se cumple.</p>
+</div>
+</section>
+<section id="ejemplo" class="slide level2">
+<h2>Ejemplo</h2>
+<p>Si reescribimos el ejemplo anterior:</p>
+<div id="7fd885bf" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="annotated-cell-3" data-code-line-numbers="1|3-4|5-6|7-8|"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-1" class="code-annotation-target"><a href="#annotated-cell-3-1"></a>valor <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Entregame un número del 1 al 10"</span>))</span>
+<span id="annotated-cell-3-2"><a href="#annotated-cell-3-2"></a></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="2">2</button><span id="annotated-cell-3-3" class="code-annotation-target"><a href="#annotated-cell-3-3"></a><span class="cf">if</span> (valor <span class="op">&gt;</span> <span class="dv">10</span>):</span>
+<span id="annotated-cell-3-4"><a href="#annotated-cell-3-4"></a>    <span class="bu">print</span>(<span class="st">"El número es muy alto"</span>)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="3">3</button><span id="annotated-cell-3-5" class="code-annotation-target"><a href="#annotated-cell-3-5"></a><span class="cf">elif</span> (valor<span class="op">&lt;</span><span class="dv">1</span>):</span>
+<span id="annotated-cell-3-6"><a href="#annotated-cell-3-6"></a>    <span class="bu">print</span>(<span class="st">"El número es muy bajo"</span>)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="4">4</button><span id="annotated-cell-3-7" class="code-annotation-target"><a href="#annotated-cell-3-7"></a><span class="cf">else</span>:</span>
+<span id="annotated-cell-3-8"><a href="#annotated-cell-3-8"></a>    <span class="bu">print</span>(<span class="st">"Gracias!"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="1" data-code-annotation="1">Aquí pedimos un numero al usuario</span>
+</dd>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="3,4" data-code-annotation="2">Comparamos si el valor es mayor a 10</span>
+</dd>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="5,6" data-code-annotation="3">Comparamos ahora si es menor a 10</span>
+</dd>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="7,8" data-code-annotation="4">Caso contrario el numero es correcto</span>
+</dd>
+</dl>
+</div>
+</div>
 </section>
 <section id="actividad" class="slide level2">
 <h2>Actividad</h2>
+<p>Hagan un código que <strong>pregunte la edad</strong> y categorice en:</p>
 <ul>
-<li><p>Cree un código que ingrese 3 números, donde:</p>
+<li>Niño</li>
+<li>Adulto</li>
+<li>Adulto mayor</li>
+</ul>
+</section>
+<section id="and-y-or" class="slide level2">
+<h2><code>and</code> y <code>or</code></h2>
+<p>Dentro de un if podemos tener múltiples condiciones. Para esto usamos <code>and</code> y <code>or</code>.</p>
 <ul>
-<li>El primer numero es la unidad</li>
-<li>El segundo es la decima</li>
-<li>El tercero es la centena</li>
-</ul></li>
-<li><p>Luego obtenga la raíz cuadrada de ese número. <strong>Con solo los primero 2 dígitos decimales.</strong> Ej: 10.24</p></li>
-<li><p>Tiene que medir el tiempo que toma en agregar cada uno de los números y el total.</p></li>
+<li><p><code>and</code>: Cuando queremos que se cumplan <strong>todas</strong> las condiciones.</p></li>
+<li><p><code>or</code>: Cuando queremos que se cumpla <strong>mínimo una</strong> de las condiciones.</p></li>
+</ul>
+</section>
+<section id="ejemplo-and" class="slide level2">
+<h2>Ejemplo <code>and</code></h2>
+<ul>
+<li><p>Primero: ¿Cómo pondrían la condición: número mayor que 3, menor que 12 y que sea par?</p></li>
+<li><p>Segundo: ¿Cómo pondrían la condición: mayor 15 o par? (O sea, si cumple que es mayor a 15 o par o ambas).</p></li>
+</ul>
+<div class="fragment fade-up">
+<p><strong>Vayamos a replit</strong></p>
+</div>
+</section>
+<section id="not" class="slide level2">
+<h2><code>not</code></h2>
+<p>El <code>not</code> se usa para hacer que una condición sea <strong>su contrario</strong>.</p>
+<p>Es decir, si una condición nos indicaba los pares, ahora nos indica los impares</p>
+</section>
+<section id="ejemplo-not" class="slide level2">
+<h2>Ejemplo <code>not</code></h2>
+<p>Queremos revisar si es mayor de 18 y NO ha sido bloqueado.</p>
+<div id="4695aea9" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a>edad <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb4-2"><a></a>bloqueado <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb4-3"><a></a></span>
+<span id="cb4-4"><a></a><span class="cf">if</span> (edad<span class="op">&gt;=</span><span class="dv">18</span> <span class="kw">and</span> <span class="kw">not</span> bloqueado):</span>
+<span id="cb4-5"><a></a>    <span class="bu">print</span>(<span class="st">"Bienvenido a la plataforma en línea."</span>)</span>
+<span id="cb4-6"><a></a><span class="cf">else</span>:</span>
+<span id="cb4-7"><a></a>    <span class="bu">print</span>(<span class="st">"Lo siento, no puedes acceder a la plataforma."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Bienvenido a la plataforma en línea.</code></pre>
+</div>
+</div>
+</section>
+<section id="complejicemos-la-cosa-anidemos-condiciones" class="slide level2">
+<h2>Complejicemos la cosa (anidemos condiciones)</h2>
+<p><strong>Olvidemos el <code>elif</code> de momento</strong></p>
+<div class="fragment fade-up">
+<p>Anidar if-else nos permite acceder a lógica más compleja.</p>
+</div>
+<div class="fragment fade-up">
+<p>Consiste en poner un if-else dentro de otro para manejar múltiples condiciones.</p>
+</div>
+<div class="fragment fade-up">
+<p>Con esto podemos trabajar múltiples variables al mismo tiempo de forma más lógica.</p>
+</div>
+</section>
+<section id="ejemplo-anidado" class="slide level2">
+<h2>Ejemplo anidado</h2>
+<p>¿Que pasa si hay descuento por tramo de edad, solo si compra más de 100 unidades?</p>
+<div class="fragment fade-left">
+<div id="73776aea" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="|4|5-6|7-11|8-9|10-11|12-13|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a>cantidad_compra <span class="op">=</span> <span class="dv">120</span></span>
+<span id="cb6-2"><a></a>edad_cliente <span class="op">=</span> <span class="dv">50</span></span>
+<span id="cb6-3"><a></a></span>
+<span id="cb6-4"><a></a><span class="cf">if</span> cantidad_compra <span class="op">&gt;</span> <span class="dv">100</span>:</span>
+<span id="cb6-5"><a></a>    <span class="cf">if</span> edad_cliente <span class="op">&lt;</span> <span class="dv">18</span>:</span>
+<span id="cb6-6"><a></a>        descuento <span class="op">=</span> <span class="fl">0.1</span></span>
+<span id="cb6-7"><a></a>    <span class="cf">else</span>: </span>
+<span id="cb6-8"><a></a>        <span class="cf">if</span> edad_cliente <span class="op">&lt;</span> <span class="dv">65</span>:</span>
+<span id="cb6-9"><a></a>            descuento <span class="op">=</span> <span class="fl">0.2</span></span>
+<span id="cb6-10"><a></a>        <span class="cf">else</span>:</span>
+<span id="cb6-11"><a></a>            descuento <span class="op">=</span> <span class="fl">0.3</span></span>
+<span id="cb6-12"><a></a><span class="cf">else</span>:</span>
+<span id="cb6-13"><a></a>    descuento <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-14"><a></a></span>
+<span id="cb6-15"><a></a><span class="bu">print</span>(<span class="st">"Tiene un descuento del:"</span>, descuento)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Tiene un descuento del: 0.2</code></pre>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="cuidado-con-la-identación" class="title-slide slide level1 center">
+<h1>Cuidado con la identación</h1>
+<p>Es una confusión normal, por lo que tienen que estar atentos.</p>
+</section>
+<section id="ejemplo-de-control" class="slide level2 smaller">
+<h2>Ejemplo de control</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p>El siguiente código solicita las notas de dos pruebas, calcula el promedio y luego despliega 3 mensajes distintos dependiendo del promedio: “Felicitaciones, vas camino a aprobar” (si el promedio es mayor o igual a 4.0); “Atención, vas camino a reprobar” (promedio mayor o igual a 3.0 pero menor a 4.0) y “Pocas posibilidades de aprobar” (para promedio menor a 3.0). Sin embargo, tiene errores. Corrija el código</p>
+</div><div class="column" style="width:55%;">
+<div id="f85a5236" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="bu">print</span>(<span class="st">"la nota 1"</span>)</span>
+<span id="cb8-2"><a></a>nota1 <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>())</span>
+<span id="cb8-3"><a></a><span class="bu">print</span>(<span class="st">"la nota 2"</span>)</span>
+<span id="cb8-4"><a></a>nota2 <span class="op">=</span> <span class="bu">input</span>()</span>
+<span id="cb8-5"><a></a>promedio <span class="op">=</span> (nota1 <span class="op">*</span> nota2) <span class="op">/</span> <span class="dv">2</span> </span>
+<span id="cb8-6"><a></a><span class="bu">print</span> (<span class="st">"tu promedio es "</span>,promedio)</span>
+<span id="cb8-7"><a></a><span class="cf">if</span> (promedio<span class="op">&gt;=</span><span class="fl">4.0</span>):</span>
+<span id="cb8-8"><a></a>&nbsp;&nbsp; <span class="bu">print</span> ( <span class="st">"Felicitaciones, vas camino a aprobar"</span> )</span>
+<span id="cb8-9"><a></a>   <span class="cf">else</span>:</span>
+<span id="cb8-10"><a></a><span class="cf">if</span> ( promedio<span class="op">&gt;=</span><span class="fl">3.0</span> ):</span>
+<span id="cb8-11"><a></a>    <span class="bu">print</span>( <span class="st">"Atención: camino a reprobar"</span> )</span>
+<span id="cb8-12"><a></a><span class="cf">else</span>:</span>
+<span id="cb8-13"><a></a>    <span class="bu">print</span>( <span class="st">"Pocas posibilidades de aprobar"</span> ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div></div>
+</section>
+<section id="ejercicio-de-programación" class="slide level2 smaller">
+<h2>Ejercicio de programación</h2>
+<p><strong>Calculadora de Envío</strong></p>
+<p>Crea un programa que simule una <em>calculadora de envío</em> para una tienda en línea. El programa debe solicitar al usuario la cantidad total de productos en su carrito y su ubicación de envío. Basado en estos datos, calcula el costo de envío de acuerdo a las siguientes reglas:</p>
+<ul>
+<li>Si la cantidad de productos es menor o igual a 10, el costo de envío es $5.</li>
+<li>Si la cantidad de productos es mayor a 10 y menor o igual a 20, el costo de envío es $10.</li>
+<li>Si la cantidad de productos es mayor a 20, el costo de envío es $15.</li>
+<li>Adicionalmente, si la ubicación de envío es internacional, agrega un costo adicional de $20 al costo de envío calculado anteriormente.</li>
 </ul>
 
 <div class="quarto-auto-generated-content">
@@ -1114,6 +1066,160 @@ Fecha actual:  Wed Aug 28 15:40:35 2024</code></pre>
           }
         });
       }
+          let selectedAnnoteEl;
+          const selectorForAnnotation = ( cell, annotation) => {
+            let cellAttr = 'data-code-cell="' + cell + '"';
+            let lineAttr = 'data-code-annotation="' +  annotation + '"';
+            const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+            return selector;
+          }
+          const selectCodeLines = (annoteEl) => {
+            const doc = window.document;
+            const targetCell = annoteEl.getAttribute("data-target-cell");
+            const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+            const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+            const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+            const lineIds = lines.map((line) => {
+              return targetCell + "-" + line;
+            })
+            let top = null;
+            let height = null;
+            let parent = null;
+            if (lineIds.length > 0) {
+                //compute the position of the single el (top and bottom and make a div)
+                const el = window.document.getElementById(lineIds[0]);
+                top = el.offsetTop;
+                height = el.offsetHeight;
+                parent = el.parentElement.parentElement;
+              if (lineIds.length > 1) {
+                const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+                const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+                height = bottom - top;
+              }
+              if (top !== null && height !== null && parent !== null) {
+                // cook up a div (if necessary) and position it 
+                let div = window.document.getElementById("code-annotation-line-highlight");
+                if (div === null) {
+                  div = window.document.createElement("div");
+                  div.setAttribute("id", "code-annotation-line-highlight");
+                  div.style.position = 'absolute';
+                  parent.appendChild(div);
+                }
+                div.style.top = top - 2 + "px";
+                div.style.height = height + 4 + "px";
+                div.style.left = 0;
+                let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+                if (gutterDiv === null) {
+                  gutterDiv = window.document.createElement("div");
+                  gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                  gutterDiv.style.position = 'absolute';
+                  const codeCell = window.document.getElementById(targetCell);
+                  const gutter = codeCell.querySelector('.code-annotation-gutter');
+                  gutter.appendChild(gutterDiv);
+                }
+                gutterDiv.style.top = top - 2 + "px";
+                gutterDiv.style.height = height + 4 + "px";
+              }
+              selectedAnnoteEl = annoteEl;
+            }
+          };
+          const unselectCodeLines = () => {
+            const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+            elementsIds.forEach((elId) => {
+              const div = window.document.getElementById(elId);
+              if (div) {
+                div.remove();
+              }
+            });
+            selectedAnnoteEl = undefined;
+          };
+            // Handle positioning of the toggle
+        window.addEventListener(
+          "resize",
+          throttle(() => {
+            elRect = undefined;
+            if (selectedAnnoteEl) {
+              selectCodeLines(selectedAnnoteEl);
+            }
+          }, 10)
+        );
+        function throttle(fn, ms) {
+        let throttle = false;
+        let timer;
+          return (...args) => {
+            if(!throttle) { // first call gets through
+                fn.apply(this, args);
+                throttle = true;
+            } else { // all the others get throttled
+                if(timer) clearTimeout(timer); // cancel #2
+                timer = setTimeout(() => {
+                  fn.apply(this, args);
+                  timer = throttle = false;
+                }, ms);
+            }
+          };
+        }
+          const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+          for (let i=0; i<annoteTargets.length; i++) {
+            const annoteTarget = annoteTargets[i];
+            const targetCell = annoteTarget.getAttribute("data-target-cell");
+            const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+            const contentFn = () => {
+              const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+              if (content) {
+                const tipContent = content.cloneNode(true);
+                tipContent.classList.add("code-annotation-tip-content");
+                return tipContent.outerHTML;
+              }
+            }
+            const config = {
+              allowHTML: true,
+              content: contentFn,
+              onShow: (instance) => {
+                selectCodeLines(instance.reference);
+                instance.reference.classList.add('code-annotation-active');
+                window.tippy.hideAll();
+              },
+              onHide: (instance) => {
+                unselectCodeLines();
+                instance.reference.classList.remove('code-annotation-active');
+              },
+              maxWidth: 300,
+              delay: [50, 0],
+              duration: [200, 0],
+              offset: [5, 10],
+              arrow: true,
+              trigger: 'click',
+              appendTo: function(el) {
+                return el.parentElement.parentElement.parentElement;
+              },
+              interactive: true,
+              interactiveBorder: 10,
+              theme: 'light-border',
+              placement: 'right',
+              positionFixed: true,
+              popperOptions: {
+                modifiers: [
+                {
+                  name: 'flip',
+                  options: {
+                    flipVariations: false, // true by default
+                    allowedAutoPlacements: ['right'],
+                    fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                  },
+                },
+                {
+                  name: 'preventOverflow',
+                  options: {
+                    mainAxis: false,
+                    altAxis: false
+                  }
+                }
+                ]        
+              }      
+            };
+            window.tippy(annoteTarget, config); 
+          }
       const findCites = (el) => {
         const parentEl = el.parentElement;
         if (parentEl) {

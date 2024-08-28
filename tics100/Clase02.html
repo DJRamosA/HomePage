@@ -8,10 +8,10 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.553">
+  <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Diego Ramos Á.">
-  <title>HomePage - TICS100 - Programación</title>
+  <title>HomePage – TICS100 - Programación</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -70,7 +70,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -84,7 +84,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -464,7 +464,7 @@ Diego Ramos Á.
 <span id="cb1-3"><a></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment fade-up">
-<div id="05afbaa7" class="cell panel-input" data-execution_count="1">
+<div id="6752c82f" class="cell panel-input" data-execution_count="1">
 <p>Hola Mundo</p>
 </div>
 </div>
@@ -494,7 +494,7 @@ Diego Ramos Á.
 <span id="cb2-5"><a></a><span class="co"># Ups... no hay nada en el output</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment fade-up">
-<div id="81ceae4d" class="cell panel-input" data-execution_count="2">
+<div id="36420a4b" class="cell panel-input" data-execution_count="2">
 <p>Hola Mundo</p>
 </div>
 </div>
@@ -514,9 +514,15 @@ Diego Ramos Á.
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="bu">print</span>(<span class="st">"Este es mi primer texto)</span></span>
 <span id="cb3-2"><a></a><span class="er"># Esta linea de codigo si o si esta mal</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment fade-up">
-<div id="233dca51" class="cell" data-execution_count="3">
+<div id="f9e57bb3" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-error">
-<pre><code>SyntaxError: unterminated string literal (detected at line 1) (3579302234.py, line 1)</code></pre>
+<div class="ansi-escaped-output">
+<pre><span class="ansi-cyan-fg ansi-bold">  Cell </span><span class="ansi-green-fg ansi-bold">In[3], line 1</span>
+<span class="ansi-yellow-fg ansi-bold">    print("Este es mi primer texto)</span>
+<span class="ansi-white-fg ansi-bold">          ^</span>
+<span class="ansi-red-fg ansi-bold">SyntaxError</span><span class="ansi-red-fg ansi-bold">:</span> unterminated string literal (detected at line 1)
+</pre>
+</div>
 </div>
 </div>
 </div>
@@ -601,9 +607,9 @@ Diego Ramos Á.
 <p>Esta nos permite pedirle información al usuario.</p>
 <p>Cuando se llama a la función el computador espera a que el usuario entregue un valor y presione la tecla ‘enter’.</p>
 <div class="fragment fade-up">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="bu">print</span>(<span class="st">"Ingrese un numero"</span>)</span>
-<span id="cb5-2"><a></a>numIngresado <span class="op">=</span> <span class="bu">input</span>()</span>
-<span id="cb5-3"><a></a><span class="bu">print</span>(<span class="st">"El número ingresado es:"</span>, numIngresado)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="bu">print</span>(<span class="st">"Ingrese un numero"</span>)</span>
+<span id="cb4-2"><a></a>numIngresado <span class="op">=</span> <span class="bu">input</span>()</span>
+<span id="cb4-3"><a></a><span class="bu">print</span>(<span class="st">"El número ingresado es:"</span>, numIngresado)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
@@ -629,8 +635,8 @@ Diego Ramos Á.
 <h2>Nueva función importante</h2>
 <p>Podemos transformar el carácter de un número al valor de un número utilizando la función <code>int()</code>.</p>
 <div class="fragment fade-up">
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a>y <span class="op">=</span> <span class="bu">input</span>() <span class="co"># Se asigna como texto</span></span>
-<span id="cb6-2"><a></a>y <span class="op">=</span> <span class="bu">int</span>(y) <span class="co"># Se transforma a número</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>y <span class="op">=</span> <span class="bu">input</span>() <span class="co"># Se asigna como texto</span></span>
+<span id="cb5-2"><a></a>y <span class="op">=</span> <span class="bu">int</span>(y) <span class="co"># Se transforma a número</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="otro-tipo-de-transformaciones" class="slide level2">
@@ -892,18 +898,7 @@ Diego Ramos Á.
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -935,7 +930,29 @@ Diego Ramos Á.
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp("https:\/\/DJRamosA\.github\.io\/HomePage\/");
@@ -943,7 +960,7 @@ Diego Ramos Á.
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
