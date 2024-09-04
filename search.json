@@ -1,5 +1,89 @@
 [
   {
+    "objectID": "tics100/Clase05.html#qué-son",
+    "href": "tics100/Clase05.html#qué-son",
+    "title": "TICS100 - Programación",
+    "section": "¿Qué son?",
+    "text": "¿Qué son?\nLos ciclos (bucles) permiten ejecutar un bloque de código repetidamente mientras se cumpla una cierta condición.\nEsto es muy útil para automatizar tareas que deben realizarse varias veces.\n\nSon distintos a las funciones."
+  },
+  {
+    "objectID": "tics100/Clase05.html#tipos-de-ciclos",
+    "href": "tics100/Clase05.html#tipos-de-ciclos",
+    "title": "TICS100 - Programación",
+    "section": "Tipos de Ciclos",
+    "text": "Tipos de Ciclos\nTenemos 2 estructuras principales para esto:\n\n\nfor\nCuando sabemos de antemano la cantidad de repeticiones.\n\nwhile\nCuando queremos que siga o pare dada una condición."
+  },
+  {
+    "objectID": "tics100/Clase05.html#uso",
+    "href": "tics100/Clase05.html#uso",
+    "title": "TICS100 - Programación",
+    "section": "Uso",
+    "text": "Uso\nEl ciclo for se utiliza cuando se conoce la cantidad exacta de repeticiones que se deben realizar.\n\n\nfor i in range(1, 6):\n    print(\"Número:\", i)\n\nNúmero: 1\nNúmero: 2\nNúmero: 3\nNúmero: 4\nNúmero: 5\n\n\n\n\nInicia con el for, una variable, in y luego un rango de valores.\n\n\nSiempre termina con un : al igual que los condicionales.\n\n\nTodo lo que se repite tiene que estar identado."
+  },
+  {
+    "objectID": "tics100/Clase05.html#cantidad-de-repeticiones",
+    "href": "tics100/Clase05.html#cantidad-de-repeticiones",
+    "title": "TICS100 - Programación",
+    "section": "Cantidad de repeticiones",
+    "text": "Cantidad de repeticiones\n¿Cómo definimos cuantas veces se repite nuestro ciclo?\nDefinimos una función llamada range().\nEsta función entrega una secuencia de numeros."
+  },
+  {
+    "objectID": "tics100/Clase05.html#función-range",
+    "href": "tics100/Clase05.html#función-range",
+    "title": "TICS100 - Programación",
+    "section": "Función range()",
+    "text": "Función range()\nEsta función recibe 3 parametros: - Inicio: Número en el que partimos. - Final: Número que terminamos (no lo incluye). - Step: Cuanto saltamos entre números, si no se define su valor es 1.\nNormalmente los parámetros estan en el siguiente orden: range( inicio, final, step )"
+  },
+  {
+    "objectID": "tics100/Clase05.html#ejemplo",
+    "href": "tics100/Clase05.html#ejemplo",
+    "title": "TICS100 - Programación",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nSi tenemos la siguiente función:\nrange(1, 7, 2)\nnos entrega: [1, 3, 5]"
+  },
+  {
+    "objectID": "tics100/Clase05.html#código",
+    "href": "tics100/Clase05.html#código",
+    "title": "TICS100 - Programación",
+    "section": "Código",
+    "text": "Código\nUsemos un visualizador para que quede claro: python visualizer\n\n\nfor i in range(1, 6):\n    print(\"Número:\", i)\n\nNúmero: 1\nNúmero: 2\nNúmero: 3\nNúmero: 4\nNúmero: 5"
+  },
+  {
+    "objectID": "tics100/Clase05.html#uso-1",
+    "href": "tics100/Clase05.html#uso-1",
+    "title": "TICS100 - Programación",
+    "section": "Uso",
+    "text": "Uso\nEl ciclo while se utiliza cuando se quiere ejecutar mientras se cumpla una condición específica.\n\ncontador = 0 \nwhile (contador &lt; 5):\n    print(\"Contador: \", contador)\n    contador += 1\n\nContador:  0\nContador:  1\nContador:  2\nContador:  3\nContador:  4\n\n\n\nInicia con el while y sigue con la condición para continuar.\n\n\nSiempre termina con un : al igual que los condicionales y el ciclo for.\n\n\nTodo lo que se repite tiene que estar identado."
+  },
+  {
+    "objectID": "tics100/Clase05.html#visualización",
+    "href": "tics100/Clase05.html#visualización",
+    "title": "TICS100 - Programación",
+    "section": "Visualización",
+    "text": "Visualización\n\n\nComo bien explicamos de un principio, este ciclo se cumple mientras haya una condición. Visto en un diagrama:"
+  },
+  {
+    "objectID": "tics100/Clase05.html#código-1",
+    "href": "tics100/Clase05.html#código-1",
+    "title": "TICS100 - Programación",
+    "section": "Código",
+    "text": "Código\nUsemos un visualizador para que quede claro: python visualizer\n\ncontador = 0 \nwhile (contador &lt; 5):\n    print(\"Contador: \", contador)\n    contador += 1\n\nContador:  0\nContador:  1\nContador:  2\nContador:  3\nContador:  4"
+  },
+  {
+    "objectID": "tics100/Clase05.html#ejercicio-1",
+    "href": "tics100/Clase05.html#ejercicio-1",
+    "title": "TICS100 - Programación",
+    "section": "Ejercicio 1",
+    "text": "Ejercicio 1\nCuenta regresiva\nInstrucciones:\nSe pide un número al usuario.\nEl computador debe hacer una cuenta regresiva desde el número del usuario usando un ciclo while.\nCuando llega al cero debe decir “Despegue”\nRequerimientos:\n\nUtilizar un ciclo while\nañadir delay de 1 segundo entre iteración (time.sleep(1))"
+  },
+  {
+    "objectID": "tics100/Clase05.html#ejercicio-2",
+    "href": "tics100/Clase05.html#ejercicio-2",
+    "title": "TICS100 - Programación",
+    "section": "Ejercicio 2",
+    "text": "Ejercicio 2\nAdivinar número aleatorio del computador\nInstrucciones:\nEl computador decide un número aleatorio entre 1 y 100.\nNosotros debemos intentar adivinar el número. Si es que adivinamos termina, sino seguimos adivinando.\nSi no adivinamos, el computador nos dice si el número es mayor o menor al que dijimos\nPregunta:\n\n¿Sabemos en cuantos turnos vamos a adivinar el número? En caso que la respuesta sea positiva, PODEMOS USAR FOR\nEn caso que la respuesta sea negativa, DEBEMOS USAR WHILE\n\nimport random random.randint(1,100)"
+  },
+  {
     "objectID": "tics100/Clase03.html#qué-son-las-funciones",
     "href": "tics100/Clase03.html#qué-son-las-funciones",
     "title": "TICS100 - Programación",
@@ -46,14 +130,14 @@
     "href": "tics100/Clase03.html#código-1",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.691969941721498\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n1"
+    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.34334002283353826\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n8"
   },
   {
     "objectID": "tics100/Clase03.html#código-2",
     "href": "tics100/Clase03.html#código-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n3.256196600109935"
+    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n2.854749483151312"
   },
   {
     "objectID": "tics100/Clase03.html#math",
@@ -109,14 +193,14 @@
     "href": "tics100/Clase03.html#código-1-2",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1724883504.2417686\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Aug 28 18:18:24 2024"
+    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1725474100.3591714\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Sep  4 14:21:40 2024"
   },
   {
     "objectID": "tics100/Clase03.html#código-2-2",
     "href": "tics100/Clase03.html#código-2-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Aug 28 18:18:24 2024\nFecha actual:  Wed Aug 28 18:18:26 2024"
+    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Sep  4 14:21:40 2024\nFecha actual:  Wed Sep  4 14:21:42 2024"
   },
   {
     "objectID": "tics100/Clase03.html#ejemplo-de-uso",
