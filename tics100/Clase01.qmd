@@ -136,7 +136,7 @@ Supongamos distintas tareas:
 - Ordenar nombres de un curso según la primera letra del nombre.
 
 
-## Ejemplos {transition="fade"}
+<!-- ## Ejemplos {transition="fade"}
 
 ```{mermaid}    
 
@@ -162,7 +162,7 @@ flowchart TB
   lista_ord["['juan', 'marcelo', \n'pedro']"]
   lista-->func_ord
   func_ord-->lista_ord
-```
+``` -->
 
 
 ## Algoritmos

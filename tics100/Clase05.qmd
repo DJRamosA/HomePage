@@ -1,0 +1,224 @@
+---
+title: 'TICS100 - Programación'
+subtitle: 'Ciclos'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow 
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+resources:
+    - Clase05.pdf
+
+---
+
+# Ciclos
+Ahora se va a poner más difícil
+
+## ¿Qué son?
+
+Los ciclos (bucles) permiten ejecutar un bloque de código **repetidamente** mientras se cumpla una cierta **condición**. 
+
+Esto es muy útil para automatizar tareas que deben realizarse varias veces.
+
+:::{.fragment .fade-up}
+Son distintos a las funciones.
+:::
+
+
+## Tipos de Ciclos
+
+Tenemos 2 estructuras principales para esto:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+`for`
+
+Cuando sabemos de antemano la cantidad de repeticiones.
+:::
+
+::: {.column width="50%"}
+`while`
+
+Cuando queremos que siga o pare dada una condición.
+:::
+::::
+
+
+# Ciclo `for`
+Iteraciones definidas
+
+## Uso
+
+El ciclo `for` se utiliza cuando se conoce la **cantidad exacta** de repeticiones que se deben realizar. 
+
+:::{.fragment .fade-right}
+```{python}
+#| echo: true
+#| eval: true
+for i in range(1, 6):
+    print("Número:", i)
+```
+:::
+
+
+:::{.fragment .fade-left}
+Inicia con el `for`, una variable, `in` y luego un rango de valores.
+:::
+
+:::{.fragment .fade-left}
+Siempre termina con un `:` al igual que los condicionales.
+:::
+
+:::{.fragment .fade-left}
+Todo lo que se repite tiene que estar identado.
+:::
+
+
+## Cantidad de repeticiones
+¿Cómo definimos cuantas veces se repite nuestro ciclo?
+
+Definimos una función llamada `range()`.
+
+Esta función entrega una **secuencia de numeros**.
+
+## Función `range()`
+
+Esta función recibe 3 parametros:
+- Inicio: Número en el que partimos.
+- Final: Número que terminamos (no lo incluye).
+- Step: Cuanto saltamos entre números, si no se define su valor es 1.
+
+
+Normalmente los parámetros estan en el siguiente orden:
+`range( inicio, final, step )`
+
+## Ejemplo
+Si tenemos la siguiente función:
+
+`range(1, 7, 2)`
+
+nos entrega:
+[1, 3, 5]
+
+## Código
+
+Usemos un visualizador para que quede claro:
+[python visualizer](https://pythontutor.com/visualize.html#mode=edit)
+
+:::{.fragment .fade-right}
+```{python}
+#| echo: true
+#| eval: true
+for i in range(1, 6):
+    print("Número:", i)
+```
+:::
+
+
+# Ciclo `while`
+Iteraciones por condición
+
+## Uso
+El ciclo `while` se utiliza cuando se quiere ejecutar **mientras se cumpla una condición** específica.
+
+```{python}
+#| echo: true
+#| eval: true
+contador = 0 
+while (contador < 5):
+    print("Contador: ", contador)
+    contador += 1
+```
+
+:::{.fragment .fade-left}
+Inicia con el `while` y sigue con la condición para continuar.
+:::
+
+:::{.fragment .fade-left}
+Siempre termina con un `:` al igual que los condicionales y el ciclo `for`.
+:::
+
+:::{.fragment .fade-left}
+Todo lo que se repite tiene que estar identado.
+:::
+
+
+## Visualización
+
+::::{.columns}
+
+:::{.column width="40%"}
+Como bien explicamos de un principio, este ciclo se cumple mientras haya una condición. Visto en un diagrama:
+:::
+
+
+:::{.column width="60%" .fade-up}
+![](../img/diagrama_ciclo_while.png){fig-align="center" width=500 height=500}
+:::
+::::
+
+## Código
+
+Usemos un visualizador para que quede claro:
+[python visualizer](https://pythontutor.com/visualize.html#mode=edit)
+
+```{python}
+#| echo: true
+#| eval: true
+contador = 0 
+while (contador < 5):
+    print("Contador: ", contador)
+    contador += 1
+```
+
+
+
+# Ejercicios
+
+## Ejercicio 1
+**Cuenta regresiva**
+
+Instrucciones:
+
+Se pide un número al usuario.
+
+El computador debe hacer una cuenta regresiva desde el número del usuario usando un ciclo while.
+
+Cuando llega al cero debe decir “Despegue”
+
+Requerimientos:
+
+- Utilizar un ciclo while
+- añadir delay de 1 segundo entre iteración (`time.sleep(1)`)
+
+
+## Ejercicio 2 {.smaller}
+**Adivinar número aleatorio del computador**
+
+Instrucciones:
+
+El computador decide un número aleatorio entre 1 y 100.
+
+Nosotros debemos intentar adivinar el número. Si es que adivinamos termina, sino seguimos adivinando.
+
+Si no adivinamos, el computador nos dice si el número es mayor o menor al que dijimos
+
+Pregunta:
+
+- ¿Sabemos en cuantos turnos vamos a adivinar el número? En caso que la respuesta sea positiva, PODEMOS USAR FOR 
+- En caso que la respuesta sea negativa, DEBEMOS USAR WHILE
+
+`import random`
+`random.randint(1,100)`
