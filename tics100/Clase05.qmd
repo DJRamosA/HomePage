@@ -108,9 +108,17 @@ Normalmente los parámetros estan en el siguiente orden:
 Si tenemos la siguiente función:
 
 `range(1, 7, 2)`
+</br>
 
+¿Qué creen que nos entrega esto para que el ciclo `for` nos funcione?
+
+</br>
+
+:::{.fragment}
 nos entrega:
 [1, 3, 5]
+:::
+
 
 ## Código
 
