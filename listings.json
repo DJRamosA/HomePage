@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/courses.html"
+    ]
+  },
+  {
     "listing": "/courses.html",
     "items": [
       "/tics100/Clase01.html",
@@ -7,12 +13,6 @@
       "/tics100/Clase03.html",
       "/tics100/Clase04.html",
       "/tics100/Clase05.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/courses.html"
     ]
   }
 ]
