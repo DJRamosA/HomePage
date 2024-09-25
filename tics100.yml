@@ -43,3 +43,21 @@
   path: tics100/Clase05.qmd
   categories:
    - slides
+
+- title: "Clase 06"
+  subtitle: "Listas"
+  author: "Diego Ramos Á"
+  date: 2024-08-21
+  # image: tics100/thumbnails/clase-0.png
+  path: tics100/Clase06.qmd
+  categories:
+   - slides
+
+- title: "Clase 07"
+  subtitle: "Ejercicio Listas"
+  author: "Diego Ramos Á"
+  date: 2024-09-25
+  # image: tics100/thumbnails/clase-0.png
+  path: tics100/Clase07.qmd
+  categories:
+   - slides

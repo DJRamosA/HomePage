@@ -1,0 +1,174 @@
+---
+title: 'TICS100 - Programación'
+subtitle: 'Clase07'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow 
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+resources:
+    - Clase07.pdf
+
+---
+
+
+# Ejercicio con listas
+
+
+## Ejercicio 1 (Encuentre el error)
+
+Encuentre los errores del programa. Para cada error indique tres cosas: 
+
+1. La línea del error
+2. ¿Por qué es un error?
+3. Cómo lo arreglaría 
+
+## Ejercicio 1 (Encuentre el error)
+
+```{python}
+#| echo: true
+#| eval: false
+nterms = input("Cuantos términos de la secuencia de Fibonacci desea mostrar?") 
+n1 = 0
+n2 = 1 
+count = 1 
+if nterms == 1:
+    print (n1) 
+else:  
+    while count < nterms : 
+        print (n1)
+        nth = n1 + n2 
+        n2 = nth 
+        count = 1 + count
+```
+
+La secuencia de Fibonnaci empieza con un 0 y un 1 y continúa añadiendo números que son la suma de los dos anteriores: 
+*0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597…*
+
+
+
+## Ejercicio 2 (Programación){.smaller}
+
+
+::::{.columns}
+
+:::{.column width="50%"}
+Estime el valor de pi usando simulación. Para ello, considere la la probabilidad de que un punto aleatorio quede adentro del círculo.   
+
+$$ 
+\begin{split} 
+P(X \in C) &= \frac{Area Circulo}{Area Cuadrado}\\ 
+&= \frac{\pi r^2}{(2r)^2} \\ 
+&= \frac{\pi}{4} 
+\end{split}
+$$
+:::
+
+:::{.column width="50%"}
+![](../img/AreaCirculo.png)
+:::
+::::
+
+## Ejercicio 2 (Programación) {.smaller}
+
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+- Simulemos la probabilidad ¿Como lo harían?
+
+- Podemos generar números aleatorios, dentro del área del cuadrado, y ver cuantos de ellos caen dentro del círculo.
+$$
+P(X \in C) \approx \frac{\# \text{Puntos en circulo}}{\# \text{Puntos generados}}
+$$
+
+:::
+
+:::{.column width="50%"}
+
+![](../img/AreaCirculo.png)
+:::
+
+::::
+
+## Ejercicio 2 (Programación)
+
+Resolviendo la matemática:
+
+$$
+\begin{split} 
+P(X \in C) &\approx \frac{\# \text{Puntos en circulo}}{\# \text{Puntos generados}} \\
+&= \frac{Area Circulo}{Area Cuadrado} = \frac{\pi r^2}{(2r)^2} = \frac{\pi}{4} 
+\end{split} 
+$$
+
+:::{.fragment}
+$$
+\pi \approx 4 \frac{\# \text{Puntos en circulo}}{\# \text{Puntos generados}}
+$$
+:::
+
+
+## Ejercicio 2 (Programación) {.smaller}
+
+Solicite a un usuario que ingrese el número de puntos a simular (`numSim`) para estimar el valor de pi.
+
+Genere `numSim` puntos entre los valores `-1.0` y `1.0`. Recuerde, `random()` genera valores aleatorios entre `0.0` y `1.0`.
+
+Para cada punto generado, determine si esta adentro o fuera del círculo. Recuerde, si la distancia de un punto a un círculo centrado en el origen es menor a su radio, entonces el punto está dentro del círculo. Guarde esta información en una lista, donde el `i`-esimo punto es `1`, si el punto está dentro del círculo.
+
+Estime el valor de pi usando la formula anterior:
+$$
+\pi \approx 4 \frac{\# \text{Puntos en circulo}}{\# \text{Puntos generados}}
+$$
+
+
+
+## Ejercicio 3 (Goku vs Piccolo)
+
+Gokú y Piccolo se enfrentan por N − esima vez! Ahora a usted le toca simular esta batalla. para ello tiene el siguiente cuadro: 
+
+![](../img/GokuVSPiccolo.png)
+
+
+## Ejercicio 3 (Goku vs Piccolo) {.smaller}
+
+Los ataques son por turnos. SIEMPRE ataca uno primero, y luego el otro.
+
+En cada turno se elige quien atacará primero de manera aleatoria (cada peleador tiene 0.5 de probabilidad de empezar atacando el turno).
+
+Prob ataque indica si el ataque acierta correctamente al peleador contrario. 
+
+Prob defensa indica si, dado que el atacante ya acertó el golpe, el peleador defensor defiende el ataque. 
+
+![](../img/GokuVSPiccolo.png)
+
+
+## Ejercicio 3 (Goku vs Piccolo) {.smaller}
+
+Si peleador atacante acierta, y no es defendido, entonces peleador defensor pierde una cantidad de vida igual al ataque del peleador atacante.
+
+Si peleador atacante acierta, y es defendido, entonces peleador defensor pierde una cantidad de vida igual al ataque del peleador atacante menos la cantidad de defensa del defensor.
+
+Si peleador atacante no acierta, no hay daño.
+
+La pelea termina cuando la vida de uno de los dos peleadores llega a 0 (o menos).
+
+![](../img/GokuVSPiccolo.png)
+
+
+## Ejercicio 3 (Goku vs Piccolo)
+
+Haga un programa en Python que simule una peles entre Goku y Piccolo, asumiendo que cada personaje tiene 100 de vida.
