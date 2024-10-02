@@ -697,14 +697,14 @@
     "href": "tics100/Clase03.html#código-1",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.10967189307075598\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n3"
+    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.9542432533356892\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n1"
   },
   {
     "objectID": "tics100/Clase03.html#código-2",
     "href": "tics100/Clase03.html#código-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n3.260619947125481"
+    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n3.247422078839006"
   },
   {
     "objectID": "tics100/Clase03.html#math",
@@ -760,14 +760,14 @@
     "href": "tics100/Clase03.html#código-1-2",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1727897001.386127\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Oct  2 16:23:21 2024"
+    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1727897393.5560534\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Oct  2 16:29:53 2024"
   },
   {
     "objectID": "tics100/Clase03.html#código-2-2",
     "href": "tics100/Clase03.html#código-2-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Oct  2 16:23:21 2024\nFecha actual:  Wed Oct  2 16:23:23 2024"
+    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Oct  2 16:29:53 2024\nFecha actual:  Wed Oct  2 16:29:55 2024"
   },
   {
     "objectID": "tics100/Clase03.html#ejemplo-de-uso",
