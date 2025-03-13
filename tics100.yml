@@ -53,11 +53,39 @@
   categories:
    - slides
 
-- title: "Clase 07"
-  subtitle: "Ejercicio Listas"
-  author: "Diego Ramos Á"
-  date: 2024-09-25
-  # image: tics100/thumbnails/clase-0.png
-  path: tics100/Clase07.qmd
-  categories:
-   - slides
+# - title: "Clase 07"
+#   subtitle: "Ejercicio Listas"
+#   author: "Diego Ramos Á"
+#   date: 2024-09-25
+#   # image: tics100/thumbnails/clase-0.png
+#   path: tics100/Clase07.qmd
+#   categories:
+#    - slides
+
+# - title: "Clase 08"
+#   subtitle: "Extra P1"
+#   author: "Diego Ramos Á"
+#   date: 2024-09-25
+#   # image: tics100/thumbnails/clase-0.png
+#   path: tics100/Clase08.qmd
+#   categories:
+#    - slides
+
+# - title: "Clase 09"
+#   subtitle: "Ciclos Anidados"
+#   author: "Diego Ramos Á"
+#   date: 2024-09-25
+#   # image: tics100/thumbnails/clase-0.png
+#   path: tics100/Clase09.qmd
+#   categories:
+#    - slides
+
+   
+# - title: "Clase 10"
+#   subtitle: "Numpy"
+#   author: "Diego Ramos Á"
+#   date: 2024-09-25
+#   # image: tics100/thumbnails/clase-0.png
+#   path: tics100/Clase10.qmd
+#   categories:
+#    - slides

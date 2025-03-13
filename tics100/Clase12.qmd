@@ -1,0 +1,51 @@
+---
+title: 'TICS100 - Programación'
+subtitle: 'Clase12'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow 
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+resources:
+    - Clase12.pdf
+
+---
+
+
+
+# Clase 12
+Ejercicios
+
+
+
+## Ejercicio 1 {.smaller}
+
+El invierno se acerca rápidamente y usted muy precavido ha decidido instalar un nuevo sistema de calefacción en su hogar. Para ello usted cotiza distintos modelos de calefacción, desde estufas a parafina, sistemas eléctricos, calefacción a leña, termopanel, etc. (Tabla 1)
+
+![](../img/Tabla%20Ejercicio.png)
+
+## Ejercicio 1 {.smaller}
+
+Cada uno de estos dispositivos tiene un costo de mantención diario (d) , un rendimiento de calor por hora (B) y un rendimiento por área cuadrada (A). Dado sus conocimientos en programación, diseñe un programa que busque el mejor sistema tal que minimice la ecuación de rendimiento y maximice el área cubierta por el sistema. 
+
+$$rendimiento = \frac{d*A}{B}$$
+
+donde d es el costo diario, c es el costo mensual ($c=d*30$). Su programa debe emplear los datos de la tabla 1 almacenados en una matriz. Al finalizar, su programa debe indicar cuál es el mejor sistema.
+
+
+## Ejercicio 2 {.smaller}
+
+2.	Cree un programa para detectar el tipo de triangulo que se está trabajando, dependiendo de los lados de estos. Para esto complete las siguientes instrucciones:
+a)	Escribe el código de la función tipo_triangulo() que recibe como argumentos de entrada las longitudes enteras de los 3 lados de un triángulo y retorna un 0 si el triangulo es escaleno, un 1 si es isósceles y un 2 si es equilátero.
+b)	Escribe un programa que le pida al usuario que ingrese la longitud de los lados de tantos triángulos como desee. El usuario debe indicar que ha finalizado el ingreso de datos ingresando un cero (0) en cualquiera de los campos. Al finalizar el ingreso de datos, el programa debe indicar el total de triángulos ingresados y cuántos triángulos de cada tipo fueron ingresados.

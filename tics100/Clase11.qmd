@@ -1,0 +1,246 @@
+---
+title: 'TICS100 - Programación'
+subtitle: 'Clase11'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow 
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+resources:
+    - Clase11.pdf
+
+---
+
+
+# Funciones
+Ahora vamos a crear código re-utilizable
+
+
+## ¿Qué son? {.smaller}
+
+Las funciones son pequeñas partes de código que pueden ser reutilizados nuevamente.
+
+Son independientes de nuestro programa.
+
+Es un subprograma que realiza una tarea específica.
+
+Las definimos **AL INICIO** del código. Antes de crear cualquier variable, luego de importar los módulos
+
+Puede **recibir 0 o más valores** del programa que los llama y **devolver 0 o 1 valor** a dicho programa.
+
+![](../img/Ejemplo_Funcion.drawio.png){fig-align="center"}
+
+
+## Ubicación de las funciones{.smaller}
+
+::::{.columns}
+
+:::{.column}
+![](../img/Funciones-estructura_codigo.png){width=400}
+:::
+
+:::{.column}
+
+**Si este fuese su código:**
+
+- Primero importan bibliotecas
+- Definen funciones
+- Luego hacen el resto del código
+
+:::
+
+::::
+
+## Explicación
+
+Las funciones se definen antes del código principal.
+
+La función más sencilla no recibe ni retorna ningún valor.
+
+Una función se puede invocar desde cualquier parte, simplemente escribiendo su nombre como una instrucción.
+
+```{python}
+#| echo: true
+#| eval: false
+
+def nombreFuncion():
+	<instrucciones>
+    return 
+```
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+def holaMundo():
+	print("Nuestra primera función")
+
+
+holaMundo()
+```
+
+:::
+
+
+# Recibir Parámetros
+
+Una función puede recibir uno o más parámetros (`valores`). 
+
+Estos `valores` son copiados dentro de la función y pueden ser empleados dentro de ella. Solo la función los puede emplear.
+
+
+```{python}
+#| echo: true
+#| eval: false
+
+def nombreFuncion(<var_1, ..., var_n>):
+	<instrucciones>
+    return 
+```
+
+
+## Finalización {auto-animate="true"}
+
+Fíjense que existe la línea return. 
+Lo que hace es:
+
+- Finalizar la función
+
+</br>
+
+```{python}
+#| echo: true
+#| eval: false
+
+def nombreFuncion(<var_1, ..., var_n>):
+	<instrucciones>
+    return 
+```
+
+
+
+## Finalización {visibility="uncounted" auto-animate="true"}
+
+Fíjense que existe la línea return. 
+Lo que hace es:
+
+- Finalizar la función
+- Entregar el valor que está a continuación del return
+
+
+```{python}
+#| echo: true
+#| eval: false
+
+def nombreFuncion(<var_1, ..., var_n>):
+	<instrucciones>
+    return <num_final>
+```
+
+
+## Ejemplo
+
+Creemos una función que reciba dos parámetros: base y altura y que retorne el área de un rectángulo.
+
+Pídanle al usuario 2 valores, llamen a su función y muestren el resultado en pantalla.
+
+## Solución Ejemplo {auto-animate="true"}
+
+El primer paso es definir la función.
+
+Aquí estamos diciendo qué es lo que hará la función. En el caso que sea llamada.
+
+
+```{python}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "1,2"
+
+def areaRectangulo(base, altura):
+    return base * altura
+
+base_rect = 4
+altura_rect = 5
+
+area_rect = areaRectangulo(base_rect, altura_rect)
+
+print(area_rect)
+
+```
+
+
+## Solución Ejemplo{visibility="uncounted" auto-animate="true"}
+
+Luego llamamos a la función para ejecutarla
+
+</br>
+
+```{python}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "7|"
+
+def areaRectangulo(base, altura):
+    return base * altura
+
+base_rect = 4
+altura_rect = 5
+
+area_rect = areaRectangulo(base_rect, altura_rect)
+
+print(area_rect)
+
+```
+
+## Observaciones
+
+Las funciones:
+
+- Reciben parámetros
+- Retornan valores
+
+:::{.fragment .fade-up}
+Todas las funciones parten con `def`
+:::
+
+:::{.fragment .fade-up}
+Para llamar a una función usamos su nombre
+:::
+
+:::{.fragment .fade-up}
+Podemos guardar el valor que retorna nuestra función
+:::
+
+:::{.fragment .fade-up}
+Las funciones deben tener un propósito específico
+:::
+
+
+
+## Ejercicio
+
+Haga un menú de calculo de área de figuras geométricas donde comience preguntando por el tipo de figura y luego las medidas. Ejemplo:
+```{python}
+print("¿Qué figura quiere calcular su área: \n 1-Cuadrado \n 2-Rectangulo \n 3-Triangulo \n 4-Circulo")
+print("Ingrese el número de la figura: 2")
+
+print("Ingrese el valor de la base: 4 \nIngrese el valor de la altura: 5")
+print("Su área es: 20")
+```
+
+Considere una función para cada figura.
+
+Si logran usar una función para para más de una figura tendrán mejor puntaje para la prueba.
+
+

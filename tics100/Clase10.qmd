@@ -1,0 +1,430 @@
+---
+title: 'TICS100 - Programación'
+subtitle: 'Clase 11'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow 
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+resources:
+    - Clase 11.pdf
+
+---
+
+
+# Numpy 
+Este modulo necesita su propia clase
+
+
+## Listas
+
+Ya hemos visto en Python el concepto de listas:
+
+- Una gran “cajonera” donde podemos almacenar distintos valores.
+- Podemos acceder a los valores usando su posición en la lista.
+- Una lista puede contener distintos tipos de datos: texto, números, booleanos, entre otros
+
+
+
+
+## Problemas con las listas
+
+**El mayor problema:** Es demasiado flexible.
+
+Por ejemplo si tengo números y texto no puedo calcular la suma…
+
+Además nos faltan dimensiones
+
+Quizá me gustaría tener una matriz 2D, pero en listas no tenemos esto.
+
+:::{.fragment .fade-up}
+**¿Solución?**
+:::
+
+:::{.fragment .fade-up}
+**¡Numpy!**
+
+Tenemos lo que son los arreglos (arreglos no son lo mismo que las listas)
+:::
+
+## Numpy
+
+**¿Qué es?**
+
+- Numpy es un módulo en Python que agrega soporte para arreglos en una o múltiples dimensiones (como matrices), y una gran colección de operaciones matemáticas para operar sobre estos arreglos.
+
+
+## Numpy {visibility="uncounted" auto-animate=true}
+
+:::{.fragment .fade-up}
+**¿Y qué es un arreglo?**
+
+- Los arreglos son el equivalente a una lista en Python, en el sentido que almacena un conjunto de valores. Se crean usando la función array de numpy. 
+
+- Los arreglos NO permiten mezclar distintos tipos de datos, y solo acepta valores de un mismo tipo convirtiendo a un tipo común.
+  
+- Los arreglos no son dinámicos, no deberíamos usar append!!!!
+:::
+
+
+
+## Arreglos 
+
+Los arreglos pueden ser de una sola dimensión como las listas o de múltiples dimensiones como las matrices.
+
+![](../img/dimensiones_numpy.png)
+
+
+
+## Uso de los Arreglos
+
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np           # importamos la biblioteca NumPy
+
+xs = np.array([3, 1, 2])     # creamos un arreglo de números
+print(xs)                    # muestra en pantalla [3 1 2]
+```
+
+:::{.fragment .fade-up}
+
+- Cuando queremos evitar escribir el nombre completo, podemos darle un apodo (`as`). Ahora con tan solo escribir np es suficiente.
+:::
+:::{.fragment .fade-up}
+
+- Fíjense que array es una función de `numpy` (`np`) que recibe como parámetro una lista.
+:::
+
+
+
+## Ejemplos
+
+```{python}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "|3,7|4,8|5,9|"
+import numpy as np           # importamos la biblioteca NumPy
+
+arreglo_1 = np.array([1, 2, 3])       # Arreglo de números enteros
+arreglo_2 = np.array([1, "hola", 3])  # Arreglo de texto
+arreglo_3 = np.array([1.5, 2, 3])     # Arreglo de decimales
+
+print(arreglo_1)
+print(arreglo_2)
+print(arreglo_3)
+```
+
+:::{.callout-important}
+Los arreglos NO permite mezclar distintos tipos de datos, y solo acepta valores de un mismo tipo convirtiendo a un tipo común.
+:::
+
+## Funciones importantes
+
+`numpy.zeros(dimensión)`: Crea un arreglo de tamaño `dimensión` y le asigna a cada elemento valor 0.
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+
+a = np.zeros([5])
+print(a) 
+```
+:::
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+
+a = np.zeros([5, 5])
+print(a) 
+```
+:::
+
+
+## Funciones importantes 2
+`numpy.ones(dimensión)`: Crea un arreglo de tamaño `dimensión` y le asigna a cada elemento valor 1  
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+
+b = np.ones([2, 4])
+print(b) 
+```
+:::
+
+
+## Funciones importantes 3
+
+`numpy.full(dimensión, valor)`: Crea un arreglo de tamaño `dimensión` y le asigna a cada elemento el valor valor
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+
+c = np.full([2,3], 7) 
+print(c)
+
+```
+:::
+
+
+## Funciones importantes 4
+
+`numpy.random.random(dimensión)`: Crea un arreglo de tamaño `dimensión` y le asigna a cada elemento un valor random entre 0 y 1
+
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+
+d = np.random.random([5]) 
+print(d)
+
+
+```
+:::
+
+
+## Acceder a sus elementos
+
+Al igual que con listas, se puede obtener un elemento en una posición usando la notación:
+
+**`arreglo[posición]`**
+
+pero si es en más de una dimensión debemos asegurarnos de incluir la posición en cada una de ellas.
+
+```{python}
+#| echo: true
+#| eval: true
+import numpy
+
+a = numpy.random.random([5])
+print(a[3])
+
+b = numpy.random.random([4,5])
+print(b[3, 0])
+```
+
+## Agregar elementos
+
+Para agregar elementos a un arreglo tenemos la función append de la biblioteca Numpy
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+
+a = np.array([1,2,3,4,5,6])
+print(a)
+
+b = np.append(a, [7])
+print(a)
+print(b)
+```
+
+:::{.callout-important}
+Los arreglos NO se actualizan cuando usamos `append`, sino que se crea una copia del arreglo con el o los elementos agregados.
+
+ASI QUE EVITE USAR `APPEND`
+:::
+
+
+## Cantidad de elementos 
+
+Para obtener la cantidad de elementos de un arreglo podemos usar `len(arreglo)`, tal como con listas, o el atributo llamado `size`.
+
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+
+a = np.random.random(5,)
+
+print(a.size, "vs", len(a))
+```
+:::
+
+
+
+## Dimensiones
+
+Para obtener las dimensiones de un arreglo y la magnitud de cada dimensión usamos shape: 
+
+
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+
+m = np.zeros([2,3,4])
+print(m.shape)
+print("Numeros de dimensiones:", len(m.shape))
+
+for i in range(len(m.shape)):
+    print("Número de elementos en dimension", i, ":", m.shape[i])
+
+```
+
+
+## Recorrer un arreglo {.smaller}
+
+Para recorrer un arreglo, podemos utilizar el método `shape` y recorrer cada una de sus dimensiones paso a paso. Por ejemplo, para recorrer primero las filas y luego las columnas:
+
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+
+m = np.random.randint(1, 101, [2,3])
+
+print('[')
+
+for i in range( m.shape[0] ): # Ciclo Externo
+    print('\t[\t', end='')
+    
+    for j in range( m.shape[1] ):  # Ciclo Interno
+        print(m[i,j], end='\t')
+    
+    print(']')
+
+print(']')
+
+```
+
+
+## Ejercicio
+
+Cree un código que genere una matriz de 40x3 representando las notas de controles, primera y segunda pruebas de los alumnos del curso. Llene esta matriz con números aleatorios entre 1 y 7. Finalmente, cree una nueva matriz unidimensional de tamaño 40, con los promedios simples de cada alumno y muestre por pantalla.
+
+
+
+## Solución 1
+
+```{python}
+#| echo: true
+#| eval: true
+import numpy
+notas = numpy.random.random([40,3])*6+1
+prom = numpy.zeros([40])
+
+for i in range(0,notas.shape[0]):
+       suma = 0
+       for j in range(0,notas.shape[1]):
+             suma = suma + notas[i,j]
+       prom[i] = suma/3
+print("Los promedios son ", prom.round(2))
+```
+
+
+
+## Solución 2
+
+```{python}
+#| echo: true
+#| eval: true
+import numpy
+notas = numpy.random.random([40,3])*6+1
+prom = numpy.zeros([40])
+
+for i in range(0,notas.shape[0]):
+     prom[i] = notas[i,:].mean()
+
+print("Los promedios son ", prom.round(2))
+
+```
+
+
+## Filas y Columnas
+
+Como se observa en la última solución, los cálculos se pueden ejecutar sobre la matriz entera, una fila o columna. En los últimos dos casos es necesario el operador “:”
+
+- `matriz*num`: retorna una matriz donde todos los elementos son multiplicados por num (pueden usar /, +, -)
+- `matriz[i,:]*num`: retorna un arreglo correspondiente a la i-ésima fila multiplicada por num 
+- `matriz[:,i]*num`: retorna un arreglo correspondiente a la i-ésima columna multiplicada por num 
+
+
+- `matriz.min()`: retorna el valor mínimo de la matriz
+- `matriz[i,:].min()`: retorna el valor mínimo de la i-ésima fila
+- `matriz[:,i].min()`: retorna el valor mínimo de la i-ésima columna
+
+
+## Filas y Columnas
+
+
+En palabras sencillas, el operador `[i,:]` permite obtener/modificar todos los elementos de la i-ésima fila.
+
+En forma similar, el operador `[:,i]` permite obtener/modificar todos los elementos de la i-ésima columna.
+
+
+## Ejercicio 1
+
+Escriba un programa en Python  que solicite al usuario num (un número entero), genere una matriz cuadrada de tamaño num en donde todo el borde está compuesto de unos y el interior de ceros y luego muestre la matriz por pantalla. 
+
+
+## Ejercicio 2
+
+Escriba un programa en Python  que solicite al usuario num (un número entero), genere una matriz cuadrada de tamaño num con la tabla de multiplicar y la muestre por pantalla. Ejemplo:
+
+
+
+## Ejercicio 3
+
+Escriba un programa que cree una matriz de 10x10 posiciones con contenido numérico aleatorio entero entre 1 y 99 y luego determine si el número 35 se encuentra dentro de dicha matriz. 
+
+Si el número 35 se encuentra en la matriz, debe imprimir por consola indicando todas las posiciones de la matriz donde se encontró el número 35. Si el número 35 no está en la matriz, debe imprimir por consola un mensaje indicando que el número 35 no se encuentra en la matriz.
+
+Use la función:  `numpy.random.randint(a,b,[dim1,dim2])`
+
+
+
+## Ejercicio Final{.smaller}
+
+Una universidad quiere hacer un programa que analice las evaluaciones de un curso. El curso tiene evaluación de la Prueba 1, Prueba 2, Prueba 3, y controles, cada una vale 25%. Para hacer el análisis, la Universidad requiere responder distintas preguntas. Pero primero le solicita simular las notas de los alumnos.
+
+</br>
+
+Funciones útiles:
+`np.round()`, `A.mean()`, `A.shape()`, `np.random.rand()`, `random.random()`
+
+## Ejercicio Final{visibility="uncounted" .smaller }
+1. Genere una matriz de tamaño 40x6 con las notas de los estudiantes.
+
+   - 1ra columna: id de los estudiantes (números de 1 a 40).
+   - 2da columna: nota prueba 1 (nota aleatoria entre 3.0 y 7.0)
+   - 3ra columna: nota prueba 2 (nota aleatoria entre 1.0 y 7.0)
+   - 4ta columna: nota prueba 3 (nota aleatoria entre 1.0 y 6.0)
+   - 5ta columna: nota controles (nota aleatoria entre 5.0 y 7.0)
+   - 6ta columna: nota promedio final.
+
+2. Muestre el promedio de cada evaluación por pantalla.
+3. Muestre el id del estudiante que le fue mejor en cada evaluación.
+4. Muestre el promedio de cada evaluación considerando solo los estudiantes que aprobaron el ramo.
+5. Muestre el promedio final de los estudiantes que tuvieron nota mayor a 4.0 en todas las evaluaciones.
+6. Muestro por pantalla los ID de los alumnos que aprobaron la asignatura con al menos una evaluación menor a 4.0
+
+
+

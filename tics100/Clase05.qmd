@@ -96,6 +96,7 @@ Esta función entrega una **secuencia de numeros**.
 ## Función `range()`
 
 Esta función recibe 3 parametros:
+
 - Inicio: Número en el que partimos.
 - Final: Número que terminamos (no lo incluye).
 - Step: Cuanto saltamos entre números, si no se define su valor es 1.

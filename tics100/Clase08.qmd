@@ -1,0 +1,138 @@
+<!-- ---
+title: 'TICS100 - Programación'
+subtitle: 'Clase 08'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow  
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+resources:
+    - Clase08.pdf
+
+---
+
+
+
+# Datos extras de listas
+
+## Funcionalidades para las listas
+
+Algo que se me olvidó pasar es el uso de los `:`.
+
+Con estos podemos recorrer un sub-rango de la lista si agregamos un numero al principio o al final.
+
+- Si el número está a la izquierda de los `:`, entonces decimos que parta de `i` hasta el **final** de la lista.
+
+- Si el número está a la derecha de los `:`, entonces decimos que parta del **inicio** y que termine de mostrar hasta el puesto `n-1`.
+
+- Si hay un número a cada lado de los `:`, entonces parte del indice `i` y termina en el indice `n-1`
+
+## Ejemplo
+
+Si el número está a la izquierda:
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+lista = [3, 7, 10, 15, 22]
+
+print(lista)
+print(lista[2:])
+```
+:::
+
+
+Si el numero está a la derecha:
+
+:::{.fragment .fade-up}
+
+```{python}
+#| echo: true
+#| eval: true
+lista = [3, 7, 10, 15, 22]
+
+print(lista)
+print(lista[:3])
+```
+:::
+
+## Ejemplo 2
+
+Si tenemos un número tanto a la derecha como a la izquierda:
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+lista = [3, 7, 10, 15, 22]
+
+print(lista)
+print(lista[2:4])
+```
+:::
+
+## Usos practicos
+
+Podemos sumar este rango de valores:
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+lista = [3, 7, 10, 15, 22]
+
+print(lista)
+print(lista[2:4], "=", sum(lista[2:4]))
+```
+:::
+
+:::{.fragment .fade-up}
+Podemos utilizar for y sumar rango variable:
+:::
+
+:::{.fragment .fade-up}
+```{python}
+#| echo: true
+#| eval: true
+lista = [3, 7, 10, 15, 22, 2, 5, 7]
+
+for i in range(2, len(lista)):
+    print(lista[i-2:i], "=", sum(lista[i-2:i]))
+```
+:::
+
+
+## ¿Como recorremos 2 listas al mismo tiempo?
+
+Idealmente tiene que ser de rango variable.
+
+Imaginemos que tenemos 2 listas una de nombres y otros de saldo.
+
+Si queremos imprimir por pantalla ambos sabiendo que estan en la misma posición el nombre y el saldo.
+
+```{python}
+#| echo: true
+#| eval: true
+
+nombres= ['Pedro', 'Juan', 'Diego']
+saldo= [100, 200, -50]
+
+for i in range(len(nombres)):
+    print("El usuario ", nombres[i], " tiene saldo de: ", saldo[i])
+
+```
+
+
+ -->

@@ -1,0 +1,70 @@
+---
+title: 'TICS100 - Programación'
+subtitle: 'Clase14'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow 
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+resources:
+    - Clase14.pdf
+
+---
+
+
+
+
+# Clase 14
+Ejercicios
+
+
+## Ejercicio 1 {.smaller}
+W
+8.	Imaginese un arreglo de tamaño num y hay una mosca en la posición pos. La mosca se mueve en forma aleatoria (al azar) a la izquierda, a la derecha, o se queda quieta. En caso que la mosca se salga del arreglo, la mosca es atrapada por una araña. 
+
+- Para modelar el comportamiento de la mosca, ustede genera un número aleatorio entre 0 y 1, si el numero es menor a 0.33, entonces la mosca se mueve a la izquierda, en caso que sea un número entre 0.33 y 0.66, se mantiene quieta, y si es mayor a 0.66 se mueve a la derecha.
+
+- Cree una función que reciba num y pos e itere hasta que la mosca sea atrapada por alguna araña. Luego, muestre por pantalla el número de veces que la mosca estuvo en cada posición y el número total de movimientos realizados.
+
+- Sea I = Izquierda, D = derecha, y Q = quieto. Un ejemplo, para un arreglo de tamaño 5, con la mosca en posición inicial 2 y realizó los siguientes movimientos: D I I I D Q Q I  hubiera impreso por pantalla lo siguiente: 2 3 2 1 0
+El número total de movimientos fue: 8
+
+
+## Ejercicio 2 {.smaller}
+
+5.	Usted dispone de un conjunto de datos en una matriz de 10 x 2, donde la primera columna corresponde a la posición del eje x y la segunda columna es la posición del eje y. Realice un programa que ajuste dichos datos a una ecuación de la recta, es decir, encuentre los parámetros m, b de la ecuación de la recta  . 
+
+::::{.columns}
+
+:::{.column}
+
+![](../img/Recta.png){width="500"}
+:::
+
+:::{.column}
+
+![](../img/Tabla_datos_ejercicio.png)
+:::
+
+::::
+
+## Ejercicio 2 {.smaller}
+Para resolver este problema, de las estadísticas sabemos que m y b se resuelven de la siguiente forma:
+
+$$m = \frac{nS_{XY} - S_XS_Y}{nS_{XX}- S_XS_X}$$
+
+$$b = \frac{S_{XX}S_Y - S_XS_{XY}}{nS_{XX}- S_XS_X}$$
+
+Donde:
+$$S_X = \sum^n_{i=1}x_i, S_Y = \sum^n_{i=1}y_i, S_{XY} = \sum^n_{i=1}x_i*y_i. S_{XX} = \sum^n_{i=1}x^2_i$$

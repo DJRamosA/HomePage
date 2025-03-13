@@ -1,0 +1,147 @@
+---
+title: 'TICS100 - Programación'
+subtitle: 'Clase13'
+author: 'Diego Ramos Á.'
+institute: <diego.ramos.a@edu.uai.cl>
+format:
+    revealjs:
+        width: 1050
+        height: 700
+        theme: [default, custom.scss]
+        slide-number: true
+        controls: true
+        logo: ../img/uai.png
+        transition: slide
+        callout-appearance: simple
+        highlight-style: arrow 
+        mermaid-format: svg
+        mermaid: 
+            theme: neutral
+resources:
+    - Clase13.pdf
+
+---
+
+
+
+# Clase 13
+Ejercicios
+
+
+
+## Ejercicio 1 {.smaller}
+
+Escriba un programa que permita crear una nueva lista de palabras, solicitando al usuario una cantidad de palabras y cada una de las palabras. Luego, limpie la nueva lista, eliminando todas las palabras repetidas de la lista, debe dejar en la lista la primera aparición de esa palabra. Hint: genere una segunda lista con las
+palabras que no se repitan. Finalmente, muestre el contenido de la nueva lista.
+
+Un ejemplo de ejecución del programa es el siguiente:
+
+```{python}
+print("ingrese el número de palabras:")
+print("4")
+print("ingrese la palabra 1")
+print("hoy")
+print("ingrese la palabra 2")
+print("ayer")
+print("ingrese la palabra 3")
+print("mañana")
+print("ingrese la palabra 4")
+print("ayer")
+print("La lista original es ['hoy', 'ayer', 'mañana', 'ayer']\n")
+print("La lista modificada es ['hoy','ayer','mañana']")
+```
+
+
+
+
+## Ejercicio 2 {.smaller}
+
+Hay una guerra entre abejas y hormigas. Las abejas deciden tomar la delantera y desean lanzar muchas bombas de azúcar en el territorio de las hormigas. Cuando una bomba de azúcar explota, la azúcar se esparce y acumula en sus alrededores, formando cerros de azúcar. 
+
+Se le pide implementar una función que reciba dos parámetros y retorne el campo de batalla, con las bombas de azúcar lanzadas por las abejas. Para generar esta función considere lo siguiente:
+
+- El nombre de la función debe ser `ataque_abejas`.
+
+
+## Ejercicio 2 {.smaller}
+
+
+- La función deberá recibir 2 parámetros. El primer parámetro (`param1`) corresponde al tamaño del tablero cuadrado. El segundo parámetro (`param2`) corresponde al número de bombas que dispararon las abejas. Asuma que el usuario llamará a la función en forma correcta.
+
+- La función deberá crear un tablero cuadrado representando el territorio de las hormigas, mostrando la cantidad de azúcar en cada casilla. El tamaño del territorio es `param1` x `param1`, e inicialmente ninguna casilla tiene azúcar, es decir, cada casilla deberá tener el valor cero.
+
+- Se deberán lanzar `param2` bombas de azúcar sobre el tablero, en forma completamente aleatoria. Cuando una bomba de azúcar cae en una casilla, el valor de azúcar de esa casilla aumenta en uno. Además, como el azúcar se esparce, cada uno de sus cuatro vecinos directos (arriba, abajo, izquierda, y derecha) también incrementarán su monto de azúcar en uno.
+
+
+## Ejercicio 2 {.smaller}
+
+- Tenga cuidado con los bordes del tablero, cualquier azúcar que caiga afuera del borde no se considera.
+
+- La función deberá retornar el tablero inicial generado con montos de azúcar en cada tablero.
+
+
+## Respuesta 1 {.smaller}
+
+```{python}
+#| eval: false
+#| echo: true
+print("ingrese el número de palabras: ")
+num = int(input())
+# 2 Puntos
+
+lista = []
+for i in range (0,num):
+    print("ingrese la palabra ",i+1)
+    val = input()
+    lista.append(val)
+# 3 Puntos
+
+print("La lista original es", lista) # 1 Punto
+
+nuevaLista=[] #1 Punto
+for i in lista: #1 Punto
+    #10 puntos por la lógica
+    flag =1
+    for j in nuevaLista: #1 Punto
+        if i==j:
+            flag=0
+        if flag==1:
+            nuevaLista.append(i)
+
+print("La lista limpia es", nuevaLista) # 1 Punto
+```
+
+## Respuesta 2 {.smaller}
+```{python}
+#| eval: false
+#| echo: true
+import numpy as np
+import random
+
+def ataque_abejas(param1, param2):
+    tablero = np.zeros([param1, param1])
+
+    for bomb in range(param2):
+        x = random.randint(0, param1)
+        y = random.randint(0, param1)
+
+        tablero[x,y] += 1
+        if x+1 < param1:
+            tablero[x+1,y] += 1
+        if y+1 < param1:
+            tablero[x,y+1] += 1
+        if 0 < x-1:
+            tablero[x-1,y] += 1
+        if 0 < y-1:
+            tablero[x,y-1] += 1
+
+
+    return tablero
+
+```
+
+
+
+
+
+
