@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>clase08 – HomePage</title>
+<title>clase09 – HomePage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 
 <!-- ---
 title: 'TICS100 - Programación'
-subtitle: 'Clase 08'
+subtitle: 'Ciclos Anidados'
 author: 'Diego Ramos Á.'
 institute: <diego.ramos.a@edu.uai.cl>
 format:
@@ -144,49 +144,210 @@ format:
         logo: ../img/uai.png
         transition: slide
         callout-appearance: simple
-        highlight-style: arrow  
+        highlight-style: arrow 
         mermaid-format: svg
         mermaid: 
             theme: neutral
 resources:
-    - Clase08.pdf
+    - Clase09.pdf
 
 ---
 
+# Programación clase 09 
+materia para la 2da prueba
 
 
-# Datos extras de listas
+# Repaso de Ciclos
 
-## Funcionalidades para las listas
+## ¿Qué son?
 
-Algo que se me olvidó pasar es el uso de los `:`.
+Los ciclos (bucles) permiten ejecutar un bloque de código **repetidamente** mientras se cumpla una cierta **condición**. 
 
-Con estos podemos recorrer un sub-rango de la lista si agregamos un numero al principio o al final.
+Esto es muy útil para automatizar tareas que deben realizarse varias veces.
 
-- Si el número está a la izquierda de los `:`, entonces decimos que parta de `i` hasta el **final** de la lista.
+## Tipos de Ciclos
 
-- Si el número está a la derecha de los `:`, entonces decimos que parta del **inicio** y que termine de mostrar hasta el puesto `n-1`.
+Tenemos 2 estructuras principales para esto:
 
-- Si hay un número a cada lado de los `:`, entonces parte del indice `i` y termina en el indice `n-1`
+:::: {.columns}
+
+::: {.column width="50%"}
+`for`
+
+Cuando sabemos de antemano la cantidad de repeticiones.
+:::
+
+::: {.column width="50%"}
+`while`
+
+Cuando queremos que siga o pare dada una condición.
+:::
+::::
+
+# Ciclo `for`
+Iteraciones definidas
+
+## Cantidad de repeticiones
+¿Cómo definimos cuantas veces se repite nuestro ciclo?
+
+Definimos una función llamada `range()`.
+
+Esta función entrega una **secuencia de numeros**.
+
+Esta función recibe 3 parametros:
+
+- Inicio: Número en el que partimos.
+- Final: Número que terminamos (no lo incluye).
+- Step: Cuanto saltamos entre números, si no se define su valor es 1.
+
+
+
+# Ciclo `while`
+Iteraciones por condición
+
+
+## Cantidad de repeticiones
+El ciclo `while` se utiliza cuando se quiere ejecutar **mientras se cumpla una condición** específica.
+
+
+- Inicia con el `while` y sigue con la condición para continuar.
+
+- En un momento se tiene que terminar la condición para que salga del ciclo.
+
+- El statement `break` nos permite romper un ciclo en cualquier momento.
+
+# Ciclos Anidados
+
+## ¿Qué son? {auto-animate=true}
+
+
+::::{.columns}
+
+:::{.column width="30%"}
+![](../img/reloj.png){fig-align="center"}
+:::
+
+:::{.column width="70%"}
+Los ciclos anidados consisten en colocar un ciclo dentro de otro ciclo. Es decir, existe un ciclo interno y otro externo
+
+Esto es útil cuando queremos realizar tareas repetitivas en múltiples niveles de iteración.
+
+Pueden imaginárselo como un reloj. La manecilla de las horas avanza uno cuando la manecilla de los minutos cumple todo su ciclo.
+:::
+::::
+
+## ¿Qué son? {visibility="uncounted" auto-animate=true}
+
+::::{.columns}
+
+:::{.column width="30%"}
+![](../img/reloj.png){fig-align="center"}
+:::
+
+:::{.column width="70%"}
+La manecilla de las horas sería el ciclo externo.
+
+La manecilla de los minutos sería el ciclo interno.
+
+Una vez que el ciclo interno cumple todas sus iteraciones, el ciclo externo avanza uno.
+
+:::
+::::
+
+## ¿Cómo sería programarlo?
+
+</br>
+
+::: {#c83cb140 .cell execution_count=1}
+``` {.python .cell-code code-line-numbers="1|2|"}
+for i in range(1, 3+1):  
+    for j in range(1, 5+1):   
+        print("i:", i, "    j:", j)
+    print()
+```
+:::
+
+
+:::{.fragment .fade-up}
+¿Cuántas veces se ejecutará todas las lineas?
+:::
+
+
+# Lo más importante es tomar una pausa antes de seguir
+
+## Definiciones
+
+**Ciclos anidados**
+
+:::{.fragment .fade-up}
+
+- **Ciclo Externo**: Es el ciclo “inicial”, el primero que comienza a ejecutarse.
+:::
+
+:::{.fragment .fade-up}
+
+- **Ciclo Interno**: Es el ciclo que se encuentra dentro de otro ciclo. Se ejecuta PARA CADA UNA de las iteraciones del ciclo externo.
+:::
 
 ## Ejemplo
 
-Si el número está a la izquierda:
+</br> 
+Si les pregunto que muestra el cdigo:
+
+::: {#1316c058 .cell execution_count=2}
+``` {.python .cell-code}
+i=1
+while(i<5):
+    j=1
+    while(j<5):
+        print(i,",",j)
+        j=j+1
+    i=i+1
+```
+:::
+
+
+:::{.fragment .fade-left}
+Analicemos con calma: ¿Cual es el ciclo interno? ¿Cual es el ciclo externo?
+:::
+
+:::{.fragment .fade-left}
+A la pizarra...
+:::
+
+## Respuesta
 
 :::{.fragment .fade-up}
 
-::: {#a9cbabe6 .cell execution_count=1}
+::: {#50c6bbd4 .cell execution_count=3}
 ``` {.python .cell-code}
-lista = [3, 7, 10, 15, 22]
-
-print(lista)
-print(lista[2:])
+i=1
+while(i<5):
+    j=1
+    while(j<5):
+        print(i,",",j)
+        j=j+1
+    i=i+1
 ```
 
 ::: {.cell-output .cell-output-stdout}
 ```
-[3, 7, 10, 15, 22]
-[10, 15, 22]
+1 , 1
+1 , 2
+1 , 3
+1 , 4
+2 , 1
+2 , 2
+2 , 3
+2 , 4
+3 , 1
+3 , 2
+3 , 3
+3 , 4
+4 , 1
+4 , 2
+4 , 3
+4 , 4
 ```
 :::
 :::
@@ -194,23 +355,39 @@ print(lista[2:])
 
 :::
 
+## Otro ejemplo
 
-Si el numero está a la derecha:
+¿Qué mostraría el siguiente código?
+
+::: {#af829856 .cell execution_count=4}
+``` {.python .cell-code}
+i=1
+while(i<5):
+    j=1
+    while(j<=i):
+        print(i,",",j)
+        j=j+1
+    i=i+1
+```
+:::
+
 
 :::{.fragment .fade-up}
 
-::: {#7b55eda9 .cell execution_count=2}
-``` {.python .cell-code}
-lista = [3, 7, 10, 15, 22]
-
-print(lista)
-print(lista[:3])
-```
+::: {#efac5ac6 .cell execution_count=5}
 
 ::: {.cell-output .cell-output-stdout}
 ```
-[3, 7, 10, 15, 22]
-[3, 7, 10]
+1 , 1
+2 , 1
+2 , 2
+3 , 1
+3 , 2
+3 , 3
+4 , 1
+4 , 2
+4 , 3
+4 , 4
 ```
 :::
 :::
@@ -218,113 +395,76 @@ print(lista[:3])
 
 :::
 
-## Ejemplo 2
 
-Si tenemos un número tanto a la derecha como a la izquierda:
+# ¿Para qué usamos ciclos anidados? 
 
-:::{.fragment .fade-up}
+## Usos 
 
-::: {#b9072826 .cell execution_count=3}
+**For fun**: podemos hacer figuras básicas en dos dimensiones. En este caso el despliegue visual tiene forma de matriz (el ciclo externo se hace cargo de cada fila y el ciclo interno de las columnas).
+
+
+![](../img/ciclos_anidados_4_fun.png)
+
+
+
+## Usos {visibility="uncounted"}
+
+Hay una función iterativa (por ejemplo, una sumatoria, un factorial, una multiplicatoria) dentro de otra función iterativa. Por ejemplo, aproximar integrales complejas.
+
+![](../img/ciclos_anidados_integral.png){.center width="780" height="280"}
+
+
+
+## Usos {visibility="uncounted"}
+
+Pero la más importante es en el uso de matrices, como por ejemplo las imágenes!!!
+
+
+![](../img/sede_uai.png){.absolute top=200 left=50 width="450" height="300"}
+
+![](../img/sede_uai_noise.png){.absolute top=200 left=550 width="450" height="300"}
+
+
+
+# Ejercicios
+
+## Ejercicio 1
+
+¿Qué aparece en pantalla al ejecutar este programa con datos 3 y 4? ¿y con datos 5 y 3?
+
+::: {#1c019a01 .cell execution_count=6}
 ``` {.python .cell-code}
-lista = [3, 7, 10, 15, 22]
-
-print(lista)
-print(lista[2:4])
-```
-
-::: {.cell-output .cell-output-stdout}
-```
-[3, 7, 10, 15, 22]
-[10, 15]
+alto=int(input("Alto del rectangulo:"))
+ancho=int(input("Ancho del rectangulo:"))
+for i in range(1, alto+1):
+    for j in range(1, ancho+1):
+        print("#", end="")
+    print(" ")
 ```
 :::
-:::
 
 
-:::
+## Ejercicio 2 
 
-## Usos practicos
+Escribe un programa en Python que te permita generar la mitad derecha de un triángulo. El usuario ingresa el alto. Por ejemplo:
 
-Podemos sumar este rango de valores:
+![](../img/ciclos_anidados_4_fun.png){width="600" height="350"}
 
-:::{.fragment .fade-up}
 
-::: {#4e333ac7 .cell execution_count=4}
-``` {.python .cell-code}
-lista = [3, 7, 10, 15, 22]
+## Ejercicio 3
 
-print(lista)
-print(lista[2:4], "=", sum(lista[2:4]))
-```
+::::{.columns}
 
-::: {.cell-output .cell-output-stdout}
-```
-[3, 7, 10, 15, 22]
-[10, 15] = 25
-```
-:::
-:::
-
+:::{.column width="75%"}
+Escribe un programa en Python que despliegue el avance de los primeros 3 minutos de un cronómetro minutero. Es decir, que aparezca en pantalla (no es necesario que aparezca el 0 antes de los primeros 9 segundos de cada minuto):
 
 :::
 
-:::{.fragment .fade-up}
-Podemos utilizar for y sumar rango variable:
+:::{.column width="25%"}
+![](../img/cronometro.png){width="90" height="600"}
 :::
 
-:::{.fragment .fade-up}
-
-::: {#b20ce71d .cell execution_count=5}
-``` {.python .cell-code}
-lista = [3, 7, 10, 15, 22, 2, 5, 7]
-
-for i in range(2, len(lista)):
-    print(lista[i-2:i], "=", sum(lista[i-2:i]))
-```
-
-::: {.cell-output .cell-output-stdout}
-```
-[3, 7] = 10
-[7, 10] = 17
-[10, 15] = 25
-[15, 22] = 37
-[22, 2] = 24
-[2, 5] = 7
-```
-:::
-:::
-
-
-:::
-
-
-## ¿Como recorremos 2 listas al mismo tiempo?
-
-Idealmente tiene que ser de rango variable.
-
-Imaginemos que tenemos 2 listas una de nombres y otros de saldo.
-
-Si queremos imprimir por pantalla ambos sabiendo que estan en la misma posición el nombre y el saldo.
-
-::: {#7d094d3f .cell execution_count=6}
-``` {.python .cell-code}
-nombres= ['Pedro', 'Juan', 'Diego']
-saldo= [100, 200, -50]
-
-for i in range(len(nombres)):
-    print("El usuario ", nombres[i], " tiene saldo de: ", saldo[i])
-```
-
-::: {.cell-output .cell-output-stdout}
-```
-El usuario  Pedro  tiene saldo de:  100
-El usuario  Juan  tiene saldo de:  200
-El usuario  Diego  tiene saldo de:  -50
-```
-:::
-:::
-
-
+::::
  -->
 
 

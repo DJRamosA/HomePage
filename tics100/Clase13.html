@@ -392,7 +392,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">TICS100 - Programación</h1>
-  <p class="subtitle">Introducción a Python</p>
+  <p class="subtitle">Clase13</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -407,247 +407,110 @@ Diego Ramos Á.
 
 </section>
 <section>
-<section id="python-básico" class="title-slide slide level1 center">
-<h1>Python Básico</h1>
-
+<section id="clase-13" class="title-slide slide level1 center">
+<h1>Clase 13</h1>
+<p>Ejercicios</p>
 </section>
-<section id="disclaimer" class="slide level2">
-<h2>Disclaimer</h2>
-<p><br></p>
-<p>Ahora todo tiene IA, por lo que armar codigo desde su computador será muy sencillo. Por lo tanto:</p>
-<div class="fragment fade-up">
+<section id="ejercicio-1" class="slide level2 smaller">
+<h2>Ejercicio 1</h2>
+<p>Escriba un programa que permita crear una nueva lista de palabras, solicitando al usuario una cantidad de palabras y cada una de las palabras. Luego, limpie la nueva lista, eliminando todas las palabras repetidas de la lista, debe dejar en la lista la primera aparición de esa palabra. Hint: genere una segunda lista con las palabras que no se repitan. Finalmente, muestre el contenido de la nueva lista.</p>
+<p>Un ejemplo de ejecución del programa es el siguiente:</p>
+<div id="e5ae403b" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-stdout">
+<pre><code>ingrese el número de palabras:
+4
+ingrese la palabra 1
+hoy
+ingrese la palabra 2
+ayer
+ingrese la palabra 3
+mañana
+ingrese la palabra 4
+ayer
+La lista original es ['hoy', 'ayer', 'mañana', 'ayer']
+
+La lista modificada es ['hoy','ayer','mañana']</code></pre>
+</div>
+</div>
+</section>
+<section id="ejercicio-2" class="slide level2 smaller">
+<h2>Ejercicio 2</h2>
+<p>Hay una guerra entre abejas y hormigas. Las abejas deciden tomar la delantera y desean lanzar muchas bombas de azúcar en el territorio de las hormigas. Cuando una bomba de azúcar explota, la azúcar se esparce y acumula en sus alrededores, formando cerros de azúcar.</p>
+<p>Se le pide implementar una función que reciba dos parámetros y retorne el campo de batalla, con las bombas de azúcar lanzadas por las abejas. Para generar esta función considere lo siguiente:</p>
 <ul>
-<li><strong>Recomendación 1</strong>: Antes de usar la IA aprendan a ciegas, entender que hace cada cosa, es tema de practica.</li>
+<li>El nombre de la función debe ser <code>ataque_abejas</code>.</li>
 </ul>
-</div>
-<div class="fragment fade-up">
+</section>
+<section id="ejercicio-2-1" class="slide level2 smaller">
+<h2>Ejercicio 2</h2>
 <ul>
-<li><strong>Recomendación 2</strong>: En las pruebas no tienen IA por lo que no les conviene acostumbrarse.</li>
+<li><p>La función deberá recibir 2 parámetros. El primer parámetro (<code>param1</code>) corresponde al tamaño del tablero cuadrado. El segundo parámetro (<code>param2</code>) corresponde al número de bombas que dispararon las abejas. Asuma que el usuario llamará a la función en forma correcta.</p></li>
+<li><p>La función deberá crear un tablero cuadrado representando el territorio de las hormigas, mostrando la cantidad de azúcar en cada casilla. El tamaño del territorio es <code>param1</code> x <code>param1</code>, e inicialmente ninguna casilla tiene azúcar, es decir, cada casilla deberá tener el valor cero.</p></li>
+<li><p>Se deberán lanzar <code>param2</code> bombas de azúcar sobre el tablero, en forma completamente aleatoria. Cuando una bomba de azúcar cae en una casilla, el valor de azúcar de esa casilla aumenta en uno. Además, como el azúcar se esparce, cada uno de sus cuatro vecinos directos (arriba, abajo, izquierda, y derecha) también incrementarán su monto de azúcar en uno.</p></li>
 </ul>
-</div>
-</section></section>
-<section>
-<section id="para-ejecutar-el-código-que-se-está-mostrando-dependerá-de-su-decisión" class="title-slide slide level1 center">
-<h1>Para ejecutar el código que se está mostrando dependerá de su decisión:</h1>
-
 </section>
-<section id="si-escogió-replit" class="slide level2">
-<h2>Si escogió replit:</h2>
-<div class="r-stack">
-<p><img data-src="../img/crear_replit_1.png" class="fragment" width="1000" height="600"></p>
-<p><img data-src="../img/crear_replit_2.png" class="fragment" width="1000" height="600"></p>
-</div>
-</section>
-<section id="si-escogió-colab" class="slide level2">
-<h2>Si escogió Colab:</h2>
-<div class="r-stack">
-<p><img data-src="../img/crear_colab_1.png" class="fragment" width="1000" height="600"></p>
-<p><img data-src="../img/crear_colab_2.png" class="fragment" width="1000" height="600"></p>
-</div>
-</section>
-<section id="en-el-caso-que-escoger-instalarlo-en-su-computador" class="slide level2">
-<h2>En el caso que escoger instalarlo en su computador…</h2>
-<p><br></p>
-<p>Mandar un correo al ayudante o puede apoyarse en mi para el proceso de instalación.</p>
-</section>
-<section id="hagamos-el-primer-código" class="slide level2">
-<h2>Hagamos el primer código</h2>
-<p><br></p>
-<p>Un programa en Python está conformado por líneas de texto que contienen <strong>una o más instrucciones y sentencias del lenguaje</strong>.</p>
-<p>Tenemos el clasico hola mundo:</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>HelloWorld.py</strong></pre>
-</div>
-<div class="sourceCode" id="cb1" data-filename="HelloWorld.py"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a></span>
-<span id="cb1-2"><a></a><span class="bu">print</span>(<span class="st">"Hola Mundo"</span>)</span>
-<span id="cb1-3"><a></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="fragment fade-up">
-<div id="fb6cb343" class="cell panel-input" data-execution_count="1">
-<p>Hola Mundo</p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="comentarios" class="title-slide slide level1 center">
-<h1>Comentarios</h1>
-
-</section>
-<section id="qué-es-y-para-qué-sirve" class="slide level2">
-<h2>¿Qué es y para qué sirve?</h2>
-<p>Un comentario es una linea del código que no es ejecutable.</p>
-<p>Cuando deseamos escribir alguna nota para recordar o para otra persona, podemos utilizar comentarios.</p>
-<p>Otro uso, es comentar código, es decir, hacer no ejecutable una parte de este.</p>
-</section>
-<section id="cómo-se-comenta" class="slide level2">
-<h2>¿Cómo se comenta?</h2>
-<p>Una línea de comentarios en Python comienza con el <strong>símbolo <code>#</code></strong> y todo lo que está después de este no será tomado en cuenta por el intérprete de Python al momento de ejecutar el programa.</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>HelloWorld.py</strong></pre>
-</div>
-<div class="sourceCode" id="cb2" data-filename="HelloWorld.py"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># Esto es un comentario</span></span>
-<span id="cb2-2"><a></a><span class="bu">print</span>(<span class="st">"Hola Mundo"</span>)</span>
-<span id="cb2-3"><a></a><span class="co"># Por ejemplo si coloco:</span></span>
-<span id="cb2-4"><a></a><span class="co"># print("Hola alumnos del curso de Programación")</span></span>
-<span id="cb2-5"><a></a><span class="co"># Ups... no hay nada en el output</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="fragment fade-up">
-<div id="8d707e95" class="cell panel-input" data-execution_count="2">
-<p>Hola Mundo</p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="imprimir-en-pantalla" class="title-slide slide level1 center">
-<h1>Imprimir en pantalla</h1>
-
-</section>
-<section id="comando-print" class="slide level2">
-<h2>Comando <code>print()</code></h2>
-<p>El comando <code>print()</code> permite desplegar el resultado de una ¿<strong>variable</strong>? o un <strong>texto por la terminal</strong>. Si escribimos texto, éste debe ir escrito entre <strong>comillas</strong>. Si escribimos una ¿variable?, éste despliega <strong>el valor almacenado</strong> en dicha variable.</p>
-</section>
-<section id="observación" class="slide level2">
-<h2>Observación</h2>
-<p>El computador es literal, por lo que no va a completar el código por ustedes. Cada caracter que falte significa un error en su código.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="bu">print</span>(<span class="st">"Este es mi primer texto)</span></span>
-<span id="cb3-2"><a></a><span class="er"># Esta linea de codigo si o si esta mal</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="fragment fade-up">
-<div id="eb7f5595" class="cell" data-execution_count="3">
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-cyan-fg ansi-bold">  Cell </span><span class="ansi-green-fg ansi-bold">In[3], line 1</span>
-<span class="ansi-yellow-fg ansi-bold">    print("Este es mi primer texto)</span>
-<span class="ansi-white-fg ansi-bold">          ^</span>
-<span class="ansi-red-fg ansi-bold">SyntaxError</span><span class="ansi-red-fg ansi-bold">:</span> unterminated string literal (detected at line 1)
-</pre>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="variables" class="title-slide slide level1 center">
-<h1>Variables</h1>
-
-</section>
-<section id="qué-es-una-variable" class="slide level2">
-<h2>¿Qué es una variable?</h2>
-<p>Una variable representa un espacio de memoria en el computador que puede ser modificado en el tiempo y permite el registro y acceso a los datos.</p>
-<p>Podemos compararlas con cajas. Donde podemos:</p>
-<div class="fragment fade-up">
+<section id="ejercicio-2-2" class="slide level2 smaller">
+<h2>Ejercicio 2</h2>
 <ul>
-<li>Almacenar información</li>
+<li><p>Tenga cuidado con los bordes del tablero, cualquier azúcar que caiga afuera del borde no se considera.</p></li>
+<li><p>La función deberá retornar el tablero inicial generado con montos de azúcar en cada tablero.</p></li>
 </ul>
-</div>
-<div class="fragment fade-up">
-<ul>
-<li>Recuperar su información</li>
-</ul>
-</div>
-<div class="fragment fade-up">
-<ul>
-<li>Sobreescribir la información</li>
-</ul>
+</section>
+<section id="respuesta-1" class="slide level2 smaller">
+<h2>Respuesta 1</h2>
+<div id="1fedd742" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="bu">print</span>(<span class="st">"ingrese el número de palabras: "</span>)</span>
+<span id="cb2-2"><a></a>num <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>())</span>
+<span id="cb2-3"><a></a><span class="co"># 2 Puntos</span></span>
+<span id="cb2-4"><a></a></span>
+<span id="cb2-5"><a></a>lista <span class="op">=</span> []</span>
+<span id="cb2-6"><a></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span> (<span class="dv">0</span>,num):</span>
+<span id="cb2-7"><a></a>    <span class="bu">print</span>(<span class="st">"ingrese la palabra "</span>,i<span class="op">+</span><span class="dv">1</span>)</span>
+<span id="cb2-8"><a></a>    val <span class="op">=</span> <span class="bu">input</span>()</span>
+<span id="cb2-9"><a></a>    lista.append(val)</span>
+<span id="cb2-10"><a></a><span class="co"># 3 Puntos</span></span>
+<span id="cb2-11"><a></a></span>
+<span id="cb2-12"><a></a><span class="bu">print</span>(<span class="st">"La lista original es"</span>, lista) <span class="co"># 1 Punto</span></span>
+<span id="cb2-13"><a></a></span>
+<span id="cb2-14"><a></a>nuevaLista<span class="op">=</span>[] <span class="co">#1 Punto</span></span>
+<span id="cb2-15"><a></a><span class="cf">for</span> i <span class="kw">in</span> lista: <span class="co">#1 Punto</span></span>
+<span id="cb2-16"><a></a>    <span class="co">#10 puntos por la lógica</span></span>
+<span id="cb2-17"><a></a>    flag <span class="op">=</span><span class="dv">1</span></span>
+<span id="cb2-18"><a></a>    <span class="cf">for</span> j <span class="kw">in</span> nuevaLista: <span class="co">#1 Punto</span></span>
+<span id="cb2-19"><a></a>        <span class="cf">if</span> i<span class="op">==</span>j:</span>
+<span id="cb2-20"><a></a>            flag<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb2-21"><a></a>        <span class="cf">if</span> flag<span class="op">==</span><span class="dv">1</span>:</span>
+<span id="cb2-22"><a></a>            nuevaLista.append(i)</span>
+<span id="cb2-23"><a></a></span>
+<span id="cb2-24"><a></a><span class="bu">print</span>(<span class="st">"La lista limpia es"</span>, nuevaLista) <span class="co"># 1 Punto</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="cómo-creamos-una-variable" class="slide level2">
-<h2>¿Cómo creamos una variable?</h2>
-<p><br></p>
-<center>
-<p>Para asignar el valor 5 a una variable se usa:</p>
-<p><code>x = 5</code></p>
-<div class="fragment fade-up">
-<p><strong>¿Qué pasa si lo invertimos?</strong></p>
-<p><br></p>
+<section id="respuesta-2" class="slide level2 smaller">
+<h2>Respuesta 2</h2>
+<div id="5c5a203a" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-2"><a></a><span class="im">import</span> random</span>
+<span id="cb3-3"><a></a></span>
+<span id="cb3-4"><a></a><span class="kw">def</span> ataque_abejas(param1, param2):</span>
+<span id="cb3-5"><a></a>    tablero <span class="op">=</span> np.zeros([param1, param1])</span>
+<span id="cb3-6"><a></a></span>
+<span id="cb3-7"><a></a>    <span class="cf">for</span> bomb <span class="kw">in</span> <span class="bu">range</span>(param2):</span>
+<span id="cb3-8"><a></a>        x <span class="op">=</span> random.randint(<span class="dv">0</span>, param1)</span>
+<span id="cb3-9"><a></a>        y <span class="op">=</span> random.randint(<span class="dv">0</span>, param1)</span>
+<span id="cb3-10"><a></a></span>
+<span id="cb3-11"><a></a>        tablero[x,y] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb3-12"><a></a>        <span class="cf">if</span> x<span class="op">+</span><span class="dv">1</span> <span class="op">&lt;</span> param1:</span>
+<span id="cb3-13"><a></a>            tablero[x<span class="op">+</span><span class="dv">1</span>,y] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb3-14"><a></a>        <span class="cf">if</span> y<span class="op">+</span><span class="dv">1</span> <span class="op">&lt;</span> param1:</span>
+<span id="cb3-15"><a></a>            tablero[x,y<span class="op">+</span><span class="dv">1</span>] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb3-16"><a></a>        <span class="cf">if</span> <span class="dv">0</span> <span class="op">&lt;</span> x<span class="op">-</span><span class="dv">1</span>:</span>
+<span id="cb3-17"><a></a>            tablero[x<span class="op">-</span><span class="dv">1</span>,y] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb3-18"><a></a>        <span class="cf">if</span> <span class="dv">0</span> <span class="op">&lt;</span> y<span class="op">-</span><span class="dv">1</span>:</span>
+<span id="cb3-19"><a></a>            tablero[x,y<span class="op">-</span><span class="dv">1</span>] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb3-20"><a></a></span>
+<span id="cb3-21"><a></a></span>
+<span id="cb3-22"><a></a>    <span class="cf">return</span> tablero</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="fragment fade-up">
-<p><code>5 = x</code></p>
-</div>
-<div class="fragment fade-up">
-<p><span style="color:red;">Error!! Siempre se asigna de DERECHA a IZQUIERDA</span></p>
-</div>
-</center>
-</section>
-<section id="observaciones" class="slide level2">
-<h2>Observaciones</h2>
-<p>Siempre intentar asignar un nombre <strong>SIGNIFICATIVO</strong> a las variables.</p>
-<p>Entender código es un tema en las empresas.</p>
-<div class="fragment fade-left">
-<p><strong>Considere que:</strong></p>
-<blockquote>
-<p>Cambiar los nombres de las variables del programa de un amigo no implica que usted hizo el código. Esta es la forma más burda de intentar engañarse.</p>
-</blockquote>
-</div>
-</section></section>
-<section>
-<section id="modfiquemos-variables" class="title-slide slide level1 center">
-<h1>Modfiquemos variables</h1>
-
-</section>
-<section id="operaciones-existentes" class="slide level2">
-<h2>Operaciones existentes</h2>
-<p>Las básicas que disponemos son:</p>
-<ul>
-<li>Sumar (+)</li>
-<li>Restar (-)</li>
-<li>Dividir (/)</li>
-<li>Módulo (%)</li>
-</ul>
-</section></section>
-<section>
-<section id="tiene-sentido-un-programa-que-no-podemos-interactuar" class="title-slide slide level1 center">
-<h1>¿Tiene sentido un programa que no podemos interactuar?</h1>
-
-</section>
-<section id="función-importante" class="slide level2">
-<h2>Función importante</h2>
-<p>Segunda función que veremos hoy: <code>input()</code></p>
-<p>Esta nos permite pedirle información al usuario.</p>
-<p>Cuando se llama a la función el computador espera a que el usuario entregue un valor y presione la tecla ‘enter’.</p>
-<div class="fragment fade-up">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="bu">print</span>(<span class="st">"Ingrese un numero"</span>)</span>
-<span id="cb4-2"><a></a>numIngresado <span class="op">=</span> <span class="bu">input</span>()</span>
-<span id="cb4-3"><a></a><span class="bu">print</span>(<span class="st">"El número ingresado es:"</span>, numIngresado)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section></section>
-<section>
-<section id="hagamos-prueba-de-código" class="title-slide slide level1 center">
-<h1>¡Hagamos prueba de código!</h1>
-
-</section>
-<section id="porqué-falla" class="slide level2">
-<h2>¿Porqué falla?</h2>
-<p>Las variables pueden almacenar distinto tipo de información, ya sea número o texto. Esto afecta el cómo procesamos la información. Sumar <code>5+5</code> es distinto a la cadena de texto <code>"5+5"</code>.</p>
-<p>Entonces:</p>
-<div class="fragment fade-left">
-<p>Cuando le entregamos información con <code>input()</code></p>
-<p><strong>¿Qué recibe? ¿Número o texto?</strong></p>
-</div>
-<div class="fragment fade-left">
-<center>
-<span style="color:red;"> <strong>TEXTO</strong> </span>
-</center>
-</div>
-</section>
-<section id="nueva-función-importante" class="slide level2">
-<h2>Nueva función importante</h2>
-<p>Podemos transformar el carácter de un número al valor de un número utilizando la función <code>int()</code>.</p>
-<div class="fragment fade-up">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>y <span class="op">=</span> <span class="bu">input</span>() <span class="co"># Se asigna como texto</span></span>
-<span id="cb5-2"><a></a>y <span class="op">=</span> <span class="bu">int</span>(y) <span class="co"># Se transforma a número</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="otro-tipo-de-transformaciones" class="slide level2">
-<h2>Otro tipo de transformaciones</h2>
-<p>Para transformar una variable a otro tipo de formato, no solo existe <code>input()</code>.</p>
-<p>Existe:</p>
-<ul>
-<li><code>str()</code> A texto</li>
-<li><code>float()</code> A decimal</li>
-<li>Y muchas más que aprenderán con el tiempo…</li>
-</ul>
 
 <div class="quarto-auto-generated-content">
 <p><img src="../img/uai.png" class="slide-logo"></p>

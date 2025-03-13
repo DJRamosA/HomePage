@@ -392,7 +392,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">TICS100 - Programación</h1>
-  <p class="subtitle">Introducción a Python</p>
+  <p class="subtitle">Clase 11</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -407,247 +407,389 @@ Diego Ramos Á.
 
 </section>
 <section>
-<section id="python-básico" class="title-slide slide level1 center">
-<h1>Python Básico</h1>
-
+<section id="numpy" class="title-slide slide level1 center">
+<h1>Numpy</h1>
+<p>Este modulo necesita su propia clase</p>
 </section>
-<section id="disclaimer" class="slide level2">
-<h2>Disclaimer</h2>
+<section id="listas" class="slide level2">
+<h2>Listas</h2>
+<p>Ya hemos visto en Python el concepto de listas:</p>
+<ul>
+<li>Una gran “cajonera” donde podemos almacenar distintos valores.</li>
+<li>Podemos acceder a los valores usando su posición en la lista.</li>
+<li>Una lista puede contener distintos tipos de datos: texto, números, booleanos, entre otros</li>
+</ul>
+</section>
+<section id="problemas-con-las-listas" class="slide level2">
+<h2>Problemas con las listas</h2>
+<p><strong>El mayor problema:</strong> Es demasiado flexible.</p>
+<p>Por ejemplo si tengo números y texto no puedo calcular la suma…</p>
+<p>Además nos faltan dimensiones</p>
+<p>Quizá me gustaría tener una matriz 2D, pero en listas no tenemos esto.</p>
+<div class="fragment fade-up">
+<p><strong>¿Solución?</strong></p>
+</div>
+<div class="fragment fade-up">
+<p><strong>¡Numpy!</strong></p>
+<p>Tenemos lo que son los arreglos (arreglos no son lo mismo que las listas)</p>
+</div>
+</section>
+<section id="numpy-1" class="slide level2">
+<h2>Numpy</h2>
+<p><strong>¿Qué es?</strong></p>
+<ul>
+<li>Numpy es un módulo en Python que agrega soporte para arreglos en una o múltiples dimensiones (como matrices), y una gran colección de operaciones matemáticas para operar sobre estos arreglos.</li>
+</ul>
+</section>
+<section id="numpy-2" class="slide level2" data-visibility="uncounted" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Numpy</h2>
+<div class="fragment fade-up">
+<p><strong>¿Y qué es un arreglo?</strong></p>
+<ul>
+<li><p>Los arreglos son el equivalente a una lista en Python, en el sentido que almacena un conjunto de valores. Se crean usando la función array de numpy.</p></li>
+<li><p>Los arreglos NO permiten mezclar distintos tipos de datos, y solo acepta valores de un mismo tipo convirtiendo a un tipo común.</p></li>
+<li><p>Los arreglos no son dinámicos, no deberíamos usar append!!!!</p></li>
+</ul>
+</div>
+</section>
+<section id="arreglos" class="slide level2">
+<h2>Arreglos</h2>
+<p>Los arreglos pueden ser de una sola dimensión como las listas o de múltiples dimensiones como las matrices.</p>
+
+<img data-src="../img/dimensiones_numpy.png" class="r-stretch"></section>
+<section id="uso-de-los-arreglos" class="slide level2">
+<h2>Uso de los Arreglos</h2>
+<div id="c54e8ecb" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np           <span class="co"># importamos la biblioteca NumPy</span></span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a>xs <span class="op">=</span> np.array([<span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">2</span>])     <span class="co"># creamos un arreglo de números</span></span>
+<span id="cb1-4"><a></a><span class="bu">print</span>(xs)                    <span class="co"># muestra en pantalla [3 1 2]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[3 1 2]</code></pre>
+</div>
+</div>
+<div class="fragment fade-up">
+<ul>
+<li>Cuando queremos evitar escribir el nombre completo, podemos darle un apodo (<code>as</code>). Ahora con tan solo escribir np es suficiente.</li>
+</ul>
+</div>
+<div class="fragment fade-up">
+<ul>
+<li>Fíjense que array es una función de <code>numpy</code> (<code>np</code>) que recibe como parámetro una lista.</li>
+</ul>
+</div>
+</section>
+<section id="ejemplos" class="slide level2">
+<h2>Ejemplos</h2>
+<div id="7e1b227c" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="|3,7|4,8|5,9|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np           <span class="co"># importamos la biblioteca NumPy</span></span>
+<span id="cb3-2"><a></a></span>
+<span id="cb3-3"><a></a>arreglo_1 <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])       <span class="co"># Arreglo de números enteros</span></span>
+<span id="cb3-4"><a></a>arreglo_2 <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="st">"hola"</span>, <span class="dv">3</span>])  <span class="co"># Arreglo de texto</span></span>
+<span id="cb3-5"><a></a>arreglo_3 <span class="op">=</span> np.array([<span class="fl">1.5</span>, <span class="dv">2</span>, <span class="dv">3</span>])     <span class="co"># Arreglo de decimales</span></span>
+<span id="cb3-6"><a></a></span>
+<span id="cb3-7"><a></a><span class="bu">print</span>(arreglo_1)</span>
+<span id="cb3-8"><a></a><span class="bu">print</span>(arreglo_2)</span>
+<span id="cb3-9"><a></a><span class="bu">print</span>(arreglo_3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Los arreglos NO permite mezclar distintos tipos de datos, y solo acepta valores de un mismo tipo convirtiendo a un tipo común.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="funciones-importantes" class="slide level2">
+<h2>Funciones importantes</h2>
+<p><code>numpy.zeros(dimensión)</code>: Crea un arreglo de tamaño <code>dimensión</code> y le asigna a cada elemento valor 0.</p>
+<div class="fragment fade-up">
+<div id="91b77165" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-2"><a></a></span>
+<span id="cb4-3"><a></a>a <span class="op">=</span> np.zeros([<span class="dv">5</span>])</span>
+<span id="cb4-4"><a></a><span class="bu">print</span>(a) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[0. 0. 0. 0. 0.]</code></pre>
+</div>
+</div>
+</div>
+<div class="fragment fade-up">
+<div id="cd02c2c7" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb6-2"><a></a></span>
+<span id="cb6-3"><a></a>a <span class="op">=</span> np.zeros([<span class="dv">5</span>, <span class="dv">5</span>])</span>
+<span id="cb6-4"><a></a><span class="bu">print</span>(a) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]]</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="funciones-importantes-2" class="slide level2">
+<h2>Funciones importantes 2</h2>
+<p><code>numpy.ones(dimensión)</code>: Crea un arreglo de tamaño <code>dimensión</code> y le asigna a cada elemento valor 1</p>
+<div class="fragment fade-up">
+<div id="7c460572" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-2"><a></a></span>
+<span id="cb8-3"><a></a>b <span class="op">=</span> np.ones([<span class="dv">2</span>, <span class="dv">4</span>])</span>
+<span id="cb8-4"><a></a><span class="bu">print</span>(b) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1. 1. 1. 1.]
+ [1. 1. 1. 1.]]</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="funciones-importantes-3" class="slide level2">
+<h2>Funciones importantes 3</h2>
+<p><code>numpy.full(dimensión, valor)</code>: Crea un arreglo de tamaño <code>dimensión</code> y le asigna a cada elemento el valor valor</p>
+<div class="fragment fade-up">
+<div id="a390ba9a" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb10-2"><a></a></span>
+<span id="cb10-3"><a></a>c <span class="op">=</span> np.full([<span class="dv">2</span>,<span class="dv">3</span>], <span class="dv">7</span>) </span>
+<span id="cb10-4"><a></a><span class="bu">print</span>(c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[7 7 7]
+ [7 7 7]]</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="funciones-importantes-4" class="slide level2">
+<h2>Funciones importantes 4</h2>
+<p><code>numpy.random.random(dimensión)</code>: Crea un arreglo de tamaño <code>dimensión</code> y le asigna a cada elemento un valor random entre 0 y 1</p>
+<div class="fragment fade-up">
+<div id="6fe055a4" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb12-2"><a></a></span>
+<span id="cb12-3"><a></a>d <span class="op">=</span> np.random.random([<span class="dv">5</span>]) </span>
+<span id="cb12-4"><a></a><span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[0.86531349 0.81099111 0.12948031 0.01381339 0.10795846]</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="acceder-a-sus-elementos" class="slide level2">
+<h2>Acceder a sus elementos</h2>
+<p>Al igual que con listas, se puede obtener un elemento en una posición usando la notación:</p>
+<p><strong><code>arreglo[posición]</code></strong></p>
+<p>pero si es en más de una dimensión debemos asegurarnos de incluir la posición en cada una de ellas.</p>
+<div id="68aa8d41" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a><span class="im">import</span> numpy</span>
+<span id="cb14-2"><a></a></span>
+<span id="cb14-3"><a></a>a <span class="op">=</span> numpy.random.random([<span class="dv">5</span>])</span>
+<span id="cb14-4"><a></a><span class="bu">print</span>(a[<span class="dv">3</span>])</span>
+<span id="cb14-5"><a></a></span>
+<span id="cb14-6"><a></a>b <span class="op">=</span> numpy.random.random([<span class="dv">4</span>,<span class="dv">5</span>])</span>
+<span id="cb14-7"><a></a><span class="bu">print</span>(b[<span class="dv">3</span>, <span class="dv">0</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0.7540935262533384
+0.16297356816022712</code></pre>
+</div>
+</div>
+</section>
+<section id="agregar-elementos" class="slide level2">
+<h2>Agregar elementos</h2>
+<p>Para agregar elementos a un arreglo tenemos la función append de la biblioteca Numpy</p>
+<div id="0e713673" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb16-2"><a></a></span>
+<span id="cb16-3"><a></a>a <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>])</span>
+<span id="cb16-4"><a></a><span class="bu">print</span>(a)</span>
+<span id="cb16-5"><a></a></span>
+<span id="cb16-6"><a></a>b <span class="op">=</span> np.append(a, [<span class="dv">7</span>])</span>
+<span id="cb16-7"><a></a><span class="bu">print</span>(a)</span>
+<span id="cb16-8"><a></a><span class="bu">print</span>(b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1 2 3 4 5 6]
+[1 2 3 4 5 6]
+[1 2 3 4 5 6 7]</code></pre>
+</div>
+</div>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Los arreglos NO se actualizan cuando usamos <code>append</code>, sino que se crea una copia del arreglo con el o los elementos agregados.</p>
+<p>ASI QUE EVITE USAR <code>APPEND</code></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cantidad-de-elementos" class="slide level2">
+<h2>Cantidad de elementos</h2>
+<p>Para obtener la cantidad de elementos de un arreglo podemos usar <code>len(arreglo)</code>, tal como con listas, o el atributo llamado <code>size</code>.</p>
+<div class="fragment fade-up">
+<div id="9e995811" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb18-2"><a></a></span>
+<span id="cb18-3"><a></a>a <span class="op">=</span> np.random.random(<span class="dv">5</span>,)</span>
+<span id="cb18-4"><a></a></span>
+<span id="cb18-5"><a></a><span class="bu">print</span>(a.size, <span class="st">"vs"</span>, <span class="bu">len</span>(a))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>5 vs 5</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="dimensiones" class="slide level2">
+<h2>Dimensiones</h2>
+<p>Para obtener las dimensiones de un arreglo y la magnitud de cada dimensión usamos shape:</p>
+<div id="b52a9fe8" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb20-2"><a></a></span>
+<span id="cb20-3"><a></a>m <span class="op">=</span> np.zeros([<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])</span>
+<span id="cb20-4"><a></a><span class="bu">print</span>(m.shape)</span>
+<span id="cb20-5"><a></a><span class="bu">print</span>(<span class="st">"Numeros de dimensiones:"</span>, <span class="bu">len</span>(m.shape))</span>
+<span id="cb20-6"><a></a></span>
+<span id="cb20-7"><a></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(m.shape)):</span>
+<span id="cb20-8"><a></a>    <span class="bu">print</span>(<span class="st">"Número de elementos en dimension"</span>, i, <span class="st">":"</span>, m.shape[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(2, 3, 4)
+Numeros de dimensiones: 3
+Número de elementos en dimension 0 : 2
+Número de elementos en dimension 1 : 3
+Número de elementos en dimension 2 : 4</code></pre>
+</div>
+</div>
+</section>
+<section id="recorrer-un-arreglo" class="slide level2 smaller">
+<h2>Recorrer un arreglo</h2>
+<p>Para recorrer un arreglo, podemos utilizar el método <code>shape</code> y recorrer cada una de sus dimensiones paso a paso. Por ejemplo, para recorrer primero las filas y luego las columnas:</p>
+<div id="d3b2e70a" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb22-2"><a></a></span>
+<span id="cb22-3"><a></a>m <span class="op">=</span> np.random.randint(<span class="dv">1</span>, <span class="dv">101</span>, [<span class="dv">2</span>,<span class="dv">3</span>])</span>
+<span id="cb22-4"><a></a></span>
+<span id="cb22-5"><a></a><span class="bu">print</span>(<span class="st">'['</span>)</span>
+<span id="cb22-6"><a></a></span>
+<span id="cb22-7"><a></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>( m.shape[<span class="dv">0</span>] ): <span class="co"># Ciclo Externo</span></span>
+<span id="cb22-8"><a></a>    <span class="bu">print</span>(<span class="st">'</span><span class="ch">\t</span><span class="st">[</span><span class="ch">\t</span><span class="st">'</span>, end<span class="op">=</span><span class="st">''</span>)</span>
+<span id="cb22-9"><a></a>    </span>
+<span id="cb22-10"><a></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>( m.shape[<span class="dv">1</span>] ):  <span class="co"># Ciclo Interno</span></span>
+<span id="cb22-11"><a></a>        <span class="bu">print</span>(m[i,j], end<span class="op">=</span><span class="st">'</span><span class="ch">\t</span><span class="st">'</span>)</span>
+<span id="cb22-12"><a></a>    </span>
+<span id="cb22-13"><a></a>    <span class="bu">print</span>(<span class="st">']'</span>)</span>
+<span id="cb22-14"><a></a></span>
+<span id="cb22-15"><a></a><span class="bu">print</span>(<span class="st">']'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[
+    [   97  15  16  ]
+    [   50  8   70  ]
+]</code></pre>
+</div>
+</div>
+</section>
+<section id="ejercicio" class="slide level2">
+<h2>Ejercicio</h2>
+<p>Cree un código que genere una matriz de 40x3 representando las notas de controles, primera y segunda pruebas de los alumnos del curso. Llene esta matriz con números aleatorios entre 1 y 7. Finalmente, cree una nueva matriz unidimensional de tamaño 40, con los promedios simples de cada alumno y muestre por pantalla.</p>
+</section>
+<section id="solución-1" class="slide level2">
+<h2>Solución 1</h2>
+<div id="f8e3c572" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a></a><span class="im">import</span> numpy</span>
+<span id="cb24-2"><a></a>notas <span class="op">=</span> numpy.random.random([<span class="dv">40</span>,<span class="dv">3</span>])<span class="op">*</span><span class="dv">6</span><span class="op">+</span><span class="dv">1</span></span>
+<span id="cb24-3"><a></a>prom <span class="op">=</span> numpy.zeros([<span class="dv">40</span>])</span>
+<span id="cb24-4"><a></a></span>
+<span id="cb24-5"><a></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,notas.shape[<span class="dv">0</span>]):</span>
+<span id="cb24-6"><a></a>       suma <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb24-7"><a></a>       <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,notas.shape[<span class="dv">1</span>]):</span>
+<span id="cb24-8"><a></a>             suma <span class="op">=</span> suma <span class="op">+</span> notas[i,j]</span>
+<span id="cb24-9"><a></a>       prom[i] <span class="op">=</span> suma<span class="op">/</span><span class="dv">3</span></span>
+<span id="cb24-10"><a></a><span class="bu">print</span>(<span class="st">"Los promedios son "</span>, prom.<span class="bu">round</span>(<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Los promedios son  [3.43 5.11 4.57 2.06 4.1  3.01 4.6  3.62 4.85 4.71 2.56 3.81 3.28 4.04
+ 2.88 4.98 3.   3.96 3.18 2.88 4.84 4.27 3.39 4.77 4.62 3.79 4.92 4.63
+ 4.85 4.7  4.26 4.23 3.28 4.68 3.58 4.15 3.51 3.26 3.24 2.74]</code></pre>
+</div>
+</div>
+</section>
+<section id="solución-2" class="slide level2">
+<h2>Solución 2</h2>
+<div id="7c986bfe" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a></a><span class="im">import</span> numpy</span>
+<span id="cb26-2"><a></a>notas <span class="op">=</span> numpy.random.random([<span class="dv">40</span>,<span class="dv">3</span>])<span class="op">*</span><span class="dv">6</span><span class="op">+</span><span class="dv">1</span></span>
+<span id="cb26-3"><a></a>prom <span class="op">=</span> numpy.zeros([<span class="dv">40</span>])</span>
+<span id="cb26-4"><a></a></span>
+<span id="cb26-5"><a></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,notas.shape[<span class="dv">0</span>]):</span>
+<span id="cb26-6"><a></a>     prom[i] <span class="op">=</span> notas[i,:].mean()</span>
+<span id="cb26-7"><a></a></span>
+<span id="cb26-8"><a></a><span class="bu">print</span>(<span class="st">"Los promedios son "</span>, prom.<span class="bu">round</span>(<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Los promedios son  [1.52 4.74 3.27 4.42 2.87 5.38 4.55 3.99 4.01 2.34 3.13 5.55 4.26 4.69
+ 3.76 3.37 4.82 4.76 4.73 4.72 4.1  2.11 3.47 3.46 3.76 2.77 2.54 3.92
+ 5.1  3.06 3.76 2.01 4.6  1.41 4.13 4.3  4.89 3.34 4.41 5.22]</code></pre>
+</div>
+</div>
+</section>
+<section id="filas-y-columnas" class="slide level2">
+<h2>Filas y Columnas</h2>
+<p>Como se observa en la última solución, los cálculos se pueden ejecutar sobre la matriz entera, una fila o columna. En los últimos dos casos es necesario el operador “:”</p>
+<ul>
+<li><p><code>matriz*num</code>: retorna una matriz donde todos los elementos son multiplicados por num (pueden usar /, +, -)</p></li>
+<li><p><code>matriz[i,:]*num</code>: retorna un arreglo correspondiente a la i-ésima fila multiplicada por num</p></li>
+<li><p><code>matriz[:,i]*num</code>: retorna un arreglo correspondiente a la i-ésima columna multiplicada por num</p></li>
+<li><p><code>matriz.min()</code>: retorna el valor mínimo de la matriz</p></li>
+<li><p><code>matriz[i,:].min()</code>: retorna el valor mínimo de la i-ésima fila</p></li>
+<li><p><code>matriz[:,i].min()</code>: retorna el valor mínimo de la i-ésima columna</p></li>
+</ul>
+</section>
+<section id="filas-y-columnas-1" class="slide level2">
+<h2>Filas y Columnas</h2>
+<p>En palabras sencillas, el operador <code>[i,:]</code> permite obtener/modificar todos los elementos de la i-ésima fila.</p>
+<p>En forma similar, el operador <code>[:,i]</code> permite obtener/modificar todos los elementos de la i-ésima columna.</p>
+</section>
+<section id="ejercicio-1" class="slide level2">
+<h2>Ejercicio 1</h2>
+<p>Escriba un programa en Python que solicite al usuario num (un número entero), genere una matriz cuadrada de tamaño num en donde todo el borde está compuesto de unos y el interior de ceros y luego muestre la matriz por pantalla.</p>
+</section>
+<section id="ejercicio-2" class="slide level2">
+<h2>Ejercicio 2</h2>
+<p>Escriba un programa en Python que solicite al usuario num (un número entero), genere una matriz cuadrada de tamaño num con la tabla de multiplicar y la muestre por pantalla. Ejemplo:</p>
+</section>
+<section id="ejercicio-3" class="slide level2">
+<h2>Ejercicio 3</h2>
+<p>Escriba un programa que cree una matriz de 10x10 posiciones con contenido numérico aleatorio entero entre 1 y 99 y luego determine si el número 35 se encuentra dentro de dicha matriz.</p>
+<p>Si el número 35 se encuentra en la matriz, debe imprimir por consola indicando todas las posiciones de la matriz donde se encontró el número 35. Si el número 35 no está en la matriz, debe imprimir por consola un mensaje indicando que el número 35 no se encuentra en la matriz.</p>
+<p>Use la función: <code>numpy.random.randint(a,b,[dim1,dim2])</code></p>
+</section>
+<section id="ejercicio-final" class="slide level2 smaller">
+<h2>Ejercicio Final</h2>
+<p>Una universidad quiere hacer un programa que analice las evaluaciones de un curso. El curso tiene evaluación de la Prueba 1, Prueba 2, Prueba 3, y controles, cada una vale 25%. Para hacer el análisis, la Universidad requiere responder distintas preguntas. Pero primero le solicita simular las notas de los alumnos.</p>
 <p><br></p>
-<p>Ahora todo tiene IA, por lo que armar codigo desde su computador será muy sencillo. Por lo tanto:</p>
-<div class="fragment fade-up">
+<p>Funciones útiles: <code>np.round()</code>, <code>A.mean()</code>, <code>A.shape()</code>, <code>np.random.rand()</code>, <code>random.random()</code></p>
+</section>
+<section id="ejercicio-final-1" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Ejercicio Final</h2>
+<ol type="1">
+<li><p>Genere una matriz de tamaño 40x6 con las notas de los estudiantes.</p>
 <ul>
-<li><strong>Recomendación 1</strong>: Antes de usar la IA aprendan a ciegas, entender que hace cada cosa, es tema de practica.</li>
-</ul>
-</div>
-<div class="fragment fade-up">
-<ul>
-<li><strong>Recomendación 2</strong>: En las pruebas no tienen IA por lo que no les conviene acostumbrarse.</li>
-</ul>
-</div>
-</section></section>
-<section>
-<section id="para-ejecutar-el-código-que-se-está-mostrando-dependerá-de-su-decisión" class="title-slide slide level1 center">
-<h1>Para ejecutar el código que se está mostrando dependerá de su decisión:</h1>
-
-</section>
-<section id="si-escogió-replit" class="slide level2">
-<h2>Si escogió replit:</h2>
-<div class="r-stack">
-<p><img data-src="../img/crear_replit_1.png" class="fragment" width="1000" height="600"></p>
-<p><img data-src="../img/crear_replit_2.png" class="fragment" width="1000" height="600"></p>
-</div>
-</section>
-<section id="si-escogió-colab" class="slide level2">
-<h2>Si escogió Colab:</h2>
-<div class="r-stack">
-<p><img data-src="../img/crear_colab_1.png" class="fragment" width="1000" height="600"></p>
-<p><img data-src="../img/crear_colab_2.png" class="fragment" width="1000" height="600"></p>
-</div>
-</section>
-<section id="en-el-caso-que-escoger-instalarlo-en-su-computador" class="slide level2">
-<h2>En el caso que escoger instalarlo en su computador…</h2>
-<p><br></p>
-<p>Mandar un correo al ayudante o puede apoyarse en mi para el proceso de instalación.</p>
-</section>
-<section id="hagamos-el-primer-código" class="slide level2">
-<h2>Hagamos el primer código</h2>
-<p><br></p>
-<p>Un programa en Python está conformado por líneas de texto que contienen <strong>una o más instrucciones y sentencias del lenguaje</strong>.</p>
-<p>Tenemos el clasico hola mundo:</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>HelloWorld.py</strong></pre>
-</div>
-<div class="sourceCode" id="cb1" data-filename="HelloWorld.py"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a></span>
-<span id="cb1-2"><a></a><span class="bu">print</span>(<span class="st">"Hola Mundo"</span>)</span>
-<span id="cb1-3"><a></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="fragment fade-up">
-<div id="fb6cb343" class="cell panel-input" data-execution_count="1">
-<p>Hola Mundo</p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="comentarios" class="title-slide slide level1 center">
-<h1>Comentarios</h1>
-
-</section>
-<section id="qué-es-y-para-qué-sirve" class="slide level2">
-<h2>¿Qué es y para qué sirve?</h2>
-<p>Un comentario es una linea del código que no es ejecutable.</p>
-<p>Cuando deseamos escribir alguna nota para recordar o para otra persona, podemos utilizar comentarios.</p>
-<p>Otro uso, es comentar código, es decir, hacer no ejecutable una parte de este.</p>
-</section>
-<section id="cómo-se-comenta" class="slide level2">
-<h2>¿Cómo se comenta?</h2>
-<p>Una línea de comentarios en Python comienza con el <strong>símbolo <code>#</code></strong> y todo lo que está después de este no será tomado en cuenta por el intérprete de Python al momento de ejecutar el programa.</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>HelloWorld.py</strong></pre>
-</div>
-<div class="sourceCode" id="cb2" data-filename="HelloWorld.py"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># Esto es un comentario</span></span>
-<span id="cb2-2"><a></a><span class="bu">print</span>(<span class="st">"Hola Mundo"</span>)</span>
-<span id="cb2-3"><a></a><span class="co"># Por ejemplo si coloco:</span></span>
-<span id="cb2-4"><a></a><span class="co"># print("Hola alumnos del curso de Programación")</span></span>
-<span id="cb2-5"><a></a><span class="co"># Ups... no hay nada en el output</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="fragment fade-up">
-<div id="8d707e95" class="cell panel-input" data-execution_count="2">
-<p>Hola Mundo</p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="imprimir-en-pantalla" class="title-slide slide level1 center">
-<h1>Imprimir en pantalla</h1>
-
-</section>
-<section id="comando-print" class="slide level2">
-<h2>Comando <code>print()</code></h2>
-<p>El comando <code>print()</code> permite desplegar el resultado de una ¿<strong>variable</strong>? o un <strong>texto por la terminal</strong>. Si escribimos texto, éste debe ir escrito entre <strong>comillas</strong>. Si escribimos una ¿variable?, éste despliega <strong>el valor almacenado</strong> en dicha variable.</p>
-</section>
-<section id="observación" class="slide level2">
-<h2>Observación</h2>
-<p>El computador es literal, por lo que no va a completar el código por ustedes. Cada caracter que falte significa un error en su código.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="bu">print</span>(<span class="st">"Este es mi primer texto)</span></span>
-<span id="cb3-2"><a></a><span class="er"># Esta linea de codigo si o si esta mal</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="fragment fade-up">
-<div id="eb7f5595" class="cell" data-execution_count="3">
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-cyan-fg ansi-bold">  Cell </span><span class="ansi-green-fg ansi-bold">In[3], line 1</span>
-<span class="ansi-yellow-fg ansi-bold">    print("Este es mi primer texto)</span>
-<span class="ansi-white-fg ansi-bold">          ^</span>
-<span class="ansi-red-fg ansi-bold">SyntaxError</span><span class="ansi-red-fg ansi-bold">:</span> unterminated string literal (detected at line 1)
-</pre>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="variables" class="title-slide slide level1 center">
-<h1>Variables</h1>
-
-</section>
-<section id="qué-es-una-variable" class="slide level2">
-<h2>¿Qué es una variable?</h2>
-<p>Una variable representa un espacio de memoria en el computador que puede ser modificado en el tiempo y permite el registro y acceso a los datos.</p>
-<p>Podemos compararlas con cajas. Donde podemos:</p>
-<div class="fragment fade-up">
-<ul>
-<li>Almacenar información</li>
-</ul>
-</div>
-<div class="fragment fade-up">
-<ul>
-<li>Recuperar su información</li>
-</ul>
-</div>
-<div class="fragment fade-up">
-<ul>
-<li>Sobreescribir la información</li>
-</ul>
-</div>
-</section>
-<section id="cómo-creamos-una-variable" class="slide level2">
-<h2>¿Cómo creamos una variable?</h2>
-<p><br></p>
-<center>
-<p>Para asignar el valor 5 a una variable se usa:</p>
-<p><code>x = 5</code></p>
-<div class="fragment fade-up">
-<p><strong>¿Qué pasa si lo invertimos?</strong></p>
-<p><br></p>
-</div>
-<div class="fragment fade-up">
-<p><code>5 = x</code></p>
-</div>
-<div class="fragment fade-up">
-<p><span style="color:red;">Error!! Siempre se asigna de DERECHA a IZQUIERDA</span></p>
-</div>
-</center>
-</section>
-<section id="observaciones" class="slide level2">
-<h2>Observaciones</h2>
-<p>Siempre intentar asignar un nombre <strong>SIGNIFICATIVO</strong> a las variables.</p>
-<p>Entender código es un tema en las empresas.</p>
-<div class="fragment fade-left">
-<p><strong>Considere que:</strong></p>
-<blockquote>
-<p>Cambiar los nombres de las variables del programa de un amigo no implica que usted hizo el código. Esta es la forma más burda de intentar engañarse.</p>
-</blockquote>
-</div>
-</section></section>
-<section>
-<section id="modfiquemos-variables" class="title-slide slide level1 center">
-<h1>Modfiquemos variables</h1>
-
-</section>
-<section id="operaciones-existentes" class="slide level2">
-<h2>Operaciones existentes</h2>
-<p>Las básicas que disponemos son:</p>
-<ul>
-<li>Sumar (+)</li>
-<li>Restar (-)</li>
-<li>Dividir (/)</li>
-<li>Módulo (%)</li>
-</ul>
-</section></section>
-<section>
-<section id="tiene-sentido-un-programa-que-no-podemos-interactuar" class="title-slide slide level1 center">
-<h1>¿Tiene sentido un programa que no podemos interactuar?</h1>
-
-</section>
-<section id="función-importante" class="slide level2">
-<h2>Función importante</h2>
-<p>Segunda función que veremos hoy: <code>input()</code></p>
-<p>Esta nos permite pedirle información al usuario.</p>
-<p>Cuando se llama a la función el computador espera a que el usuario entregue un valor y presione la tecla ‘enter’.</p>
-<div class="fragment fade-up">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="bu">print</span>(<span class="st">"Ingrese un numero"</span>)</span>
-<span id="cb4-2"><a></a>numIngresado <span class="op">=</span> <span class="bu">input</span>()</span>
-<span id="cb4-3"><a></a><span class="bu">print</span>(<span class="st">"El número ingresado es:"</span>, numIngresado)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section></section>
-<section>
-<section id="hagamos-prueba-de-código" class="title-slide slide level1 center">
-<h1>¡Hagamos prueba de código!</h1>
-
-</section>
-<section id="porqué-falla" class="slide level2">
-<h2>¿Porqué falla?</h2>
-<p>Las variables pueden almacenar distinto tipo de información, ya sea número o texto. Esto afecta el cómo procesamos la información. Sumar <code>5+5</code> es distinto a la cadena de texto <code>"5+5"</code>.</p>
-<p>Entonces:</p>
-<div class="fragment fade-left">
-<p>Cuando le entregamos información con <code>input()</code></p>
-<p><strong>¿Qué recibe? ¿Número o texto?</strong></p>
-</div>
-<div class="fragment fade-left">
-<center>
-<span style="color:red;"> <strong>TEXTO</strong> </span>
-</center>
-</div>
-</section>
-<section id="nueva-función-importante" class="slide level2">
-<h2>Nueva función importante</h2>
-<p>Podemos transformar el carácter de un número al valor de un número utilizando la función <code>int()</code>.</p>
-<div class="fragment fade-up">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>y <span class="op">=</span> <span class="bu">input</span>() <span class="co"># Se asigna como texto</span></span>
-<span id="cb5-2"><a></a>y <span class="op">=</span> <span class="bu">int</span>(y) <span class="co"># Se transforma a número</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="otro-tipo-de-transformaciones" class="slide level2">
-<h2>Otro tipo de transformaciones</h2>
-<p>Para transformar una variable a otro tipo de formato, no solo existe <code>input()</code>.</p>
-<p>Existe:</p>
-<ul>
-<li><code>str()</code> A texto</li>
-<li><code>float()</code> A decimal</li>
-<li>Y muchas más que aprenderán con el tiempo…</li>
-</ul>
+<li>1ra columna: id de los estudiantes (números de 1 a 40).</li>
+<li>2da columna: nota prueba 1 (nota aleatoria entre 3.0 y 7.0)</li>
+<li>3ra columna: nota prueba 2 (nota aleatoria entre 1.0 y 7.0)</li>
+<li>4ta columna: nota prueba 3 (nota aleatoria entre 1.0 y 6.0)</li>
+<li>5ta columna: nota controles (nota aleatoria entre 5.0 y 7.0)</li>
+<li>6ta columna: nota promedio final.</li>
+</ul></li>
+<li><p>Muestre el promedio de cada evaluación por pantalla.</p></li>
+<li><p>Muestre el id del estudiante que le fue mejor en cada evaluación.</p></li>
+<li><p>Muestre el promedio de cada evaluación considerando solo los estudiantes que aprobaron el ramo.</p></li>
+<li><p>Muestre el promedio final de los estudiantes que tuvieron nota mayor a 4.0 en todas las evaluaciones.</p></li>
+<li><p>Muestro por pantalla los ID de los alumnos que aprobaron la asignatura con al menos una evaluación menor a 4.0</p></li>
+</ol>
 
 <div class="quarto-auto-generated-content">
 <p><img src="../img/uai.png" class="slide-logo"></p>
