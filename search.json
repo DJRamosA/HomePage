@@ -326,14 +326,14 @@
     "href": "tics100/Clase03.html#código-1",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.6907469053362936\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n2"
+    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.7258642473049968\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n7"
   },
   {
     "objectID": "tics100/Clase03.html#código-2",
     "href": "tics100/Clase03.html#código-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n4.507053031884969"
+    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n5.309055279965708"
   },
   {
     "objectID": "tics100/Clase03.html#math",
@@ -389,14 +389,14 @@
     "href": "tics100/Clase03.html#código-1-2",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1741826494.9114702\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Mar 12 21:41:34 2025"
+    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1741826790.0857213\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Mar 12 21:46:30 2025"
   },
   {
     "objectID": "tics100/Clase03.html#código-2-2",
     "href": "tics100/Clase03.html#código-2-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Mar 12 21:41:34 2025\nFecha actual:  Wed Mar 12 21:41:36 2025"
+    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Mar 12 21:46:30 2025\nFecha actual:  Wed Mar 12 21:46:32 2025"
   },
   {
     "objectID": "tics100/Clase03.html#ejemplo-de-uso",
@@ -522,7 +522,7 @@
     "href": "courses.html",
     "title": "Cursos",
     "section": "",
-    "text": "Clase 01\n\n\nPresentación del Curso\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 02\n\n\nIntroducción a Python\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 03\n\n\nIntroducción a Python: Funciones\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 04\n\n\nCondicionales\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 05\n\n\nCiclos\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 06\n\n\nListas\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Clase 01\n\n\nPresentación del Curso\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 02\n\n\nIntroducción a Python\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 03\n\n\nIntroducción a Python: Funciones\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 04\n\n\nCondicionales\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 05\n\n\nCiclos\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 06\n\n\nListas\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 07\n\n\nEjercicio Listas\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 08\n\n\nExtra P1\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 09\n\n\nCiclos Anidados\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 10\n\n\nNumpy\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -1103,14 +1103,14 @@
     "href": "tics100/Clase10.html#funciones-importantes-4",
     "title": "TICS100 - Programación",
     "section": "Funciones importantes 4",
-    "text": "Funciones importantes 4\nnumpy.random.random(dimensión): Crea un arreglo de tamaño dimensión y le asigna a cada elemento un valor random entre 0 y 1\n\n\nimport numpy as np\n\nd = np.random.random([5]) \nprint(d)\n\n[0.86531349 0.81099111 0.12948031 0.01381339 0.10795846]"
+    "text": "Funciones importantes 4\nnumpy.random.random(dimensión): Crea un arreglo de tamaño dimensión y le asigna a cada elemento un valor random entre 0 y 1\n\n\nimport numpy as np\n\nd = np.random.random([5]) \nprint(d)\n\n[0.69958917 0.46401783 0.28634662 0.36890204 0.83641123]"
   },
   {
     "objectID": "tics100/Clase10.html#acceder-a-sus-elementos",
     "href": "tics100/Clase10.html#acceder-a-sus-elementos",
     "title": "TICS100 - Programación",
     "section": "Acceder a sus elementos",
-    "text": "Acceder a sus elementos\nAl igual que con listas, se puede obtener un elemento en una posición usando la notación:\narreglo[posición]\npero si es en más de una dimensión debemos asegurarnos de incluir la posición en cada una de ellas.\n\nimport numpy\n\na = numpy.random.random([5])\nprint(a[3])\n\nb = numpy.random.random([4,5])\nprint(b[3, 0])\n\n0.7540935262533384\n0.16297356816022712"
+    "text": "Acceder a sus elementos\nAl igual que con listas, se puede obtener un elemento en una posición usando la notación:\narreglo[posición]\npero si es en más de una dimensión debemos asegurarnos de incluir la posición en cada una de ellas.\n\nimport numpy\n\na = numpy.random.random([5])\nprint(a[3])\n\nb = numpy.random.random([4,5])\nprint(b[3, 0])\n\n0.7108890917424983\n0.6053743793414248"
   },
   {
     "objectID": "tics100/Clase10.html#agregar-elementos",
@@ -1138,7 +1138,7 @@
     "href": "tics100/Clase10.html#recorrer-un-arreglo",
     "title": "TICS100 - Programación",
     "section": "Recorrer un arreglo",
-    "text": "Recorrer un arreglo\nPara recorrer un arreglo, podemos utilizar el método shape y recorrer cada una de sus dimensiones paso a paso. Por ejemplo, para recorrer primero las filas y luego las columnas:\n\nimport numpy as np\n\nm = np.random.randint(1, 101, [2,3])\n\nprint('[')\n\nfor i in range( m.shape[0] ): # Ciclo Externo\n    print('\\t[\\t', end='')\n    \n    for j in range( m.shape[1] ):  # Ciclo Interno\n        print(m[i,j], end='\\t')\n    \n    print(']')\n\nprint(']')\n\n[\n    [   97  15  16  ]\n    [   50  8   70  ]\n]"
+    "text": "Recorrer un arreglo\nPara recorrer un arreglo, podemos utilizar el método shape y recorrer cada una de sus dimensiones paso a paso. Por ejemplo, para recorrer primero las filas y luego las columnas:\n\nimport numpy as np\n\nm = np.random.randint(1, 101, [2,3])\n\nprint('[')\n\nfor i in range( m.shape[0] ): # Ciclo Externo\n    print('\\t[\\t', end='')\n    \n    for j in range( m.shape[1] ):  # Ciclo Interno\n        print(m[i,j], end='\\t')\n    \n    print(']')\n\nprint(']')\n\n[\n    [   66  50  99  ]\n    [   39  30  77  ]\n]"
   },
   {
     "objectID": "tics100/Clase10.html#ejercicio",
@@ -1152,14 +1152,14 @@
     "href": "tics100/Clase10.html#solución-1",
     "title": "TICS100 - Programación",
     "section": "Solución 1",
-    "text": "Solución 1\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n       suma = 0\n       for j in range(0,notas.shape[1]):\n             suma = suma + notas[i,j]\n       prom[i] = suma/3\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [3.43 5.11 4.57 2.06 4.1  3.01 4.6  3.62 4.85 4.71 2.56 3.81 3.28 4.04\n 2.88 4.98 3.   3.96 3.18 2.88 4.84 4.27 3.39 4.77 4.62 3.79 4.92 4.63\n 4.85 4.7  4.26 4.23 3.28 4.68 3.58 4.15 3.51 3.26 3.24 2.74]"
+    "text": "Solución 1\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n       suma = 0\n       for j in range(0,notas.shape[1]):\n             suma = suma + notas[i,j]\n       prom[i] = suma/3\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [5.67 4.47 4.01 4.01 5.05 3.97 3.14 3.64 4.14 3.57 5.66 5.21 5.34 3.88\n 1.86 4.17 3.98 4.07 3.15 2.98 5.8  2.98 3.54 4.46 3.15 3.75 3.78 2.74\n 5.79 2.92 4.59 4.82 4.73 3.57 4.51 3.76 2.54 3.71 3.75 3.2 ]"
   },
   {
     "objectID": "tics100/Clase10.html#solución-2",
     "href": "tics100/Clase10.html#solución-2",
     "title": "TICS100 - Programación",
     "section": "Solución 2",
-    "text": "Solución 2\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n     prom[i] = notas[i,:].mean()\n\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [1.52 4.74 3.27 4.42 2.87 5.38 4.55 3.99 4.01 2.34 3.13 5.55 4.26 4.69\n 3.76 3.37 4.82 4.76 4.73 4.72 4.1  2.11 3.47 3.46 3.76 2.77 2.54 3.92\n 5.1  3.06 3.76 2.01 4.6  1.41 4.13 4.3  4.89 3.34 4.41 5.22]"
+    "text": "Solución 2\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n     prom[i] = notas[i,:].mean()\n\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [5.62 1.99 5.35 4.53 4.21 2.5  3.67 4.24 2.69 3.87 2.78 3.71 5.25 4.48\n 2.78 2.42 4.18 4.32 4.27 3.48 3.41 5.33 3.   2.8  2.9  4.43 2.88 2.84\n 4.33 4.04 3.15 4.89 4.07 4.82 4.21 3.68 4.8  6.06 4.93 3.95]"
   },
   {
     "objectID": "tics100/Clase10.html#filas-y-columnas",
