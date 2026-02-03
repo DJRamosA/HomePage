@@ -1,12 +1,30 @@
 ---
 title: "HomePage"
-listing:
-  contents: courses.qmd
-  sort: "date desc"
-  type: default
-  categories: true
+
+# listing:
+#   contents: courses.qmd
+#   sort: "date desc"
+#   type: default
+#   categories: true
 ---
 
-This is a Quarto website.
+## Investigación
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+## Publicaciones
+
+- Ramos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). [AC-PLT: An algorithm for computer-assisted coding of semantic property listing data](https://link.springer.com/article/10.3758/s13428-023-02260-9) *Behavior Research Methods*, 56(4), 3366-3379.
+
+## Cursos y Clases
+
+### Cursos que Dicto
+- [Programación](courses.qmd) - Curso básico de programación.
+- [Nombre del Curso 2](#) - Descripción breve.
+
+
+## Contacto
+- Email: [diegor98@gmail.com](mailto:diegor98@gmail.com)
+- [Google Scholar](#) | [ResearchGate](#) | [GitHub](#)
+
+---
+© 2025 Diego Joaquín Ramos Álvarez - Todos los derechos reservados.

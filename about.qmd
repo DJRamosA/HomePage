@@ -10,10 +10,14 @@ about:
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/in/diego-ramos-alvarez/
+    - icon: envelope
+      text: Mail
+      href: mailto:diegor98@gmail.com
 ---
 :::{#hero-heading}
 
 I'm Diego Ramos a PhD student in Universidad Adolfo Ibáñez in Santiago, Chile. 
+
 
 ## Education 
 
@@ -26,7 +30,7 @@ Master in Science of Data Science | Marzo 2021 - Enero 2023
 **Universidad Adolfo Ibáñez** | Viña del Mar \
 Ingeniería Civil Informática | Marzo 2017 - Enero 2023
 
-## Papers Publicados
+<!-- ## Papers Publicados
 
 Ramos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). [AC-PLT: An algorithm for computer-assisted coding of semantic property listing data](https://link.springer.com/article/10.3758/s13428-023-02260-9). *Behavior Research Methods*, 56(4), 3366-3379.
-:::
+::: -->
