@@ -23,9 +23,10 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: Darkly
     css: styles.css
-    # toc: true
+    smooth-scroll: true
+    
 
 
 
