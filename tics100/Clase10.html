@@ -459,7 +459,7 @@ Diego Ramos Á.
 <img data-src="../img/dimensiones_numpy.png" class="r-stretch"></section>
 <section id="uso-de-los-arreglos" class="slide level2">
 <h2>Uso de los Arreglos</h2>
-<div id="77178125" class="cell" data-execution_count="1">
+<div id="64ced784" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np           <span class="co"># importamos la biblioteca NumPy</span></span>
 <span id="cb1-2"><a></a></span>
 <span id="cb1-3"><a></a>xs <span class="op">=</span> np.array([<span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">2</span>])     <span class="co"># creamos un arreglo de números</span></span>
@@ -481,7 +481,7 @@ Diego Ramos Á.
 </section>
 <section id="ejemplos" class="slide level2">
 <h2>Ejemplos</h2>
-<div id="c149cca2" class="cell" data-execution_count="2">
+<div id="4b13f727" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3" data-code-line-numbers="|3,7|4,8|5,9|"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np           <span class="co"># importamos la biblioteca NumPy</span></span>
 <span id="cb3-2"><a></a></span>
 <span id="cb3-3"><a></a>arreglo_1 <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])       <span class="co"># Arreglo de números enteros</span></span>
@@ -507,7 +507,7 @@ Diego Ramos Á.
 <h2>Funciones importantes</h2>
 <p><code>numpy.zeros(dimensión)</code>: Crea un arreglo de tamaño <code>dimensión</code> y le asigna a cada elemento valor 0.</p>
 <div class="fragment fade-up">
-<div id="484919c7" class="cell" data-execution_count="3">
+<div id="03922d5b" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb4-2"><a></a></span>
 <span id="cb4-3"><a></a>a <span class="op">=</span> np.zeros([<span class="dv">5</span>])</span>
@@ -518,7 +518,7 @@ Diego Ramos Á.
 </div>
 </div>
 <div class="fragment fade-up">
-<div id="8c403208" class="cell" data-execution_count="4">
+<div id="6ac56928" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb6-2"><a></a></span>
 <span id="cb6-3"><a></a>a <span class="op">=</span> np.zeros([<span class="dv">5</span>, <span class="dv">5</span>])</span>
@@ -537,7 +537,7 @@ Diego Ramos Á.
 <h2>Funciones importantes 2</h2>
 <p><code>numpy.ones(dimensión)</code>: Crea un arreglo de tamaño <code>dimensión</code> y le asigna a cada elemento valor 1</p>
 <div class="fragment fade-up">
-<div id="f9164476" class="cell" data-execution_count="5">
+<div id="1ba38442" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb8-2"><a></a></span>
 <span id="cb8-3"><a></a>b <span class="op">=</span> np.ones([<span class="dv">2</span>, <span class="dv">4</span>])</span>
@@ -553,7 +553,7 @@ Diego Ramos Á.
 <h2>Funciones importantes 3</h2>
 <p><code>numpy.full(dimensión, valor)</code>: Crea un arreglo de tamaño <code>dimensión</code> y le asigna a cada elemento el valor valor</p>
 <div class="fragment fade-up">
-<div id="c3252231" class="cell" data-execution_count="6">
+<div id="31547b33" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb10-2"><a></a></span>
 <span id="cb10-3"><a></a>c <span class="op">=</span> np.full([<span class="dv">2</span>,<span class="dv">3</span>], <span class="dv">7</span>) </span>
@@ -569,13 +569,13 @@ Diego Ramos Á.
 <h2>Funciones importantes 4</h2>
 <p><code>numpy.random.random(dimensión)</code>: Crea un arreglo de tamaño <code>dimensión</code> y le asigna a cada elemento un valor random entre 0 y 1</p>
 <div class="fragment fade-up">
-<div id="f278e31e" class="cell" data-execution_count="7">
+<div id="5e771b7b" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb12-2"><a></a></span>
 <span id="cb12-3"><a></a>d <span class="op">=</span> np.random.random([<span class="dv">5</span>]) </span>
 <span id="cb12-4"><a></a><span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[0.69958917 0.46401783 0.28634662 0.36890204 0.83641123]</code></pre>
+<pre><code>[0.82775175 0.48086842 0.97650866 0.09253159 0.43089058]</code></pre>
 </div>
 </div>
 </div>
@@ -585,7 +585,7 @@ Diego Ramos Á.
 <p>Al igual que con listas, se puede obtener un elemento en una posición usando la notación:</p>
 <p><strong><code>arreglo[posición]</code></strong></p>
 <p>pero si es en más de una dimensión debemos asegurarnos de incluir la posición en cada una de ellas.</p>
-<div id="f034bbe4" class="cell" data-execution_count="8">
+<div id="e15c4699" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a><span class="im">import</span> numpy</span>
 <span id="cb14-2"><a></a></span>
 <span id="cb14-3"><a></a>a <span class="op">=</span> numpy.random.random([<span class="dv">5</span>])</span>
@@ -594,15 +594,15 @@ Diego Ramos Á.
 <span id="cb14-6"><a></a>b <span class="op">=</span> numpy.random.random([<span class="dv">4</span>,<span class="dv">5</span>])</span>
 <span id="cb14-7"><a></a><span class="bu">print</span>(b[<span class="dv">3</span>, <span class="dv">0</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>0.7108890917424983
-0.6053743793414248</code></pre>
+<pre><code>0.7972874239924923
+0.5481667073960588</code></pre>
 </div>
 </div>
 </section>
 <section id="agregar-elementos" class="slide level2">
 <h2>Agregar elementos</h2>
 <p>Para agregar elementos a un arreglo tenemos la función append de la biblioteca Numpy</p>
-<div id="136d89cc" class="cell" data-execution_count="9">
+<div id="ac9ae75d" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb16-2"><a></a></span>
 <span id="cb16-3"><a></a>a <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>])</span>
@@ -633,7 +633,7 @@ Diego Ramos Á.
 <h2>Cantidad de elementos</h2>
 <p>Para obtener la cantidad de elementos de un arreglo podemos usar <code>len(arreglo)</code>, tal como con listas, o el atributo llamado <code>size</code>.</p>
 <div class="fragment fade-up">
-<div id="65e88a71" class="cell" data-execution_count="10">
+<div id="24a5076a" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb18-2"><a></a></span>
 <span id="cb18-3"><a></a>a <span class="op">=</span> np.random.random(<span class="dv">5</span>,)</span>
@@ -648,7 +648,7 @@ Diego Ramos Á.
 <section id="dimensiones" class="slide level2">
 <h2>Dimensiones</h2>
 <p>Para obtener las dimensiones de un arreglo y la magnitud de cada dimensión usamos shape:</p>
-<div id="3fa86e64" class="cell" data-execution_count="11">
+<div id="bdb8c412" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb20-2"><a></a></span>
 <span id="cb20-3"><a></a>m <span class="op">=</span> np.zeros([<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])</span>
@@ -669,7 +669,7 @@ Número de elementos en dimension 2 : 4</code></pre>
 <section id="recorrer-un-arreglo" class="slide level2 smaller">
 <h2>Recorrer un arreglo</h2>
 <p>Para recorrer un arreglo, podemos utilizar el método <code>shape</code> y recorrer cada una de sus dimensiones paso a paso. Por ejemplo, para recorrer primero las filas y luego las columnas:</p>
-<div id="34e22318" class="cell" data-execution_count="12">
+<div id="4b432f43" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb22-2"><a></a></span>
 <span id="cb22-3"><a></a>m <span class="op">=</span> np.random.randint(<span class="dv">1</span>, <span class="dv">101</span>, [<span class="dv">2</span>,<span class="dv">3</span>])</span>
@@ -687,8 +687,8 @@ Número de elementos en dimension 2 : 4</code></pre>
 <span id="cb22-15"><a></a><span class="bu">print</span>(<span class="st">']'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[
-    [   66  50  99  ]
-    [   39  30  77  ]
+    [   33  33  11  ]
+    [   32  88  42  ]
 ]</code></pre>
 </div>
 </div>
@@ -699,7 +699,7 @@ Número de elementos en dimension 2 : 4</code></pre>
 </section>
 <section id="solución-1" class="slide level2">
 <h2>Solución 1</h2>
-<div id="8e04b73c" class="cell" data-execution_count="13">
+<div id="0fea261c" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a></a><span class="im">import</span> numpy</span>
 <span id="cb24-2"><a></a>notas <span class="op">=</span> numpy.random.random([<span class="dv">40</span>,<span class="dv">3</span>])<span class="op">*</span><span class="dv">6</span><span class="op">+</span><span class="dv">1</span></span>
 <span id="cb24-3"><a></a>prom <span class="op">=</span> numpy.zeros([<span class="dv">40</span>])</span>
@@ -711,15 +711,15 @@ Número de elementos en dimension 2 : 4</code></pre>
 <span id="cb24-9"><a></a>       prom[i] <span class="op">=</span> suma<span class="op">/</span><span class="dv">3</span></span>
 <span id="cb24-10"><a></a><span class="bu">print</span>(<span class="st">"Los promedios son "</span>, prom.<span class="bu">round</span>(<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Los promedios son  [5.67 4.47 4.01 4.01 5.05 3.97 3.14 3.64 4.14 3.57 5.66 5.21 5.34 3.88
- 1.86 4.17 3.98 4.07 3.15 2.98 5.8  2.98 3.54 4.46 3.15 3.75 3.78 2.74
- 5.79 2.92 4.59 4.82 4.73 3.57 4.51 3.76 2.54 3.71 3.75 3.2 ]</code></pre>
+<pre><code>Los promedios son  [4.91 3.78 3.18 4.96 5.93 6.15 4.58 5.29 3.86 4.65 4.44 3.74 2.4  4.41
+ 5.58 4.62 2.97 3.94 3.63 4.28 4.49 3.07 3.07 5.86 3.8  6.24 4.08 4.63
+ 4.05 3.68 3.63 1.75 5.09 5.46 4.43 3.41 5.47 4.91 4.46 3.88]</code></pre>
 </div>
 </div>
 </section>
 <section id="solución-2" class="slide level2">
 <h2>Solución 2</h2>
-<div id="f2583628" class="cell" data-execution_count="14">
+<div id="f03d319c" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a></a><span class="im">import</span> numpy</span>
 <span id="cb26-2"><a></a>notas <span class="op">=</span> numpy.random.random([<span class="dv">40</span>,<span class="dv">3</span>])<span class="op">*</span><span class="dv">6</span><span class="op">+</span><span class="dv">1</span></span>
 <span id="cb26-3"><a></a>prom <span class="op">=</span> numpy.zeros([<span class="dv">40</span>])</span>
@@ -729,9 +729,9 @@ Número de elementos en dimension 2 : 4</code></pre>
 <span id="cb26-7"><a></a></span>
 <span id="cb26-8"><a></a><span class="bu">print</span>(<span class="st">"Los promedios son "</span>, prom.<span class="bu">round</span>(<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Los promedios son  [5.62 1.99 5.35 4.53 4.21 2.5  3.67 4.24 2.69 3.87 2.78 3.71 5.25 4.48
- 2.78 2.42 4.18 4.32 4.27 3.48 3.41 5.33 3.   2.8  2.9  4.43 2.88 2.84
- 4.33 4.04 3.15 4.89 4.07 4.82 4.21 3.68 4.8  6.06 4.93 3.95]</code></pre>
+<pre><code>Los promedios son  [2.03 4.15 1.74 4.26 4.65 4.35 3.69 4.86 3.63 3.38 2.78 3.88 3.32 3.95
+ 3.65 3.87 5.09 2.35 3.08 4.54 3.54 3.6  2.88 3.29 3.   2.03 4.05 4.23
+ 5.03 3.64 4.26 3.57 3.54 4.65 3.99 2.96 3.41 3.68 2.78 6.21]</code></pre>
 </div>
 </div>
 </section>

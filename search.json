@@ -326,14 +326,14 @@
     "href": "tics100/Clase03.html#código-1",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.7258642473049968\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n7"
+    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.33538810106358097\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n3"
   },
   {
     "objectID": "tics100/Clase03.html#código-2",
     "href": "tics100/Clase03.html#código-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n5.309055279965708"
+    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n3.199048496503296"
   },
   {
     "objectID": "tics100/Clase03.html#math",
@@ -389,14 +389,14 @@
     "href": "tics100/Clase03.html#código-1-2",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1741826790.0857213\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Mar 12 21:46:30 2025"
+    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1770147330.5129128\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Tue Feb  3 16:35:30 2026"
   },
   {
     "objectID": "tics100/Clase03.html#código-2-2",
     "href": "tics100/Clase03.html#código-2-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Wed Mar 12 21:46:30 2025\nFecha actual:  Wed Mar 12 21:46:32 2025"
+    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Tue Feb  3 16:35:30 2026\nFecha actual:  Tue Feb  3 16:35:32 2026"
   },
   {
     "objectID": "tics100/Clase03.html#ejemplo-de-uso",
@@ -529,7 +529,7 @@
     "href": "about.html",
     "title": "Diego Ramos Álvarez",
     "section": "",
-    "text": "I’m Diego Ramos a PhD student in Universidad Adolfo Ibáñez in Santiago, Chile.\n\n\nUniversidad Adolfo Ibáñez | Santiago\nPhD Data Science | Marzo 2023 - Current\nUniversidad Adolfo Ibáñez | Viña del Mar\nMaster in Science of Data Science | Marzo 2021 - Enero 2023\nUniversidad Adolfo Ibáñez | Viña del Mar\nIngeniería Civil Informática | Marzo 2017 - Enero 2023\n\n\n\nRamos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data. Behavior Research Methods, 56(4), 3366-3379."
+    "text": "I’m Diego Ramos a PhD student in Universidad Adolfo Ibáñez in Santiago, Chile.\n\n\nUniversidad Adolfo Ibáñez | Santiago\nPhD Data Science | Marzo 2023 - Current\nUniversidad Adolfo Ibáñez | Viña del Mar\nMaster in Science of Data Science | Marzo 2021 - Enero 2023\nUniversidad Adolfo Ibáñez | Viña del Mar\nIngeniería Civil Informática | Marzo 2017 - Enero 2023"
   },
   {
     "objectID": "about.html#education",
@@ -539,18 +539,25 @@
     "text": "Universidad Adolfo Ibáñez | Santiago\nPhD Data Science | Marzo 2023 - Current\nUniversidad Adolfo Ibáñez | Viña del Mar\nMaster in Science of Data Science | Marzo 2021 - Enero 2023\nUniversidad Adolfo Ibáñez | Viña del Mar\nIngeniería Civil Informática | Marzo 2017 - Enero 2023"
   },
   {
-    "objectID": "about.html#papers-publicados",
-    "href": "about.html#papers-publicados",
-    "title": "Diego Ramos Álvarez",
-    "section": "",
-    "text": "Ramos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data. Behavior Research Methods, 56(4), 3366-3379."
+    "objectID": "index.html#publicaciones",
+    "href": "index.html#publicaciones",
+    "title": "HomePage",
+    "section": "Publicaciones",
+    "text": "Publicaciones\n\nRamos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data Behavior Research Methods, 56(4), 3366-3379."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.html#cursos-y-clases",
+    "href": "index.html#cursos-y-clases",
     "title": "HomePage",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCursos\n\n\n\n\n\nDiapositivas de los cursos que he dictado. \n\n\n\n\n\n\n\n\n\nNo matching items"
+    "section": "Cursos y Clases",
+    "text": "Cursos y Clases\n\nCursos que Dicto\n\nProgramación - Curso básico de programación.\nNombre del Curso 2 - Descripción breve."
+  },
+  {
+    "objectID": "index.html#contacto",
+    "href": "index.html#contacto",
+    "title": "HomePage",
+    "section": "Contacto",
+    "text": "Contacto\n\nEmail: diegor98@gmail.com\nGoogle Scholar | ResearchGate | GitHub\n\n\n© 2025 Diego Joaquín Ramos Álvarez - Todos los derechos reservados."
   },
   {
     "objectID": "tics100/Clase02.html#disclaimer",
@@ -1103,14 +1110,14 @@
     "href": "tics100/Clase10.html#funciones-importantes-4",
     "title": "TICS100 - Programación",
     "section": "Funciones importantes 4",
-    "text": "Funciones importantes 4\nnumpy.random.random(dimensión): Crea un arreglo de tamaño dimensión y le asigna a cada elemento un valor random entre 0 y 1\n\n\nimport numpy as np\n\nd = np.random.random([5]) \nprint(d)\n\n[0.69958917 0.46401783 0.28634662 0.36890204 0.83641123]"
+    "text": "Funciones importantes 4\nnumpy.random.random(dimensión): Crea un arreglo de tamaño dimensión y le asigna a cada elemento un valor random entre 0 y 1\n\n\nimport numpy as np\n\nd = np.random.random([5]) \nprint(d)\n\n[0.82775175 0.48086842 0.97650866 0.09253159 0.43089058]"
   },
   {
     "objectID": "tics100/Clase10.html#acceder-a-sus-elementos",
     "href": "tics100/Clase10.html#acceder-a-sus-elementos",
     "title": "TICS100 - Programación",
     "section": "Acceder a sus elementos",
-    "text": "Acceder a sus elementos\nAl igual que con listas, se puede obtener un elemento en una posición usando la notación:\narreglo[posición]\npero si es en más de una dimensión debemos asegurarnos de incluir la posición en cada una de ellas.\n\nimport numpy\n\na = numpy.random.random([5])\nprint(a[3])\n\nb = numpy.random.random([4,5])\nprint(b[3, 0])\n\n0.7108890917424983\n0.6053743793414248"
+    "text": "Acceder a sus elementos\nAl igual que con listas, se puede obtener un elemento en una posición usando la notación:\narreglo[posición]\npero si es en más de una dimensión debemos asegurarnos de incluir la posición en cada una de ellas.\n\nimport numpy\n\na = numpy.random.random([5])\nprint(a[3])\n\nb = numpy.random.random([4,5])\nprint(b[3, 0])\n\n0.7972874239924923\n0.5481667073960588"
   },
   {
     "objectID": "tics100/Clase10.html#agregar-elementos",
@@ -1138,7 +1145,7 @@
     "href": "tics100/Clase10.html#recorrer-un-arreglo",
     "title": "TICS100 - Programación",
     "section": "Recorrer un arreglo",
-    "text": "Recorrer un arreglo\nPara recorrer un arreglo, podemos utilizar el método shape y recorrer cada una de sus dimensiones paso a paso. Por ejemplo, para recorrer primero las filas y luego las columnas:\n\nimport numpy as np\n\nm = np.random.randint(1, 101, [2,3])\n\nprint('[')\n\nfor i in range( m.shape[0] ): # Ciclo Externo\n    print('\\t[\\t', end='')\n    \n    for j in range( m.shape[1] ):  # Ciclo Interno\n        print(m[i,j], end='\\t')\n    \n    print(']')\n\nprint(']')\n\n[\n    [   66  50  99  ]\n    [   39  30  77  ]\n]"
+    "text": "Recorrer un arreglo\nPara recorrer un arreglo, podemos utilizar el método shape y recorrer cada una de sus dimensiones paso a paso. Por ejemplo, para recorrer primero las filas y luego las columnas:\n\nimport numpy as np\n\nm = np.random.randint(1, 101, [2,3])\n\nprint('[')\n\nfor i in range( m.shape[0] ): # Ciclo Externo\n    print('\\t[\\t', end='')\n    \n    for j in range( m.shape[1] ):  # Ciclo Interno\n        print(m[i,j], end='\\t')\n    \n    print(']')\n\nprint(']')\n\n[\n    [   33  33  11  ]\n    [   32  88  42  ]\n]"
   },
   {
     "objectID": "tics100/Clase10.html#ejercicio",
@@ -1152,14 +1159,14 @@
     "href": "tics100/Clase10.html#solución-1",
     "title": "TICS100 - Programación",
     "section": "Solución 1",
-    "text": "Solución 1\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n       suma = 0\n       for j in range(0,notas.shape[1]):\n             suma = suma + notas[i,j]\n       prom[i] = suma/3\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [5.67 4.47 4.01 4.01 5.05 3.97 3.14 3.64 4.14 3.57 5.66 5.21 5.34 3.88\n 1.86 4.17 3.98 4.07 3.15 2.98 5.8  2.98 3.54 4.46 3.15 3.75 3.78 2.74\n 5.79 2.92 4.59 4.82 4.73 3.57 4.51 3.76 2.54 3.71 3.75 3.2 ]"
+    "text": "Solución 1\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n       suma = 0\n       for j in range(0,notas.shape[1]):\n             suma = suma + notas[i,j]\n       prom[i] = suma/3\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [4.91 3.78 3.18 4.96 5.93 6.15 4.58 5.29 3.86 4.65 4.44 3.74 2.4  4.41\n 5.58 4.62 2.97 3.94 3.63 4.28 4.49 3.07 3.07 5.86 3.8  6.24 4.08 4.63\n 4.05 3.68 3.63 1.75 5.09 5.46 4.43 3.41 5.47 4.91 4.46 3.88]"
   },
   {
     "objectID": "tics100/Clase10.html#solución-2",
     "href": "tics100/Clase10.html#solución-2",
     "title": "TICS100 - Programación",
     "section": "Solución 2",
-    "text": "Solución 2\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n     prom[i] = notas[i,:].mean()\n\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [5.62 1.99 5.35 4.53 4.21 2.5  3.67 4.24 2.69 3.87 2.78 3.71 5.25 4.48\n 2.78 2.42 4.18 4.32 4.27 3.48 3.41 5.33 3.   2.8  2.9  4.43 2.88 2.84\n 4.33 4.04 3.15 4.89 4.07 4.82 4.21 3.68 4.8  6.06 4.93 3.95]"
+    "text": "Solución 2\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n     prom[i] = notas[i,:].mean()\n\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [2.03 4.15 1.74 4.26 4.65 4.35 3.69 4.86 3.63 3.38 2.78 3.88 3.32 3.95\n 3.65 3.87 5.09 2.35 3.08 4.54 3.54 3.6  2.88 3.29 3.   2.03 4.05 4.23\n 5.03 3.64 4.26 3.57 3.54 4.65 3.99 2.96 3.41 3.68 2.78 6.21]"
   },
   {
     "objectID": "tics100/Clase10.html#filas-y-columnas",

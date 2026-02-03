@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,6 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -258,7 +259,7 @@ Una vez que el ciclo interno cumple todas sus iteraciones, el ciclo externo avan
 
 </br>
 
-::: {#1579fd99 .cell execution_count=1}
+::: {#3e55233b .cell execution_count=1}
 ``` {.python .cell-code code-line-numbers="1|2|"}
 for i in range(1, 3+1):  
     for j in range(1, 5+1):   
@@ -294,7 +295,7 @@ for i in range(1, 3+1):
 </br> 
 Si les pregunto que muestra el cdigo:
 
-::: {#f922d404 .cell execution_count=2}
+::: {#0fc7ee96 .cell execution_count=2}
 ``` {.python .cell-code}
 i=1
 while(i<5):
@@ -319,7 +320,7 @@ A la pizarra...
 
 :::{.fragment .fade-up}
 
-::: {#f199b1c2 .cell execution_count=3}
+::: {#aacb8623 .cell execution_count=3}
 ``` {.python .cell-code}
 i=1
 while(i<5):
@@ -359,7 +360,7 @@ while(i<5):
 
 ¿Qué mostraría el siguiente código?
 
-::: {#80e109a9 .cell execution_count=4}
+::: {#500c0db2 .cell execution_count=4}
 ``` {.python .cell-code}
 i=1
 while(i<5):
@@ -374,7 +375,7 @@ while(i<5):
 
 :::{.fragment .fade-up}
 
-::: {#40c885a1 .cell execution_count=5}
+::: {#733dd77b .cell execution_count=5}
 
 ::: {.cell-output .cell-output-stdout}
 ```
@@ -432,7 +433,7 @@ Pero la más importante es en el uso de matrices, como por ejemplo las imágenes
 
 ¿Qué aparece en pantalla al ejecutar este programa con datos 3 y 4? ¿y con datos 5 y 3?
 
-::: {#61f69ff0 .cell execution_count=6}
+::: {#09149a4e .cell execution_count=6}
 ``` {.python .cell-code}
 alto=int(input("Alto del rectangulo:"))
 ancho=int(input("Ancho del rectangulo:"))
@@ -895,4 +896,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
