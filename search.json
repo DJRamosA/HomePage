@@ -4,7 +4,7 @@
     "href": "tics100/Clase15.html#ejercicio-1",
     "title": "TICS100 - Programación",
     "section": "Ejercicio 1",
-    "text": "Ejercicio 1\nLa gran multitienda LeroMart tiene una oferta lleve 3 y pague 2 la cual consiste en poder comprar 3 elementos cuales quiera y solo pagar 2 (la tienda no es tonta por lo que cobrará los 2 elementos más caros), la promoción no aplica si lleva más de 3 elementos. Raspum tiene una lista de N elementos que desea comprar (asuma que todos los elementos existen en LeroMart). Raspum es muy inteligente por lo que decide entrar las veces que sean necesarias para pagar menos. Por ejemplo si entra 2 veces comprando 3 elementos cada vez, pagará sólo 4 elementos en lugar de pagar los 6.\n\n\ncuantos productos? 7\n2000 4000 1000 2000 4000 3000 2000\n\nEl valor mínimo que podría pagar es: 13000\n\n\nRealice un programa en Python que solicite el número de productos a comprar y luego solicite precios de cada uno (el largo no puede ser superior a 20 productos). Finalmente calcule el valor mínimo que podría pagar Raspum empleando la estrategia descrita anteriormente."
+    "text": "Ejercicio 1\nLa gran multitienda LeroMart tiene una oferta lleve 3 y pague 2 la cual consiste en poder comprar 3 elementos cuales quiera y solo pagar 2 (la tienda no es tonta por lo que cobrará los 2 elementos más caros), la promoción no aplica si lleva más de 3 elementos. Raspum tiene una lista de N elementos que desea comprar (asuma que todos los elementos existen en LeroMart). Raspum es muy inteligente por lo que decide entrar las veces que sean necesarias para pagar menos. Por ejemplo si entra 2 veces comprando 3 elementos cada vez, pagará sólo 4 elementos en lugar de pagar los 6.\n\nprint(\"cuantos productos? 7\")\nprint(\"2000 4000 1000 2000 4000 3000 2000\")\nprint(\"\")\nprint(\"El valor mínimo que podría pagar es: 13000\")\n\ncuantos productos? 7\n2000 4000 1000 2000 4000 3000 2000\n\nEl valor mínimo que podría pagar es: 13000\n\n\nRealice un programa en Python que solicite el número de productos a comprar y luego solicite precios de cada uno (el largo no puede ser superior a 20 productos). Finalmente calcule el valor mínimo que podría pagar Raspum empleando la estrategia descrita anteriormente."
   },
   {
     "objectID": "tics100/Clase15.html#ejercicio-2",
@@ -18,7 +18,7 @@
     "href": "tics100/Clase13.html#ejercicio-1",
     "title": "TICS100 - Programación",
     "section": "Ejercicio 1",
-    "text": "Ejercicio 1\nEscriba un programa que permita crear una nueva lista de palabras, solicitando al usuario una cantidad de palabras y cada una de las palabras. Luego, limpie la nueva lista, eliminando todas las palabras repetidas de la lista, debe dejar en la lista la primera aparición de esa palabra. Hint: genere una segunda lista con las palabras que no se repitan. Finalmente, muestre el contenido de la nueva lista.\nUn ejemplo de ejecución del programa es el siguiente:\n\n\ningrese el número de palabras:\n4\ningrese la palabra 1\nhoy\ningrese la palabra 2\nayer\ningrese la palabra 3\nmañana\ningrese la palabra 4\nayer\nLa lista original es ['hoy', 'ayer', 'mañana', 'ayer']\n\nLa lista modificada es ['hoy','ayer','mañana']"
+    "text": "Ejercicio 1\nEscriba un programa que permita crear una nueva lista de palabras, solicitando al usuario una cantidad de palabras y cada una de las palabras. Luego, limpie la nueva lista, eliminando todas las palabras repetidas de la lista, debe dejar en la lista la primera aparición de esa palabra. Hint: genere una segunda lista con las palabras que no se repitan. Finalmente, muestre el contenido de la nueva lista.\nUn ejemplo de ejecución del programa es el siguiente:\n\nprint(\"ingrese el número de palabras:\")\nprint(\"4\")\nprint(\"ingrese la palabra 1\")\nprint(\"hoy\")\nprint(\"ingrese la palabra 2\")\nprint(\"ayer\")\nprint(\"ingrese la palabra 3\")\nprint(\"mañana\")\nprint(\"ingrese la palabra 4\")\nprint(\"ayer\")\nprint(\"La lista original es ['hoy', 'ayer', 'mañana', 'ayer']\\n\")\nprint(\"La lista modificada es ['hoy','ayer','mañana']\")\n\ningrese el número de palabras:\n4\ningrese la palabra 1\nhoy\ningrese la palabra 2\nayer\ningrese la palabra 3\nmañana\ningrese la palabra 4\nayer\nLa lista original es ['hoy', 'ayer', 'mañana', 'ayer']\n\nLa lista modificada es ['hoy','ayer','mañana']"
   },
   {
     "objectID": "tics100/Clase13.html#ejercicio-2",
@@ -123,7 +123,7 @@
     "href": "tics100/Clase11.html#ejercicio",
     "title": "TICS100 - Programación",
     "section": "Ejercicio",
-    "text": "Ejercicio\nHaga un menú de calculo de área de figuras geométricas donde comience preguntando por el tipo de figura y luego las medidas. Ejemplo:\n\n\n¿Qué figura quiere calcular su área: \n 1-Cuadrado \n 2-Rectangulo \n 3-Triangulo \n 4-Circulo\nIngrese el número de la figura: 2\nIngrese el valor de la base: 4 \nIngrese el valor de la altura: 5\nSu área es: 20\n\n\nConsidere una función para cada figura.\nSi logran usar una función para para más de una figura tendrán mejor puntaje para la prueba."
+    "text": "Ejercicio\nHaga un menú de calculo de área de figuras geométricas donde comience preguntando por el tipo de figura y luego las medidas. Ejemplo:\n\nprint(\"¿Qué figura quiere calcular su área: \\n 1-Cuadrado \\n 2-Rectangulo \\n 3-Triangulo \\n 4-Circulo\")\nprint(\"Ingrese el número de la figura: 2\")\n\nprint(\"Ingrese el valor de la base: 4 \\nIngrese el valor de la altura: 5\")\nprint(\"Su área es: 20\")\n\n¿Qué figura quiere calcular su área: \n 1-Cuadrado \n 2-Rectangulo \n 3-Triangulo \n 4-Circulo\nIngrese el número de la figura: 2\nIngrese el valor de la base: 4 \nIngrese el valor de la altura: 5\nSu área es: 20\n\n\nConsidere una función para cada figura.\nSi logran usar una función para para más de una figura tendrán mejor puntaje para la prueba."
   },
   {
     "objectID": "tics100/Clase07.html#ejercicio-1-encuentre-el-error",
@@ -326,14 +326,14 @@
     "href": "tics100/Clase03.html#código-1",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.9233550211100624\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n3"
+    "text": "Código 1\nPodemos generar un numero aleatorio entre 0 y 1:\n\nimport random\n\n# Genera un numero aleatorio entre 0 y 1\nnumAleatorio = random.random()\nprint(numAleatorio)\n\n0.9357674723074677\n\n\n\nTambién podemos generar un numero entero entre 1 y 10:\n\nimport random\n\n# Genera un numero aleatorio entre 1 y 10\nnumAleatorio = random.randint(1, 10)\nprint(numAleatorio)\n\n7"
   },
   {
     "objectID": "tics100/Clase03.html#código-2",
     "href": "tics100/Clase03.html#código-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n2.73475772728474"
+    "text": "Código 2\nTambién podemos generar números aleatorios decimales entre un rango.\n\n\nimport random\n\n# Genera un numero aleatorio entre 2.5 y 5.5\nnumAleatorio = random.uniform(2.5, 5.5)\nprint(numAleatorio)\n\n3.445741083976105"
   },
   {
     "objectID": "tics100/Clase03.html#math",
@@ -389,14 +389,14 @@
     "href": "tics100/Clase03.html#código-1-2",
     "title": "TICS100 - Programación",
     "section": "Código 1",
-    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1770147616.4872918\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Tue Feb  3 16:40:16 2026"
+    "text": "Código 1\nLa función time() devuelve el tiempo actual en segundos desde el 1 de enero de 1970.\n\nimport time\n\ntiempoActual = time.time()\nprint(\"Segundos desde el 01/01/1970: \", tiempoActual)\n\nSegundos desde el 01/01/1970:  1771259894.4704049\n\n\n\nTambién podemos formatear la hora actual en una cadena legible para los humanos. Muestra la hora, la fecha y la zona horaria.\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Mon Feb 16 13:38:14 2026"
   },
   {
     "objectID": "tics100/Clase03.html#código-2-2",
     "href": "tics100/Clase03.html#código-2-2",
     "title": "TICS100 - Programación",
     "section": "Código 2",
-    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Tue Feb  3 16:40:16 2026\nFecha actual:  Tue Feb  3 16:40:18 2026"
+    "text": "Código 2\nPodemos pausar la ejecución de un programa:\n\nimport time\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\ntime.sleep(2)\n\nformatoFecha = time.ctime()\nprint(\"Fecha actual: \", formatoFecha)\n\nFecha actual:  Mon Feb 16 13:38:14 2026\nFecha actual:  Mon Feb 16 13:38:16 2026"
   },
   {
     "objectID": "tics100/Clase03.html#ejemplo-de-uso",
@@ -522,7 +522,7 @@
     "href": "courses.html",
     "title": "Cursos",
     "section": "",
-    "text": "Clase 01\n\n\nPresentación del Curso\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 02\n\n\nIntroducción a Python\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 03\n\n\nIntroducción a Python: Funciones\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 04\n\n\nCondicionales\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 05\n\n\nCiclos\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 06\n\n\nListas\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 07\n\n\nEjercicio Listas\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 08\n\n\nExtra P1\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 09\n\n\nCiclos Anidados\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\n\n\n\nClase 10\n\n\nNumpy\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Clase 01\n\n\nPresentación del Curso\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\nClase 02\n\n\nIntroducción a Python\n\n\n\nAug 7, 2024\n\n\n\n\n\n\n\n\n\n\nClase 03\n\n\nIntroducción a Python: Funciones\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\nClase 04\n\n\nCondicionales\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\nClase 05\n\n\nCiclos\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\nClase 06\n\n\nListas\n\n\n\nAug 21, 2024\n\n\n\n\n\n\n\n\n\n\nClase 07\n\n\nEjercicio Listas\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\n\n\nClase 08\n\n\nExtra P1\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\n\n\nClase 09\n\n\nCiclos Anidados\n\n\n\nSep 25, 2024\n\n\n\n\n\n\n\n\n\n\nClase 10\n\n\nNumpy\n\n\n\nSep 25, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -543,14 +543,14 @@
     "href": "index.html#publicaciones",
     "title": "HomePage",
     "section": "Publicaciones",
-    "text": "Publicaciones\n\nRamos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. (2024). AC-PLT: An algorithm for computer-assisted coding of semantic property listing data Behavior Research Methods, 56(4), 3366-3379."
+    "text": "Publicaciones\n\nRamos, D., Moreno, S., Canessa, E., & Chaigneau, S. E. “Towards scalable and reliable coding of Semantic Property Norms: ChatGPT vs. an improved AC-PLT”. Behavior Research Methods 57, 302 (2025).\nRamos, D., Moreno, S., Canessa, E., Chaigneau, S. E., & Marchant, N. “AC-PLT: An algorithm for computer-assisted coding of semantic property listing data”. Behavior Research Methods, 56(4), 3366-3379 (2024)."
   },
   {
     "objectID": "index.html#cursos-y-clases",
     "href": "index.html#cursos-y-clases",
     "title": "HomePage",
     "section": "Cursos y Clases",
-    "text": "Cursos y Clases\n\nCursos que Dicto\n\nProgramación - Curso básico de programación.\nNombre del Curso 2 - Descripción breve."
+    "text": "Cursos y Clases\n\nCursos que Dicto\n\nProgramación - Curso básico de programación."
   },
   {
     "objectID": "index.html#contacto",
@@ -592,7 +592,7 @@
     "href": "tics100/Clase02.html#hagamos-el-primer-código",
     "title": "TICS100 - Programación",
     "section": "Hagamos el primer código",
-    "text": "Hagamos el primer código\n\nUn programa en Python está conformado por líneas de texto que contienen una o más instrucciones y sentencias del lenguaje.\nTenemos el clasico hola mundo:\n\n\nHelloWorld.py\n\n\nprint(\"Hola Mundo\")\n \n\n\n\nHola Mundo"
+    "text": "Hagamos el primer código\n\nUn programa en Python está conformado por líneas de texto que contienen una o más instrucciones y sentencias del lenguaje.\nTenemos el clasico hola mundo:\n\n\nHelloWorld.py\n\n\nprint(\"Hola Mundo\")\n \n\n\n\nprint(\" Hola Mundo\")\nHola Mundo"
   },
   {
     "objectID": "tics100/Clase02.html#qué-es-y-para-qué-sirve",
@@ -606,7 +606,7 @@
     "href": "tics100/Clase02.html#cómo-se-comenta",
     "title": "TICS100 - Programación",
     "section": "¿Cómo se comenta?",
-    "text": "¿Cómo se comenta?\nUna línea de comentarios en Python comienza con el símbolo # y todo lo que está después de este no será tomado en cuenta por el intérprete de Python al momento de ejecutar el programa.\n\n\nHelloWorld.py\n\n# Esto es un comentario\nprint(\"Hola Mundo\")\n# Por ejemplo si coloco:\n# print(\"Hola alumnos del curso de Programación\")\n# Ups... no hay nada en el output\n\n\n\nHola Mundo"
+    "text": "¿Cómo se comenta?\nUna línea de comentarios en Python comienza con el símbolo # y todo lo que está después de este no será tomado en cuenta por el intérprete de Python al momento de ejecutar el programa.\n\n\nHelloWorld.py\n\n# Esto es un comentario\nprint(\"Hola Mundo\")\n# Por ejemplo si coloco:\n# print(\"Hola alumnos del curso de Programación\")\n# Ups... no hay nada en el output\n\n\n\n# Esto es un comentario\nprint(\"Hola Mundo\")\n# Por ejemplo si coloco:\n# print(\"Hola alumnos del curso de Programación\")\n# Ups... no hay nada en el output\nHola Mundo"
   },
   {
     "objectID": "tics100/Clase02.html#comando-print",
@@ -620,7 +620,7 @@
     "href": "tics100/Clase02.html#observación",
     "title": "TICS100 - Programación",
     "section": "Observación",
-    "text": "Observación\nEl computador es literal, por lo que no va a completar el código por ustedes. Cada caracter que falte significa un error en su código.\nprint(\"Este es mi primer texto)\n# Esta linea de codigo si o si esta mal\n\n\n\n\n  Cell In[3], line 1\n    print(\"Este es mi primer texto)\n          ^\nSyntaxError: unterminated string literal (detected at line 1)"
+    "text": "Observación\nEl computador es literal, por lo que no va a completar el código por ustedes. Cada caracter que falte significa un error en su código.\nprint(\"Este es mi primer texto)\n# Esta linea de codigo si o si esta mal\n\n\nprint(\"Este es mi primer texto)\n\n\n  Cell In[3], line 1\n    print(\"Este es mi primer texto)\n          ^\nSyntaxError: unterminated string literal (detected at line 1)"
   },
   {
     "objectID": "tics100/Clase02.html#qué-es-una-variable",
@@ -844,14 +844,14 @@
     "href": "tics100/Clase06.html#ejemplos",
     "title": "TICS100 - Programación",
     "section": "Ejemplos",
-    "text": "Ejemplos\nlista1=[\"p\",\"y\",\"t\",\"h\",\"o\",\"n\"]\nprint(\"lista1 posicion 0:\", lista1[0])\n\nlista2=[\"python1\"]\nprint(\"lista2 posicion 0:\",lista2[0])\n\nlista3=\"python\"\nprint(\"lista1 posicion 0:\",lista3[0])\n\n\n\nlista1 posicion 0: p\nlista2 posicion 0: python1\nlista1 posicion 0: p\n\n\n\n\nLos string no son listas, pero “funcionan” como listas"
+    "text": "Ejemplos\nlista1=[\"p\",\"y\",\"t\",\"h\",\"o\",\"n\"]\nprint(\"lista1 posicion 0:\", lista1[0])\n\nlista2=[\"python1\"]\nprint(\"lista2 posicion 0:\",lista2[0])\n\nlista3=\"python\"\nprint(\"lista1 posicion 0:\",lista3[0])\n\n\nlista1=[\"p\",\"y\",\"t\",\"h\",\"o\",\"n\"]\nprint(\"lista1 posicion 0:\", lista1[0])\n\nlista2=[\"python1\"]\nprint(\"lista2 posicion 0:\",lista2[0])\n\nlista3=\"python\"\nprint(\"lista1 posicion 0:\",lista3[0])\n\nlista1 posicion 0: p\nlista2 posicion 0: python1\nlista1 posicion 0: p\n\n\n\n\nLos string no son listas, pero “funcionan” como listas"
   },
   {
     "objectID": "tics100/Clase06.html#mostrar-elementos-con-ciclos",
     "href": "tics100/Clase06.html#mostrar-elementos-con-ciclos",
     "title": "TICS100 - Programación",
     "section": "Mostrar elementos con ciclos",
-    "text": "Mostrar elementos con ciclos\nPara mostrar todos los valores aprovechamos la estructura del ciclo for, de tal forma de escribir el código necesario y así recorrer toda la lista.\nlista = [45,5,3,\"hola\",\"Otra cosa\"]\n\nfor elemento in lista:\n    print(elemento)\n\n\n\n45\n5\n3\nhola\nOtra cosa\n\n\n\n\nEsta forma recorre todos los elementos de la lista y permite realizar acciones con cada uno."
+    "text": "Mostrar elementos con ciclos\nPara mostrar todos los valores aprovechamos la estructura del ciclo for, de tal forma de escribir el código necesario y así recorrer toda la lista.\nlista = [45,5,3,\"hola\",\"Otra cosa\"]\n\nfor elemento in lista:\n    print(elemento)\n\n\nlista = [45,5,3,\"hola\",\"Otra cosa\"]\n\nfor elemento in lista:\n    print(elemento)\n\n45\n5\n3\nhola\nOtra cosa\n\n\n\n\nEsta forma recorre todos los elementos de la lista y permite realizar acciones con cada uno."
   },
   {
     "objectID": "tics100/Clase06.html#formato",
@@ -865,7 +865,7 @@
     "href": "tics100/Clase06.html#mostrar-elementos-pero-por-indice",
     "title": "TICS100 - Programación",
     "section": "Mostrar elementos pero por indice",
-    "text": "Mostrar elementos pero por indice\nOtra forma de observar cada valor de la lista es usando el índice como identificador.\nlista = [45,5,3,\"hola\",\"Otra cosa\"]\n\nfor i in range (0,len(lista)):\n    print(lista[i])\n\n\n\n45\n5\n3\nhola\nOtra cosa\n\n\n\n\nDado que el índice está ordenado y sabemos el largo de la lista, fabricamos el rango en donde la variable i debe moverse."
+    "text": "Mostrar elementos pero por indice\nOtra forma de observar cada valor de la lista es usando el índice como identificador.\nlista = [45,5,3,\"hola\",\"Otra cosa\"]\n\nfor i in range (0,len(lista)):\n    print(lista[i])\n\n\nlista = [45,5,3,\"hola\",\"Otra cosa\"]\n\nfor i in range (0,len(lista)):\n    print(lista[i])\n\n45\n5\n3\nhola\nOtra cosa\n\n\n\n\nDado que el índice está ordenado y sabemos el largo de la lista, fabricamos el rango en donde la variable i debe moverse."
   },
   {
     "objectID": "tics100/Clase06.html#formato-1",
@@ -1110,14 +1110,14 @@
     "href": "tics100/Clase10.html#funciones-importantes-4",
     "title": "TICS100 - Programación",
     "section": "Funciones importantes 4",
-    "text": "Funciones importantes 4\nnumpy.random.random(dimensión): Crea un arreglo de tamaño dimensión y le asigna a cada elemento un valor random entre 0 y 1\n\n\nimport numpy as np\n\nd = np.random.random([5]) \nprint(d)\n\n[0.70357767 0.97746707 0.3785364  0.10203854 0.97253322]"
+    "text": "Funciones importantes 4\nnumpy.random.random(dimensión): Crea un arreglo de tamaño dimensión y le asigna a cada elemento un valor random entre 0 y 1\n\n\nimport numpy as np\n\nd = np.random.random([5]) \nprint(d)\n\n[0.51030004 0.79655834 0.12636192 0.1624145  0.77478362]"
   },
   {
     "objectID": "tics100/Clase10.html#acceder-a-sus-elementos",
     "href": "tics100/Clase10.html#acceder-a-sus-elementos",
     "title": "TICS100 - Programación",
     "section": "Acceder a sus elementos",
-    "text": "Acceder a sus elementos\nAl igual que con listas, se puede obtener un elemento en una posición usando la notación:\narreglo[posición]\npero si es en más de una dimensión debemos asegurarnos de incluir la posición en cada una de ellas.\n\nimport numpy\n\na = numpy.random.random([5])\nprint(a[3])\n\nb = numpy.random.random([4,5])\nprint(b[3, 0])\n\n0.6459693628226042\n0.09869441848055782"
+    "text": "Acceder a sus elementos\nAl igual que con listas, se puede obtener un elemento en una posición usando la notación:\narreglo[posición]\npero si es en más de una dimensión debemos asegurarnos de incluir la posición en cada una de ellas.\n\nimport numpy\n\na = numpy.random.random([5])\nprint(a[3])\n\nb = numpy.random.random([4,5])\nprint(b[3, 0])\n\n0.6468662897701652\n0.5072900043896283"
   },
   {
     "objectID": "tics100/Clase10.html#agregar-elementos",
@@ -1145,7 +1145,7 @@
     "href": "tics100/Clase10.html#recorrer-un-arreglo",
     "title": "TICS100 - Programación",
     "section": "Recorrer un arreglo",
-    "text": "Recorrer un arreglo\nPara recorrer un arreglo, podemos utilizar el método shape y recorrer cada una de sus dimensiones paso a paso. Por ejemplo, para recorrer primero las filas y luego las columnas:\n\nimport numpy as np\n\nm = np.random.randint(1, 101, [2,3])\n\nprint('[')\n\nfor i in range( m.shape[0] ): # Ciclo Externo\n    print('\\t[\\t', end='')\n    \n    for j in range( m.shape[1] ):  # Ciclo Interno\n        print(m[i,j], end='\\t')\n    \n    print(']')\n\nprint(']')\n\n[\n    [   47  81  42  ]\n    [   82  61  99  ]\n]"
+    "text": "Recorrer un arreglo\nPara recorrer un arreglo, podemos utilizar el método shape y recorrer cada una de sus dimensiones paso a paso. Por ejemplo, para recorrer primero las filas y luego las columnas:\n\nimport numpy as np\n\nm = np.random.randint(1, 101, [2,3])\n\nprint('[')\n\nfor i in range( m.shape[0] ): # Ciclo Externo\n    print('\\t[\\t', end='')\n    \n    for j in range( m.shape[1] ):  # Ciclo Interno\n        print(m[i,j], end='\\t')\n    \n    print(']')\n\nprint(']')\n\n[\n    [   72  50  2   ]\n    [   89  91  52  ]\n]"
   },
   {
     "objectID": "tics100/Clase10.html#ejercicio",
@@ -1159,14 +1159,14 @@
     "href": "tics100/Clase10.html#solución-1",
     "title": "TICS100 - Programación",
     "section": "Solución 1",
-    "text": "Solución 1\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n       suma = 0\n       for j in range(0,notas.shape[1]):\n             suma = suma + notas[i,j]\n       prom[i] = suma/3\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [3.37 3.28 3.46 6.46 3.33 3.95 4.97 5.29 3.91 3.53 4.65 4.65 4.58 3.97\n 2.85 3.21 4.25 3.7  2.83 5.68 2.94 2.72 4.52 2.98 6.39 3.67 3.92 5.96\n 3.6  2.22 4.81 3.88 4.69 4.3  4.38 4.14 4.38 3.75 4.17 3.96]"
+    "text": "Solución 1\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n       suma = 0\n       for j in range(0,notas.shape[1]):\n             suma = suma + notas[i,j]\n       prom[i] = suma/3\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [4.35 2.34 3.36 4.53 3.52 3.42 4.57 3.37 3.1  2.28 5.4  4.28 4.12 2.04\n 3.59 4.53 3.73 2.38 3.12 3.88 4.19 5.45 4.45 3.22 2.95 3.29 3.21 4.02\n 2.32 4.92 4.71 3.99 3.8  5.44 3.75 5.15 5.64 4.84 2.73 2.57]"
   },
   {
     "objectID": "tics100/Clase10.html#solución-2",
     "href": "tics100/Clase10.html#solución-2",
     "title": "TICS100 - Programación",
     "section": "Solución 2",
-    "text": "Solución 2\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n     prom[i] = notas[i,:].mean()\n\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [4.19 5.56 3.79 4.38 3.43 3.84 2.97 3.88 6.24 5.46 3.17 3.53 3.38 4.61\n 5.95 2.61 4.91 3.31 4.55 3.28 2.88 4.37 4.74 5.16 3.96 5.75 4.84 5.01\n 4.91 3.04 4.3  4.75 3.07 3.85 5.9  4.65 5.06 3.27 4.51 4.41]"
+    "text": "Solución 2\n\nimport numpy\nnotas = numpy.random.random([40,3])*6+1\nprom = numpy.zeros([40])\n\nfor i in range(0,notas.shape[0]):\n     prom[i] = notas[i,:].mean()\n\nprint(\"Los promedios son \", prom.round(2))\n\nLos promedios son  [2.44 3.61 2.17 4.22 2.55 4.65 5.47 3.67 4.49 4.29 5.39 4.38 3.86 2.18\n 4.48 2.94 2.78 2.45 4.05 3.04 4.73 2.98 3.12 3.89 4.96 4.07 3.99 3.54\n 2.98 3.69 3.38 4.48 3.05 4.14 3.54 4.13 4.51 4.54 3.25 4.7 ]"
   },
   {
     "objectID": "tics100/Clase10.html#filas-y-columnas",
